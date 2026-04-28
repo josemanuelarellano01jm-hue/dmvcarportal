@@ -1623,9 +1623,16 @@ body {
 .verify-box-title i { color: var(--blue); }
 .verify-service-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 12px;
   margin-bottom: 24px;
+}
+
+/* Para pantallas pequeñas (menos de 600px), cambiar a 2 columnas */
+@media (max-width: 600px) {
+  .verify-service-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 .verify-opt {
   border: 2px solid #e8eef8;
@@ -3476,6 +3483,7 @@ body {
     <i class="fas fa-search"></i>
     Selecciona el servicio que deseas verificar
   </div>
+
   <div class="verify-service-grid">
     <div class="verify-opt selected" onclick="selectVerify(this,'seguros')">
       <i class="fas fa-shield-alt"></i>
@@ -3497,7 +3505,7 @@ body {
       <i class="fas fa-clipboard-list"></i>
       <span>Inspecciones</span>
     </div>
-  </div> <!-- cierre del verify-service-grid -->
+  </div>
 
   <div class="verify-input-row">
     <input
@@ -3517,8 +3525,7 @@ body {
   </p>
 
   <div id="verifyResult" class="verify-result"></div>
-</div> <!-- cierre del verify-box -->
-
+</div>
     <!-- INFO CARDS -->
     <div style="background:var(--gray);padding:70px 0;position:relative;z-index:2">
       <div class="container">
