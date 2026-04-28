@@ -1569,6 +1569,18 @@ body {
   position: relative;
   overflow: hidden;
 }
+.verify-page {
+  background: linear-gradient(160deg,
+    var(--blue-dark) 0%,
+    var(--blue-mid) 35%,
+    var(--blue) 70%,
+    var(--blue-light) 100%);
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+}
 .verify-page::before {
   content: '';
   position: absolute;
@@ -1577,10 +1589,11 @@ body {
   background-size: 30px 30px;
 }
 .verify-hero-section {
-  padding: 80px 0 50px;
+  padding: 80px 0 80px;  /* ← aumento el padding inferior de 50px a 80px */
   text-align: center;
   position: relative;
   z-index: 2;
+  flex: 1;
 }
 .verify-hero-section h1 {
   font-size: 46px;
@@ -1607,9 +1620,10 @@ body {
   padding: 44px;
   box-shadow: 0 30px 80px rgba(0,0,0,0.25);
   max-width: 720px;
-  margin: 0 auto;
+  margin: 0 auto 40px;  /* ← añadido margen inferior de 40px */
   position: relative;
   z-index: 2;
+  box-sizing: border-box;
 }
 .verify-box-title {
   font-size: 17px;
@@ -1628,7 +1642,6 @@ body {
   margin-bottom: 24px;
 }
 
-/* Para pantallas pequeñas (menos de 600px), cambiar a 2 columnas */
 @media (max-width: 600px) {
   .verify-service-grid {
     grid-template-columns: repeat(2, 1fr);
