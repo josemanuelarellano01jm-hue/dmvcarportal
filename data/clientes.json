@@ -27,19 +27,21 @@
     "tramite": "En revisión",
     "fotos": [
       "fotos/INS-789012/ine.jpg"
-        ]
+    ]
   },
-  "E1468461": {
-    "nombre": "MARIO ENRIQUR",
+  "E1456461": {
+    "nombre": "MARIO ENRIQUE",
     "apellido": "GEORGE PALMA",
-    "id": "E1468461",
+    "id": "E1456461",
     "estado": "En proceso",
-    "ubicacion": " 10901 VILLAGE BEND LN, Houston, Texas",
+    "ubicacion": "10901 VILLAGE BEND LN, Houston, Texas",
     "fecha_nacimiento": "22/08/1990",
     "plan": "Seguro Básico",
     "servicio": "SEGURO Y PLACA",
     "tramite": "En revisión",
     "fotos": [
-      "fotos/INS-789012/ine.jpg"
+      "fotos/E1456461/licencia.jpg",
+      "fotos/E1456461/placa.png"
     ]
-},
+  }
+}
