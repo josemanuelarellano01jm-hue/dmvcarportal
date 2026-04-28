@@ -1696,6 +1696,8 @@ body {
   background: var(--blue-pale);
   color: var(--text);
   font-family: inherit;
+   box-sizing: border-box;   /* ← agregar esta línea */
+   max-width: 100%;          /* ← opcional pero recomendable */
 }
 .verify-input:focus {
   border-color: var(--blue);
