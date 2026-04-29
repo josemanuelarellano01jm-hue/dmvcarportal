@@ -30,7 +30,7 @@
     "nombre": "MARIO ENRIQUE",
     "apellido": "GEORGE PALMA",
     "id": "E1468461",
-    "estado": "activo",
+    "estado": "En proceso",
     "ubicacion": "10901 VILLAGE BEND LN, Houston, Texas",
     "fecha_nacimiento": "01/18/1996",
     "plan": "Seguro Básico-Placa Express",
@@ -39,5 +39,16 @@
     "fotos": [
       "fotos/E1468461_pasaporte.jpg"
     ]
+  },
+  "48743723": {
+    "nombre": "Yurbis A.",
+    "apellido": "Briceño",
+    "id": "48743723",
+    "estado": "APROBADO",
+    "ubicacion": "4500 SOJOURN DR APT 1908 C ADDISON, TX 75001",
+    "fecha_nacimiento": "FECHA 04/28/2027",
+    "plan": "Registro titular completo-inspeccion",
+    "tramite": "VIN 3TMJU62N68M055856",
+    "fotos": []
   }
 }
