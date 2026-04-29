@@ -1,5 +1,5 @@
 {
-  "DMV-123456": {
+  "KNADM4A35D6317858": {
     "nombre": "Rodolfo",
     "apellido": "Vatista",
     "id": "205744158964520",
@@ -8,11 +8,9 @@
     "fecha_nacimiento": "04/28/2026",
     "plan": "Sticker",
     "servicio": ,
-    "tramite": "VIN KNADM4A35D6317858-",
+    "tramite": "VIN KNADM4A35D6317858",
     "fotos": [
-      "fotos/seguro_dmv123456.jpg",
-      "fotos/placa_dmv123456.jpg",
-      "fotos/identificacion_dmv123456.jpg"
+      "fotos/RODOLFO.jpg",
     ]
   },
   "INS-789012": {
