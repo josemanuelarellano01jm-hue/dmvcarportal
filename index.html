@@ -2887,28 +2887,65 @@
      PÁGINA: VERIFICACIÓN (mejorada responsiva)
 ============================================ -->
 <div class="page" id="page-verify">
-    <div class="verify-page">
-        <div class="hero-circle-1"></div><div class="hero-circle-2"></div>
-        <div class="container">
-            <div class="verify-hero-section">
-                <button class="sdp-back" onclick="goTo('home')" style="margin:0 auto 25px;display:inline-flex"><i class="fas fa-arrow-left"></i> Volver al Inicio</button>
-                <div class="section-badge" style="margin-bottom:16px"><i class="fas fa-search"></i> Verificación de Trámites</div>
-                <h1>Verifica el Estado de <span>Tu Trámite</span></h1>
-                <p class="verify-tagline">Consulta el estado de cualquiera de tus trámites vehiculares de forma rápida y segura.</p>
-                <p class="verify-sub">Verifica con nosotros — Tu tranquilidad es nuestra prioridad</p>
-                <div class="verify-box">
-                    <div class="verify-box-title"><i class="fas fa-search"></i> Selecciona el servicio que deseas verificar</div>
-                    <div class="verify-service-grid">
-                        <div class="verify-opt selected" onclick="selectVerify(this,'seguros')"><i class="fas fa-shield-alt"></i><span>Seguros</span></div>
-                        <div class="verify-opt" onclick="selectVerify(this,'placas')"><i class="fas fa-id-card"></i><span>Placas</span></div>
-                        <div class="verify-opt" onclick="selectVerify(this,'titulos')"><i class="fas fa-file-alt"></i><span>Títulos</span></div>
-                        <div class="verify-opt" onclick="selectVerify(this,'licencias')"><i class="fas fa-car"></i><span>Licencias</span></div>
-                        <div class="verify-opt" onclick="selectVerify(this,'inspecciones')"><i class="fas fa-clipboard-list"></i><span>Inspecciones</span></div>
-                        <div class="verify-opt" onclick="selectVerify(this,'stickers')"><i class="fas fa-sticky-note"></i><span>Stickers</span></div>
-                    </div>
-                    <div class="verify-input-row">
-                        <input type="text" class="verify-input" id="verifyId" placeholder="Ingresa tu ID o VIN Y1234567">
-                        <button class="verify-btn" onclick="runVerify()"><i class="fas fa-search"></i> Verificar</button>
+  <div class="verify-page">
+    <div class="hero-circle-1"></div>
+    <div class="hero-circle-2"></div>
+    <div class="container">
+      <div class="verify-hero-section">
+        <button class="sdp-back" onclick="goTo('home')" style="margin:0 auto 25px;display:inline-flex">
+          <i class="fas fa-arrow-left"></i> Volver al Inicio
+        </button>
+        <div class="section-badge" style="margin-bottom:16px">
+          <i class="fas fa-search"></i> Verificación de Trámites
+        </div>
+        <h1>Verifica el Estado de <span>Tu Trámite</span></h1>
+        <p class="verify-tagline">Consulta el estado de cualquiera de tus trámites vehiculares de forma rápida y segura.</p>
+        <p class="verify-sub">Verifica con nosotros — Tu tranquilidad es nuestra prioridad</p>
+        <div class="verify-box">
+          <div class="verify-box-title">
+            <i class="fas fa-search"></i>
+            Selecciona el servicio que deseas verificar
+          </div>
+          <div class="verify-service-grid">
+            <div class="verify-opt selected" onclick="selectVerify(this,'seguros')">
+              <i class="fas fa-shield-alt"></i><span>Seguros</span>
+            </div>
+            <div class="verify-opt" onclick="selectVerify(this,'placas')">
+              <i class="fas fa-id-card"></i><span>Placas Temporales</span>
+            </div>
+            <div class="verify-opt" onclick="selectVerify(this,'titulos')">
+              <i class="fas fa-file-alt"></i><span>Títulos</span>
+            </div>
+            <div class="verify-opt" onclick="selectVerify(this,'licencias')">
+              <i class="fas fa-car"></i><span>Licencias de Conducir</span>
+            </div>
+            <div class="verify-opt" onclick="selectVerify(this,'inspecciones')">
+              <i class="fas fa-clipboard-list"></i><span>Inspecciones</span>
+            </div>
+              <div class="verify-opt" onclick="selectVerify(this,'Stickers')">
+              <i class="fas fa-clipboard-list"></i><span>Stickers</span>
+             </div>   
+          </div>
+          <div class="verify-input-row">
+            <input
+              type="text"
+              class="verify-input"
+              id="verifyId"
+              placeholder="Ingresa tu ID de trámite (ej. INS-123456)"
+              placeholder="Ingresa tu ID o VIN Y1234567"
+            />
+            <button class="verify-btn" onclick="runVerify()">
+              <i class="fas fa-search"></i> Verificación para nuestros clientes
+            </button>
+          </div>
+          <p class="verify-hint">
+            <i class="fas fa-info-circle"></i>
+            Tu ID de trámite fue enviado a tu correo al momento de realizar tu solicitud.
+          </p>
+          <div id="verifyResult" class="verify-result"></div>
+        </div>
+      </div>
+    </div>
                         // ========== VERIFICACIÓN CON ARCHIVOS ESTÁTICOS ==========
 let clientesCache = null;
 
