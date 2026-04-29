@@ -12,16 +12,14 @@
       "fotos/RODOLFO.png"
     ]
   },
-  "INS-789012": {
-    "nombre": "Carlos",
-    "apellido": "López",
-    "id": "INS-789012",
-    "estado": "En proceso",
-    "ubicacion": "Houston, Texas",
-    "fecha_nacimiento": "22/08/1990",
-    "plan": "Seguro Básico",
-    "servicio": "Seguro de Auto",
-    "tramite": "En revisión",
+  "JNIAV7AR3EM700125": {
+    "nombre": "Filadelfo Salvasdor",
+    "apellido": "Montoya Mejia",
+    "id": "VIN JNIAV7AR3EM700125",
+    "estado": "ESTATUS PASS",
+    "ubicacion": "8010 ALLENDALE DR,NORT ENGLEDWOOD, MD 20",
+    "fecha_nacimiento": "29/04/2026",
+    "servicio": "Inspeccion",
     "fotos": [
       "fotos/ine_ins789012.jpg"
     ]
