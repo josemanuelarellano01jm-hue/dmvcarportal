@@ -10,9 +10,9 @@
     "servicio": "Seguro de Auto",
     "tramite": "Activación inmediata",
     "fotos": [
-      "fotos/DMV-123456/seguro_frontal.jpg",
-      "fotos/DMV-123456/placa_temporal.jpg",
-      "fotos/DMV-123456/identificacion.jpg"
+      "fotos/seguro_dmv123456.jpg",
+      "fotos/placa_dmv123456.jpg",
+      "fotos/identificacion_dmv123456.jpg"
     ]
   },
   "INS-789012": {
@@ -26,7 +26,7 @@
     "servicio": "Seguro de Auto",
     "tramite": "En revisión",
     "fotos": [
-      "fotos/INS-789012/ine.jpg"
+      "fotos/ine_ins789012.jpg"
     ]
   },
   "E1468461": {
@@ -40,6 +40,7 @@
     "servicio": "PLACA SHK2107",
     "tramite": "VIN JTKDE177950026320-2005 SCION MODEL:TC BODYS STYLE",
     "fotos": [
+      "fotos/E1468461_pasaporte.jpg"
     ]
   }
 }
