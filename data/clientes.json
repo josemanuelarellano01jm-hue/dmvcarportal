@@ -1,14 +1,14 @@
 {
   "DMV-123456": {
-    "nombre": "María",
-    "apellido": "Rodríguez",
-    "id": "DMV-123456",
-    "estado": "Activo",
-    "ubicacion": "Miami, Florida",
-    "fecha_nacimiento": "15/03/1985",
-    "plan": "Seguro Full Cover",
-    "servicio": "Seguro de Auto",
-    "tramite": "Activación inmediata",
+    "nombre": "Rodolfo",
+    "apellido": "Vatista",
+    "id": "205744158964520",
+    "estado": "ESTATUS (PASS)",
+    "ubicacion": "12516 AUDELTA ROAD APT 906 DALLAS, TX 75243",
+    "fecha_nacimiento": "04/28/2026",
+    "plan": "Sticker",
+    "servicio": ,
+    "tramite": "VIN KNADM4A35D6317858-",
     "fotos": [
       "fotos/seguro_dmv123456.jpg",
       "fotos/placa_dmv123456.jpg",
