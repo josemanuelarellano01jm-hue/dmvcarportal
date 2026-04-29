@@ -19,9 +19,9 @@
     "estado": "ESTATUS PASS",
     "ubicacion": "8010 ALLENDALE DR,NORT ENGLEDWOOD, MD 20",
     "fecha_nacimiento": "29/04/2026",
-    "servicio": "Inspeccion",
+     "plan": Inspeccion
     "fotos": [
-      "fotos/ine_ins789012.jpg"
+      "fotos/ine_ins78.jpg"
     ]
   },
   "348665745": {
@@ -34,7 +34,7 @@
     "plan": "Titulo completo",
     "tramite": "PLACAS:L86ENJ",
     "fotos": [
-      "fotos/E1468461_pasaporte.jpg"
+      "fotos/E1468461"
     ]
   },
   "48743723": {
