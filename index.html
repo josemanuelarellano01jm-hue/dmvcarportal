@@ -2909,6 +2909,78 @@
                     <div class="verify-input-row">
                         <input type="text" class="verify-input" id="verifyId" placeholder="Ingresa tu ID o VIN Y1234567">
                         <button class="verify-btn" onclick="runVerify()"><i class="fas fa-search"></i> Verificar</button>
+                        // ========== VERIFICACIÓN CON ARCHIVOS ESTÁTICOS ==========
+let clientesCache = null;
+
+async function cargarClientes() {
+    if (clientesCache) return clientesCache;
+    try {
+        const response = await fetch('data/clientes.json');
+        if (!response.ok) throw new Error('No se pudo cargar la base de datos');
+        clientesCache = await response.json();
+        return clientesCache;
+    } catch (error) {
+        console.error(error);
+        return null;
+    }
+}
+
+async function runVerify() {
+    const id = document.getElementById('verifyId').value.trim();
+    const resultDiv = document.getElementById('verifyResult');
+
+    if (!id) {
+        mostrarErrorVerificacion(resultDiv, 'Por favor ingresa tu ID o VIN de trámite.');
+        return;
+    }
+
+    resultDiv.className = 'verify-result show pending';
+    resultDiv.innerHTML = '<div class="vr-head"><div class="vr-icon p"><i class="fas fa-spinner fa-spin"></i></div><div class="vr-title p">Buscando tu información...</div></div>';
+
+    const clientes = await cargarClientes();
+    if (!clientes) {
+        mostrarErrorVerificacion(resultDiv, 'Error al cargar la base de datos. Intenta más tarde.');
+        return;
+    }
+
+    // Buscar por ID exacto (clave del objeto)
+    let cliente = clientes[id];
+    
+    // Si no se encuentra, buscar por la propiedad "vin" en cualquier cliente
+    if (!cliente) {
+        for (let key in clientes) {
+            if (clientes[key].vin === id) {
+                cliente = clientes[key];
+                break;
+            }
+        }
+    }
+
+    if (cliente) {
+        sessionStorage.setItem('clienteData', JSON.stringify(cliente));
+        window.location.href = 'verify-detail.html';
+    } else {
+        mostrarErrorVerificacion(resultDiv, `No encontramos ningún trámite con el ID o VIN: ${id}. Verifica que esté bien escrito.`);
+    }
+}
+
+function mostrarErrorVerificacion(div, mensaje) {
+    div.className = 'verify-result show error';
+    div.innerHTML = `<div class="vr-head"><div class="vr-icon e"><i class="fas fa-exclamation-triangle"></i></div><div class="vr-title e">Error</div></div>
+                     <p style="font-size:14px;color:var(--text2)">${mensaje}</p>
+                     <button onclick="window.open('https://wa.me/message/DIJO3NMFOQJZM1','_blank')" style="margin-top:15px; background:#25D366; color:white; border:none; padding:10px 20px; border-radius:30px; font-weight:bold; cursor:pointer;"><i class="fab fa-whatsapp"></i> Contactar Asesor</button>`;
+}
+
+function selectVerify(el, service) {
+    document.querySelectorAll('.verify-opt').forEach(o => o.classList.remove('selected'));
+    el.classList.add('selected');
+    currentVerifyService = service;
+    const result = document.getElementById('verifyResult');
+    if (result) {
+        result.className = 'verify-result';
+        result.innerHTML = '';
+    }
+}
                     </div>
                     <p class="verify-hint"><i class="fas fa-info-circle"></i> Tu ID de trámite fue enviado a tu correo al momento de realizar tu solicitud.</p>
                     <div id="verifyResult" class="verify-result"></div>
