@@ -2403,6 +2403,34 @@ body {
   40%      { transform: translateX(8px); }
   60%      { transform: translateX(-5px); }
   80%      { transform: translateX(5px); }
+   
+}
+   @media (max-width: 768px) {
+  .verify-page [style*="display:grid;grid-template-columns:repeat(4,1fr)"] {
+    grid-template-columns: 1fr !important;
+    gap: 20px !important;
+  }
+  .verify-page .sdp-card {
+    text-align: center !important;
+    padding: 24px 20px !important;
+  }
+  .verify-page .sdp-card .sdp-card-icon {
+    margin: 0 auto 16px !important;
+  }
+  .verify-page .sdp-card h3 {
+    font-size: 16px !important;
+  }
+  .verify-page .sdp-card p {
+    font-size: 13px !important;
+    margin-bottom: 0 !important;
+  }
+
+@media (max-width: 480px) {
+  .verify-page .sdp-card {
+    padding: 20px 16px !important;
+  }
+  .verify-page .sdp-card h3 {
+    font-size: 15px !important;
 }
 </style>
 </head>
@@ -3995,7 +4023,38 @@ body {
     <h2 class="success-title">¡Solicitud Enviada!</h2>
     <p class="success-desc">
       Tu solicitud ha sido recibida exitosamente. Un asesor especializado
-      se pondrá en contacto contigo en menos de 24 horas.
+      se pondrá en contacto contigo en menos de 24 horas./* ============================================
+   PASOS VERIFICACIÓN - RESPONSIVE
+============================================ */
+@media (max-width: 768px) {
+  .verify-page [style*="display:grid;grid-template-columns:repeat(4,1fr)"] {
+    grid-template-columns: 1fr !important;
+    gap: 20px !important;
+  }
+  .verify-page .sdp-card {
+    text-align: center !important;
+    padding: 24px 20px !important;
+  }
+  .verify-page .sdp-card .sdp-card-icon {
+    margin: 0 auto 16px !important;
+  }
+  .verify-page .sdp-card h3 {
+    font-size: 16px !important;
+  }
+  .verify-page .sdp-card p {
+    font-size: 13px !important;
+    margin-bottom: 0 !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .verify-page .sdp-card {
+    padding: 20px 16px !important;
+  }
+  .verify-page .sdp-card h3 {
+    font-size: 15px !important;
+  }
+}
     </p>
     <div class="success-id" id="successId">DMV-000000</div>
     <p class="success-id-note">Guarda este ID para verificar el estado de tu trámite</p>
