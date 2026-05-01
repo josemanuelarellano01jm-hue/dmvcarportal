@@ -199,7 +199,7 @@ body {
 .logo-institucional {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centrado para look de sello oficial */
+    align-items: center;
     cursor: pointer;
     user-select: none;
 }
@@ -218,7 +218,6 @@ body {
     text-transform: uppercase;
 }
 
-/* Línea curva que atraviesa el DMV sutilmente */
 .horizon-line {
     position: absolute;
     top: 55%;
@@ -235,27 +234,26 @@ body {
     align-items: center;
     gap: 6px;
     margin-top: 2px;
-    background-color: var(--gold); /* El fondo amarillo para resaltar */
+    background-color: var(--gold);
     padding: 2px 10px;
     border-radius: 3px;
-    transform: translateY(-2px); /* Lo pega un poco más al DMV */
+    transform: translateY(-2px);
 }
 
 .car-mini {
     font-size: 10px;
-    color: #001233; /* Color oscuro para contraste sobre el oro */
+    color: #001233;
 }
 
 .brand-name {
     font-family: 'Poppins', sans-serif;
     font-size: 12px;
     font-weight: 700;
-    color: #001233; /* Texto oscuro sobre fondo oro */
+    color: #001233;
     text-transform: uppercase;
     letter-spacing: 1px;
 }
 
-/* Efecto al pasar el mouse */
 .logo-institucional:hover .dmv-main {
     color: var(--gold);
     transition: 0.3s;
@@ -266,7 +264,7 @@ body {
 }
 
 .accent-a {
-  color: var(--red-light); /* Usa el rojo que ya tienes en tus variables */
+  color: var(--red-light);
   font-weight: 700;
 }
 
@@ -498,7 +496,7 @@ body {
 .section-desc {
   font-size: 16px;
   color: var(--text2);
-  line-height:   1.75;
+  line-height: 1.75;
   max-width: 600px;
   margin: 0 auto;
 }
@@ -526,7 +524,6 @@ body {
   padding: 80px 0;
 }
 
-/* Fondo animado con partículas */
 .hero::before {
   content: '';
   position: absolute;
@@ -544,7 +541,6 @@ body {
   background-size: 35px 35px;
 }
 
-/* Círculos decorativos */
 .hero-circle-1 {
   position: absolute;
   width: 500px;
@@ -650,7 +646,6 @@ body {
   font-size: 14px;
 }
 
-/* Cards flotantes del hero */
 .hero-right {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -958,7 +953,7 @@ body {
   background: #25D366;
   border-radius: 50%;
   display: flex;
-    align-items: center;
+  align-items: center;
   justify-content: center;
   text-decoration: none;
   box-shadow: 0 6px 25px rgba(37,211,102,0.5);
@@ -1086,7 +1081,6 @@ body {
 }
 .sdp-feature i { color: var(--gold); font-size: 13px; }
 
-/* Sub-servicios cards */
 .sdp-cards-section {
   background: var(--gray);
   padding: 80px 0;
@@ -1196,7 +1190,6 @@ body {
   box-shadow: 0 8px 25px rgba(0,82,204,0.4);
 }
 
-/* Insurance Plans */
 .insurance-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -1416,7 +1409,7 @@ body {
 }
 .testi-card::before {
   content: '\201C';
-    font-size: 100px;
+  font-size: 100px;
   color: var(--blue-soft);
   font-family: Georgia, serif;
   position: absolute;
@@ -1567,16 +1560,6 @@ body {
     var(--blue-light) 100%);
   min-height: 100vh;
   position: relative;
-  overflow: hidden;
-}
-.verify-page {
-  background: linear-gradient(160deg,
-    var(--blue-dark) 0%,
-    var(--blue-mid) 35%,
-    var(--blue) 70%,
-    var(--blue-light) 100%);
-  min-height: 100vh;
-  position: relative;
   overflow-x: hidden;
   display: flex;
   flex-direction: column;
@@ -1589,7 +1572,7 @@ body {
   background-size: 30px 30px;
 }
 .verify-hero-section {
-  padding: 80px 0 80px;  /* ← aumento el padding inferior de 50px a 80px */
+  padding: 80px 0 80px;
   text-align: center;
   position: relative;
   z-index: 2;
@@ -1620,7 +1603,7 @@ body {
   padding: 44px;
   box-shadow: 0 30px 80px rgba(0,0,0,0.25);
   max-width: 720px;
-  margin: 0 auto 40px;  /* ← añadido margen inferior de 40px */
+  margin: 0 auto 40px;
   position: relative;
   z-index: 2;
   box-sizing: border-box;
@@ -1640,12 +1623,6 @@ body {
   grid-template-columns: repeat(3, 1fr);
   gap: 12px;
   margin-bottom: 24px;
-}
-
-@media (max-width: 600px) {
-  .verify-service-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
 }
 .verify-opt {
   border: 2px solid #e8eef8;
@@ -1696,8 +1673,8 @@ body {
   background: var(--blue-pale);
   color: var(--text);
   font-family: inherit;
-   box-sizing: border-box;   /* ← agregar esta línea */
-   max-width: 100%;          /* ← opcional pero recomendable */
+  box-sizing: border-box;
+  max-width: 100%;
 }
 .verify-input:focus {
   border-color: var(--blue);
@@ -1905,7 +1882,7 @@ body {
   letter-spacing: 0.5px;
   display: flex;
   align-items: center;
-  gap: 6px
+  gap: 6px;
 }
 .cf-group label i { font-size: 11px; color: var(--blue); }
 .cf-input {
@@ -1964,7 +1941,6 @@ body {
 }
 .cf-note i { color: var(--blue); }
 
-/* SUCCESS MODAL */
 .success-box {
   background: white;
   border-radius: var(--radius-lg);
@@ -2141,8 +2117,9 @@ body {
   gap: 5px;
 }
 .footer-badge i { color: var(--gold); font-size: 10px; }
-   /* ============================================
-   PROMO BOX - OFERTA ESPECIAL
+
+/* ============================================
+   PROMO BOX
 ============================================ */
 .promo-section {
   background: var(--gray);
@@ -2181,7 +2158,6 @@ body {
   background: radial-gradient(circle, rgba(255,255,255,0.1), transparent 70%);
   border-radius: 50%;
 }
-
 .promo-ribbon {
   position: absolute;
   top: 20px;
@@ -2197,7 +2173,6 @@ body {
   box-shadow: 0 4px 15px rgba(0,0,0,0.2);
   z-index: 2;
 }
-
 .promo-content {
   position: relative;
   z-index: 1;
@@ -2219,7 +2194,6 @@ body {
   animation: pulse 2s ease infinite;
 }
 .promo-tag i { font-size: 12px; }
-
 .promo-title {
   font-size: 38px;
   font-weight: 900;
@@ -2234,7 +2208,6 @@ body {
   text-decoration-color: rgba(255,215,0,0.4);
   text-underline-offset: 6px;
 }
-
 .promo-features-mini {
   display: flex;
   gap: 20px;
@@ -2253,7 +2226,6 @@ body {
   color: var(--gold);
   font-size: 14px;
 }
-
 .promo-timer {
   display: inline-flex;
   align-items: center;
@@ -2270,7 +2242,6 @@ body {
   color: var(--gold);
   animation: pulse 1.5s ease infinite;
 }
-
 .promo-right {
   position: relative;
   z-index: 1;
@@ -2347,9 +2318,10 @@ body {
     font-size: 10px;
     padding: 5px 55px;
   }
+}
 
 /* ============================================
-   RESPONSIVE
+   RESPONSIVE GENERAL
 ============================================ */
 @media(max-width: 1024px) {
   .services-grid       { grid-template-columns: repeat(2,1fr); }
@@ -2396,1636 +2368,13 @@ body {
   .verify-service-grid { grid-template-columns: repeat(2,1fr); }
   .wa-float            { bottom: 20px; right: 20px; }
 }
-
 @keyframes shake {
   0%,100% { transform: translateX(0); }
-  20%      { transform: translateX(-8px); }
-  40%      { transform: translateX(8px); }
-  60%      { transform: translateX(-5px); }
-  80%      { transform: translateX(5px); }
-   
+  20%     { transform: translateX(-8px); }
+  40%     { transform: translateX(8px); }
+  60%     { transform: translateX(-5px); }
+  80%     { transform: translateX(5px); }
 }
-   @media (max-width: 768px) {
-  .verify-page [style*="display:grid;grid-template-columns:repeat(4,1fr)"] {
-    grid-template-columns: 1fr !important;
-    gap: 20px !important;
-  }
-  .verify-page .sdp-card {
-    text-align: center !important;
-    padding: 24px 20px !important;
-  }
-  .verify-page .sdp-card .sdp-card-icon {
-    margin: 0 auto 16px !important;
-  }
-  .verify-page .sdp-card h3 {
-    font-size: 16px !important;
-  }
-  .verify-page .sdp-card p {
-    font-size: 13px !important;
-    margin-bottom: 0 !important;
-  }
-
-@media (max-width: 480px) {
-  .verify-page .sdp-card {
-    padding: 20px 16px !important;
-  }
-  .verify-page .sdp-card h3 {
-    font-size: 15px !important;
-}
-</style>
-</head>
-<body>
-
-<!-- ============================================
-     WHATSAPP FLOTANTE
-============================================ -->
-<div class="wa-float">
-  <div class="wa-tooltip-box">¡Chatea con nosotros!</div>
-  <a href="https://wa.me/1TUNUMERO" target="_blank" class="wa-btn">
-    <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-      <path d="M16 0C7.163 0 0 7.163 0 16c0 2.833.737 5.489 2.027 7.8L0 32l8.418-2.007A15.93 15.93 0 0016 32c8.837 0 16-7.163 16-16S24.837 0 16 0zm0 29.333a13.267 13.267 0 01-6.77-1.853l-.486-.29-5.002 1.193 1.216-4.87-.317-.5A13.267 13.267 0 012.667 16C2.667 8.636 8.636 2.667 16 2.667S29.333 8.636 29.333 16 23.364 29.333 16 29.333zm7.27-9.927c-.398-.199-2.354-1.162-2.72-1.294-.365-.133-.631-.199-.897.199-.265.398-1.029 1.294-1.261 1.56-.232.265-.465.298-.863.1-.398-.2-1.681-.62-3.203-1.977-1.184-1.056-1.983-2.36-2.215-2.758-.232-.398-.025-.613.174-.811.179-.178.398-.465.597-.697.2-.232.266-.398.399-.664.132-.265.066-.497-.033-.696-.1-.199-.897-2.162-1.229-2.96-.324-.777-.653-.672-.897-.684l-.764-.013c-.265 0-.696.1-1.061.497-.365.398-1.394 1.362-1.394 3.325s1.427 3.856 1.626 4.122c.199.265 2.808 4.287 6.803 6.014.951.41 1.693.655 2.271.839.954.304 1.823.261 2.51.158.766-.114 2.354-.962 2.686-1.891.332-.93.332-1.727.232-1.892-.099-.165-.365-.265-.763-.464z"/>
-    </svg>
-  </a>
-</div>
-
-<!-- ============================================
-     MOBILE MENU
-============================================ -->
-<div class="mobile-menu" id="mobileMenu">
-  <button class="mobile-menu-close" onclick="closeMobileMenu()">
-    <i class="fas fa-times"></i>
-  </button>
-  <a onclick="goTo('home');closeMobileMenu()">
-    <i class="fas fa-home"></i> Inicio
-  </a>
-  <a onclick="goTo('seguros');closeMobileMenu()">
-    <i class="fas fa-shield-alt"></i> Seguros
-  </a>
-  <a onclick="goTo('placas');closeMobileMenu()">
-    <i class="fas fa-id-card"></i> Placas Temporales
-  </a>
-  <a onclick="goTo('titulos');closeMobileMenu()">
-    <i class="fas fa-file-alt"></i> Títulos
-  </a>
-  <a onclick="goTo('licencias');closeMobileMenu()">
-    <i class="fas fa-car"></i> Licencias
-  </a>
-  <a onclick="goTo('verify');closeMobileMenu()">
-    <i class="fas fa-search"></i> Verificar
-  </a>
-    <a onclick="openModal('general');closeMobileMenu()" class="mobile-menu-cta">
-    <i class="fas fa-paper-plane"></i> Solicitar Servicio
-  </a>
-</div>
-
-<!-- ============================================
-     PROMO BANNER
-============================================ -->
-<div class="promo-banner">
-  <div class="promo-track">
-    <span><i class="fas fa-certificate"></i> Servicio #1 de Trámites Vehiculares en USA</span>
-    <span><i class="fas fa-bolt"></i> Procesamiento en 24 Horas</span>
-    <span><i class="fas fa-shield-alt"></i> 100% Legal y Aprobado por el DMV</span>
-    <span><i class="fas fa-truck"></i> Envío Gratis en Órdenes Mayores a $50</span>
-    <span><i class="fas fa-globe"></i> Válido en los 50 Estados de USA</span>
-    <span><i class="fas fa-headset"></i> Soporte en Español e Inglés 24/7</span>
-    <span><i class="fas fa-star"></i> Más de 50,000 Clientes Satisfechos</span>
-    <span><i class="fas fa-certificate"></i> Servicio #1 de Trámites Vehiculares en USA</span>
-    <span><i class="fas fa-bolt"></i> Procesamiento en 24 Horas</span>
-    <span><i class="fas fa-shield-alt"></i> 100% Legal y Aprobado por el DMV</span>
-    <span><i class="fas fa-truck"></i> Envío Gratis en Órdenes Mayores a $50</span>
-    <span><i class="fas fa-globe"></i> Válido en los 50 Estados de USA</span>
-    <span><i class="fas fa-headset"></i> Soporte en Español e Inglés 24/7</span>
-    <span><i class="fas fa-star"></i> Más de 50,000 Clientes Satisfechos</span>
-  </div>
-</div>
-
-<!-- ============================================
-     NAVBAR
-============================================ -->
-<nav class="navbar" id="navbar">
-  <div class="logo-institucional" onclick="goTo('home')">
-    <div class="dmv-wrapper">
-        <span class="dmv-main">DMV</span>
-        <div class="horizon-line"></div>
-    </div>
-    <div class="brand-footer">
-        <i class="fa-solid fa-car car-mini"></i>
-        <span class="brand-name">Car Portal</span>
-    </div>
-</div>
-
-    <div class="logo-sub-premium">Tu Portal Vehicular Inteligente</div>
-</div>
-  <ul class="nav-links">
-    <li>
-      <a onclick="goTo('home')" id="nav-home" class="active">
-        <i class="fas fa-home"></i> Inicio
-      </a>
-    </li>
-    <li>
-      <a onclick="goTo('seguros')" id="nav-seguros">
-        <i class="fas fa-shield-alt"></i> Seguros
-      </a>
-    </li>
-    <li>
-      <a onclick="goTo('placas')" id="nav-placas">
-        <i class="fas fa-id-card"></i> Placas
-      </a>
-    </li>
-    <li>
-      <a onclick="goTo('titulos')" id="nav-titulos">
-        <i class="fas fa-file-alt"></i> Títulos
-      </a>
-    </li>
-    <li>
-      <a onclick="goTo('licencias')" id="nav-licencias">
-        <i class="fas fa-car"></i> Licencias
-      </a>
-    </li>
-    <li>
-      <a onclick="goTo('verify')" id="nav-verify">
-        <i class="fas fa-search"></i> Verificar
-      </a>
-    </li>
-    <li>
-      <a onclick="openModal('general')" class="nav-cta">
-        <i class="fas fa-paper-plane"></i> Solicitar Servicio
-      </a>
-    </li>
-  </ul>
-  <button class="hamburger" onclick="openMobileMenu()">
-    <i class="fas fa-bars"></i>
-  </button>
-</nav>
-
-<!-- ============================================
-     HOME PAGE
-============================================ -->
-<div class="page active" id="page-home">
-
-  <!-- HERO -->
-  <section class="hero">
-    <div class="hero-circle-1"></div>
-    <div class="hero-circle-2"></div>
-    <div class="hero-circle-3"></div>
-    <div class="container">
-      <div class="hero-wrap">
-        <div class="hero-content">
-          <div class="hero-badge">
-            <i class="fas fa-certificate"></i>
-            Servicio Oficial Número 1 en USA
-          </div>
-          <h1>Tu Portal de <span>Trámites Vehiculares</span> en USA</h1>
-          <p class="hero-desc">
-            Obtén tus placas temporales, seguros, títulos y licencias de forma
-            rápida, segura y 100% legal. Servicio disponible en los 50 estados.
-          </p>
-          <div class="hero-buttons">
-            <button class="btn btn-red" onclick="openModal('general')">
-              <i class="fas fa-paper-plane"></i> Solicitar Servicio Ahora
-            </button>
-            <button class="btn btn-outline" onclick="goTo('verify')">
-              <i class="fas fa-search"></i> Verificar Mi Trámite
-            </button>
-          </div>
-          <div class="hero-trust">
-            <div class="hero-trust-item">
-              <i class="fas fa-check-circle"></i>
-              <span>Aprobado por DMV</span>
-            </div>
-            <div class="hero-trust-item">
-              <i class="fas fa-lock"></i>
-              <span>100% Seguro</span>
-            </div>
-            <div class="hero-trust-item">
-              <i class="fas fa-bolt"></i>
-              <span>Entrega en 24h</span>
-            </div>
-            <div class="hero-trust-item">
-              <i class="fas fa-globe"></i>
-              <span>50 Estados</span>
-            </div>
-          </div>
-        </div>
-        <div class="hero-right">
-          <div class="hero-card" onclick="goTo('seguros')">
-            <div class="hero-card-icon">
-              <i class="fas fa-shield-alt"></i>
-            </div>
-            <h3>Seguros</h3>
-            <p>Básico y Full Cover disponible</p>
-            <div class="hero-card-arrow">
-              Ver planes <i class="fas fa-arrow-right"></i>
-            </div>
-          </div>
-          <div class="hero-card" onclick="goTo('placas')">
-            <div class="hero-card-icon">
-              <i class="fas fa-id-card"></i>
-            </div>
-            <h3>Placas Temporales</h3>
-            <p>Válidas en los 50 estados</p>
-            <div class="hero-card-arrow">
-              Ver servicios <i class="fas fa-arrow-right"></i>
-            </div>
-          </div>
-          <div class="hero-card" onclick="goTo('titulos')">
-            <div class="hero-card-icon">
-              <i class="fas fa-file-alt"></i>
-            </div>
-            <h3>Títulos </h3>
-            <p>Transferencias y recuperacion</p>
-            <div class="hero-card-arrow">
-              Ver trámites <i class="fas fa-arrow-right"></i>
-            </div>
-          </div>
-          <div class="hero-card" onclick="goTo('licencias')">
-            <div class="hero-card-icon">
-              <i class="fas fa-car"></i>
-            </div>
-            <h3>Licencias de Conducir</h3>
-            <p>Nuevas, renovaciones y duplicados</p>
-            <div class="hero-card-arrow">
-              Ver trámites <i class="fas fa-arrow-right"></i>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-<!-- PROMO ESPECIAL -->  
-  <section class="promo-section">
-    <div class="container">
-      <div class="promo-box fade-up">
-        <div class="promo-ribbon">Oferta</div>
-        <div class="promo-content">
-          <div class="promo-tag">
-            <i class="fas fa-fire"></i> Promoción Especial
-          </div>
-          <h2 class="promo-title">
-            Placa Temporal + Seguro <span>por solo $150</span>
-          </h2>
-          <div class="promo-features-mini">
-            <div class="promo-feature-mini">
-              <i class="fas fa-check-circle"></i> Placa Temporal Oficial
-            </div>
-            <div class="promo-feature-mini">
-              <i class="fas fa-check-circle"></i> Seguro de Auto Incluido
-            </div>
-            <div class="promo-feature-mini">
-              <i class="fas fa-check-circle"></i> Activación Inmediata
-            </div>
-          </div>
-          <div class="promo-timer">
-            <i class="fas fa-clock"></i> Tiempo Limitado — ¡No te lo pierdas!
-          </div>
-        </div>
-        <div class="promo-right">
-          <div class="promo-price-label">Precio Combo</div>
-          <div class="promo-price">$150</div>
-          <span class="promo-price-old">Antes $220</span>
-          <button class="promo-btn" onclick="openModal('promo-combo')">
-            <i class="fas fa-bolt"></i> Aprovechar Oferta
-            <i class="fas fa-arrow-right"></i>
-          </button>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- STATS -->
-  <div class="stats-bar">
-    <div class="container">
-      <div class="stats-grid">
-        <div class="stat-item">
-          <div class="stat-icon"><i class="fas fa-id-card"></i></div>
-          <span class="stat-number" id="s1">0</span>
-          <div class="stat-label">Placas Emitidas</div>
-        </div>
-        <div class="stat-item">
-          <div class="stat-icon"><i class="fas fa-map-marked-alt"></i></div>
-          <span class="stat-number" id="s2">0</span>
-          <div class="stat-label">Estados Cubiertos</div>
-        </div>
-        <div class="stat-item">
-          <div class="stat-icon"><i class="fas fa-clock"></i></div>
-          <span class="stat-number" id="s3">0</span>
-          <div class="stat-label">Horas de Entrega</div>
-        </div>
-        <div class="stat-item">
-          <div class="stat-icon"><i class="fas fa-star"></i></div>
-          <span class="stat-number" id="s4">0</span>
-          <div class="stat-label">% Satisfacción</div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- SERVICES OVERVIEW -->
-  <section class="services-section">
-    <div class="container">
-      <div class="section-header">
-        <div class="section-badge">
-          <i class="fas fa-th-large"></i> Nuestros Servicios
-        </div>
-        <h2 class="section-title">Todo lo que Necesitas en un Solo Lugar</h2>
-        <p class="section-desc">
-          Trámites vehiculares rápidos, legales y sin complicaciones
-          para todo tipo de vehículos en USA.
-        </p>
-      </div>
-      <div class="services-grid">
-        <div class="service-card fade-up" onclick="goTo('seguros')">
-          <div class="service-card-icon">
-            <i class="fas fa-shield-alt"></i>
-          </div>
-          <h3>Seguros de Auto</h3>
-          <p>Protege tu vehículo con nuestros planes de cobertura básica y full cover.</p>
-          <div class="service-sub">
-            <i class="fas fa-layer-group"></i> 2 planes disponibles
-          </div>
-          <button class="service-btn">
-            <i class="fas fa-arrow-right"></i> Ver Planes
-          </button>
-        </div>
-        <div class="service-card fade-up" onclick="goTo('placas')">
-          <div class="service-card-icon">
-            <i class="fas fa-id-card"></i>
-          </div>
-          <h3>Placas Temporales</h3>
-          <p>Obtén tu placa temporal oficial válida en los 50 estados de USA.</p>
-          <div class="service-sub">
-            <i class="fas fa-layer-group"></i> 3 tipos de servicio
-          </div>
-          <button class="service-btn">
-            <i class="fas fa-arrow-right"></i> Ver Servicios
-          </button>
-        </div>
-        <div class="service-card fade-up" onclick="goTo('titulos')">
-          <div class="service-card-icon">
-            <i class="fas fa-file-alt"></i>
-          </div>
-          <h3>Títulos Vehiculares</h3>
-          <p>Transferencias, duplicados y correcciones de título vehicular.</p>
-          <div class="service-sub">
-            <i class="fas fa-layer-group"></i> 3 tipos de trámite
-          </div>
-          <button class="service-btn">
-            <i class="fas fa-arrow-right"></i> Ver Trámites
-          </button>
-        </div>
-        <div class="service-card fade-up" onclick="goTo('licencias')">
-          <div class="service-card-icon">
-            <i class="fas fa-car"></i>
-          </div>
-          <h3>Licencias de Conducir</h3>
-          <p>Nuevas licencias, renovaciones y duplicados para todos los estados.</p>
-          <div class="service-sub">
-            <i class="fas fa-layer-group"></i> 3 tipos de trámite
-          </div>
-          <button class="service-btn">
-            <i class="fas fa-arrow-right"></i> Ver Trámites
-          </button>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- HOW IT WORKS -->
-  <section class="how-section">
-    <div class="container">
-      <div class="section-header">
-        <div class="section-badge">
-          <i class="fas fa-list-ol"></i> Cómo Funciona
-        </div>
-        <h2 class="section-title white">Obtén Tu Trámite en 4 Simples Pasos</h2>
-        <p class="section-desc white">
-          Nuestro proceso simplificado hace que cualquier trámite vehicular
-          sea rápido y sin complicaciones.
-        </p>
-      </div>
-      <div class="how-grid">
-        <div class="how-line"></div>
-        <div class="how-step fade-up">
-          <div class="how-num">1</div>
-          <h3>Elige tu Servicio</h3>
-          <p>Selecciona el trámite que necesitas entre nuestras opciones disponibles.</p>
-        </div>
-        <div class="how-step fade-up">
-          <div class="how-num">2</div>
-          <h3>Llena el Formulario</h3>
-          <p>Ingresa tus datos personales y la información de tu vehículo de forma segura.</p>
-        </div>
-        <div class="how-step fade-up">
-          <div class="how-num">3</div>
-          <h3>Un Asesor te Contacta</h3>
-          <p>Nuestro equipo se pondrá en contacto contigo en menos de 24 horas.</p>
-        </div>
-        <div class="how-step fade-up">
-          <div class="how-num">4</div>
-          <h3>Recibe tu Trámite</h3>
-          <p>Recibe tu documento oficial en la comodidad de tu hogar.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- TESTIMONIALS -->
-  <section class="section" style="background:var(--gray)">
-    <div class="container">
-      <div class="section-header">
-        <div class="section-badge">
-          <i class="fas fa-star"></i> Testimonios
-        </div>
-        <h2 class="section-title">Lo que Dicen Nuestros Clientes</h2>
-        <p class="section-desc">
-          Miles de clientes satisfechos en todo USA confían en DMVCarPortal.
-        </p>
-      </div>
-      <div class="testi-grid">
-        <div class="testi-card fade-up">
-          <div class="testi-stars">
-            <i class="fas fa-star star-on"></i>
-            <i class="fas fa-star star-on"></i>
-            <i class="fas fa-star star-on"></i>
-            <i class="fas fa-star star-on"></i>
-            <i class="fas fa-star star-on"></i>
-          </div>
-          <p class="testi-text">"Increíble servicio. Obtuve mi placa temporal en menos de 24 horas. El proceso fue muy fácil y el asesor me guió en todo momento."</p>
-          <div class="testi-author">
-            <div class="testi-avatar" style="background:var(--blue)">MR</div>
-            <div>
-              <div class="testi-name">María Rodríguez</div>
-              <div class="testi-loc"><i class="fas fa-map-marker-alt"></i> Miami, Florida</div>
-              <div class="testi-tag">Placa Temporal</div>
-            </div>
-          </div>
-        </div>
-        <div class="testi-card fade-up">
-          <div class="testi-stars">
-            <i class="fas fa-star star-on"></i>
-            <i class="fas fa-star star-on"></i>
-            <i class="fas fa-star star-on"></i>
-            <i class="fas fa-star star-off"></i>
-            <i class="fas fa-star star-off"></i>
-          </div>
-          <p class="testi-text">"Buen servicio en general. El trámite tardó un poco más de lo esperado pero al final todo salió bien. El asesor fue muy amable y profesional."</p>
-          <div class="testi-author">
-            <div class="testi-avatar" style="background:var(--blue-light)">CL</div>
-            <div>
-              <div class="testi-name">Carlos López</div>
-              <div class="testi-loc"><i class="fas fa-map-marker-alt"></i> Houston, Texas</div>
-              <div class="testi-tag">Título Vehicular</div>
-            </div>
-          </div>
-        </div>
-        <div class="testi-card fade-up">
-          <div class="testi-stars">
-            <i class="fas fa-star star-on"></i>
-            <i class="fas fa-star star-on"></i>
-            <i class="fas fa-star star-on"></i>
-            <i class="fas fa-star star-on"></i>
-            <i class="fas fa-star star-on"></i>
-          </div>
-          <p class="testi-text">"El seguro Full Cover es excelente. Tuve un accidente y todo fue cubierto sin problemas. El proceso de contratación fue muy rápido."</p>
-          <div class="testi-author">
-            <div class="testi-avatar" style="background:#1a7a1a">AG</div>
-            <div>
-              <div class="testi-name">Ana González</div>
-              <div class="testi-loc"><i class="fas fa-map-marker-alt"></i> Los Angeles, California</div>
-              <div class="testi-tag">Seguro Full Cover</div>
-            </div>
-          </div>
-        </div>
-        <div class="testi-card fade-up">
-          <div class="testi-stars">
-            <i class="fas fa-star star-on"></i>
-            <i class="fas fa-star star-on"></i>
-            <i class="fas fa-star star-on"></i>
-            <i class="fas fa-star star-on"></i>
-            <i class="fas fa-star star-off"></i>
-          </div>
-          <p class="testi-text">"Me ayudaron con la renovación de mi licencia. El proceso fue claro y el asesor estuvo disponible para responder todas mis dudas."</p>
-          <div class="testi-author">
-            <div class="testi-avatar" style="background:#7b1fa2">JM</div>
-            <div>
-              <div class="testi-name">José Martínez</div>
-              <div class="testi-loc"><i class="fas fa-map-marker-alt"></i> Chicago, Illinois</div>
-              <div class="testi-tag">Licencia de Conducir</div>
-            </div>
-          </div>
-        </div>
-        <div class="testi-card fade-up">
-          <div class="testi-stars">
-            <i class="fas fa-star star-on"></i>
-            <i class="fas fa-star star-on"></i>
-            <i class="fas fa-star star-on"></i>
-            <i class="fas fa-star star-on"></i>
-            <i class="fas fa-star star-on"></i>
-          </div>
-          <p class="testi-text">"Pensé que sería complicado pero fue muy sencillo. Llené el formulario, me llamó un asesor y en 2 días tenía mi placa. El mejor servicio."</p>
-          <div class="testi-author">
-            <div class="testi-avatar" style="background:#e65100">LP</div>
-            <div>
-              <div class="testi-name">Laura Pérez</div>
-              <div class="testi-loc"><i class="fas fa-map-marker-alt"></i> New York, NY</div>
-              <div class="testi-tag">Placa Express</div>
-            </div>
-          </div>
-        </div>
-        <div class="testi-card fade-up">
-          <div class="testi-stars">
-            <i class="fas fa-star star-on"></i>
-            <i class="fas fa-star star-on"></i>
-            <i class="fas fa-star star-on"></i>
-            <i class="fas fa-star star-off"></i>
-            <i class="fas fa-star star-off"></i>
-          </div>
-          <p class="testi-text">"El servicio de duplicado de título fue bueno. Tardó unos días más de lo indicado pero el resultado fue correcto. Recomendaría mejorar los tiempos."</p>
-          <div class="testi-author">
-            <div class="testi-avatar" style="background:#00838f">RF</div>
-            <div>
-              <div class="testi-name">Roberto Flores</div>
-              <div class="testi-loc"><i class="fas fa-map-marker-alt"></i> Phoenix, Arizona</div>
-              <div class="testi-tag">Duplicado de Título</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="section" style="background:white">
-    <div class="container">
-      <div class="section-header">
-        <div class="section-badge">
-          <i class="fas fa-question-circle"></i> Preguntas Frecuentes
-        </div>
-        <h2 class="section-title">Resolvemos tus Dudas</h2>
-        <p class="section-desc">Encuentra respuestas a las preguntas más comunes sobre nuestros servicios.</p>
-      </div>
-      <div class="faq-wrap">
-        <div class="faq-item">
-          <div class="faq-q" onclick="toggleFaq(this)">
-            <h3>¿Cuánto tiempo tarda en llegar mi placa temporal?</h3>
-            <div class="faq-toggle"><i class="fas fa-plus"></i></div>
-          </div>
-          <div class="faq-a">
-            <p>Dependiendo del plan elegido, tu placa puede llegar en 3-5 días hábiles con el plan Estándar, 24-48 horas con el plan Express, o el mismo día con el plan Premium. Un asesor te confirmará el tiempo exacto al contactarte.</p>
-          </div>
-        </div>
-        <div class="faq-item">
-          <div class="faq-q" onclick="toggleFaq(this)">
-            <h3>¿Son legales las placas temporales que emiten?</h3>
-            <div class="faq-toggle"><i class="fas fa-plus"></i></div>
-          </div>
-          <div class="faq-a">
-            <p>Sí, todas nuestras placas temporales son 100% legales y están aprobadas por el DMV. Son válidas en los 50 estados de USA y cumplen con todos los requisitos legales vigentes.</p>
-          </div>
-        </div>
-        <div class="faq-item">
-          <div class="faq-q" onclick="toggleFaq(this)">
-            <h3>¿Cómo funciona el proceso de contacto con el asesor?</h3>
-            <div class="faq-toggle"><i class="fas fa-plus"></i></div>
-          </div>
-          <div class="faq-a">
-            <p>Una vez que llenes el formulario de solicitud, un asesor especializado se pondrá en contacto contigo en un máximo de 24 horas por teléfono, WhatsApp o correo electrónico según tu preferencia.</p>
-          </div>
-        </div>
-        <div class="faq-item">
-          <div class="faq-q" onclick="toggleFaq(this)">
-            <h3>¿Cuál es la diferencia entre el Seguro Básico y el Full Cover?</h3>
-            <div class="faq-toggle"><i class="fas fa-plus"></i></div>
-          </div>
-          <div class="faq-a">
-            <p>El Seguro Básico cubre responsabilidad civil y daños a terceros, cumpliendo con los requisitos mínimos legales. El Full Cover incluye además cobertura por colisión, médica, asistencia 24/7, auto de reemplazo, robo y desastres naturales.</p>
-          </div>
-        </div>
-        <div class="faq-item">
-          <div class="faq-q" onclick="toggleFaq(this)">
-            <h3>¿Qué documentos necesito para obtener mi placa?</h3>
-            <div class="faq-toggle"><i class="fas fa-plus"></i></div>
-          </div>
-          <div class="faq-a">
-            <p>Solo necesitas el número VIN de tu vehículo, tu información personal y una forma de contacto válida. El asesor te indicará si se requiere algún documento adicional según tu estado.</p>
-          </div>
-        </div>
-        <div class="faq-item">
-          <div class="faq-q" onclick="toggleFaq(this)">
-            <h3>¿Tienen servicio al cliente en español?</h3>
-            <div class="faq-toggle"><i class="fas fa-plus"></i></div>
-          </div>
-          <div class="faq-a">
-            <p>Sí, nuestro equipo de atención al cliente está disponible en español e inglés. Puedes contactarnos por WhatsApp, email o teléfono de lunes a domingo de 8am a 8pm EST.</p>
-          </div>
-        </div>
-        <div class="faq-item">
-          <div class="faq-q" onclick="toggleFaq(this)">
-            <h3>¿Puedo verificar el estado de mi trámite en línea?</h3>
-            <div class="faq-toggle"><i class="fas fa-plus"></i></div>
-          </div>
-          <div class="faq-a">
-            <p>Sí, puedes verificar el estado de cualquier trámite en nuestra sección de Verificación. Solo necesitas tu ID de trámite y seleccionar el tipo de servicio para consultar el estado en tiempo real.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- FOOTER HOME -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand">
-          <div class="logo-main" style="font-size:22px">DMVCar<span style="color:var(--gold)">Portal</span></div>
-          <p>La fuente número 1 de confianza para trámites vehiculares en USA. Placas temporales, seguros, títulos y licencias de forma rápida, legal y sin complicaciones.</p>
-          <div class="footer-social">
-            <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
-            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
-            <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
-            <a href="#" class="social-link"><i class="fab fa-tiktok"></i></a>
-          </div>
-        </div>
-        <div class="footer-col">
-          <h4>Servicios</h4>
-          <ul>
-            <li><a onclick="goTo('seguros')"><i class="fas fa-chevron-right"></i> Seguro Básico</a></li>
-            <li><a onclick="goTo('seguros')"><i class="fas fa-chevron-right"></i> Seguro Full Cover</a></li>
-            <li><a onclick="goTo('placas')"><i class="fas fa-chevron-right"></i> Placa Estándar</a></li>
-            <li><a onclick="goTo('placas')"><i class="fas fa-chevron-right"></i> Placa Express</a></li>
-            <li><a onclick="goTo('titulos')"><i class="fas fa-chevron-right"></i> Títulos </a></li>
-            <li><a onclick="goTo('licencias')"><i class="fas fa-chevron-right"></i> Licencias de Conducir</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4>Empresa</h4>
-          <ul>
-            <li><a onclick="goTo('home')"><i class="fas fa-chevron-right"></i> Sobre Nosotros</a></li>
-            <li><a onclick="goTo('home')"><i class="fas fa-chevron-right"></i> Cómo Funciona</a></li>
-            <li><a onclick="goTo('home')"><i class="fas fa-chevron-right"></i> Testimonios</a></li>
-            <li><a onclick="goTo('home')"><i class="fas fa-chevron-right"></i> Preguntas Frecuentes</a></li>
-            <li><a onclick="goTo('verify')"><i class="fas fa-chevron-right"></i> Verificar Trámite</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4>Contacto</h4>
-          <ul>
-            <li><a href="https://wa.me/1TUNUMERO" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a></li>
-            <li><a href="mailto:info@dmvcarportal.com"><i class="fas fa-envelope"></i> info@dmvcarportal.com</a></li>
-            <li><a href="tel:+10000000000"><i class="fas fa-phone"></i> +1 (000) 000-0000</a></li>
-            <li><a><i class="fas fa-clock"></i> Lun-Dom 8am-8pm EST</a></li>
-            <li><a><i class="fas fa-globe"></i> Los 50 Estados de USA</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <p>© 2024 DMVCarPortal. Todos los derechos reservados. | No afiliado con ninguna agencia gubernamental.</p>
-        <div class="footer-badges">
-          <div class="footer-badge"><i class="fas fa-lock"></i> SSL Seguro</div>
-          <div class="footer-badge"><i class="fas fa-check-circle"></i> DMV Aprobado</div>
-          <div class="footer-badge"><i class="fas fa-globe"></i> 50 Estados</div>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-</div>
-<!-- FIN HOME PAGE -->
-   <!-- ============================================
-     PÁGINA: SEGUROS
-============================================ -->
-<div class="page" id="page-seguros">
-  <div class="service-detail-page">
-    <div class="hero-circle-1"></div>
-    <div class="hero-circle-2"></div>
-    <div class="container">
-      <div class="sdp-hero">
-        <button class="sdp-back" onclick="goTo('home')">
-          <i class="fas fa-arrow-left"></i> Volver al Inicio
-        </button>
-        <div class="sdp-badge">
-          <i class="fas fa-shield-alt"></i> Seguros
-        </div>
-        <h1 class="sdp-title">Protege Tu Vehículo con<br><span>Cobertura Completa</span></h1>
-        <p class="sdp-desc">
-          Obtén tu seguro de auto de forma rápida y sencilla.
-          Cobertura inmediata disponible en los 50 estados con las mejores tarifas del mercado.
-        </p>
-        <div class="sdp-features">
-          <div class="sdp-feature"><i class="fas fa-bolt"></i> Activación Inmediata</div>
-          <div class="sdp-feature"><i class="fas fa-globe"></i> Válido en 50 Estados</div>
-          <div class="sdp-feature"><i class="fas fa-file-alt"></i> Certificado Digital</div>
-          <div class="sdp-feature"><i class="fas fa-headset"></i> Soporte 24/7</div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- PLANES DE SEGURO -->
-  <section class="section" style="background:var(--gray)">
-    <div class="container">
-      <div class="section-header">
-        <div class="section-badge"><i class="fas fa-shield-alt"></i> Planes Disponibles</div>
-        <h2 class="section-title">Elige el Plan que Mejor se Adapte a Ti</h2>
-        <p class="section-desc">Dos opciones diseñadas para cubrir todas tus necesidades de protección vehicular.</p>
-      </div>
-      <div class="insurance-grid">
-        <!-- BASICO -->
-        <div class="ins-card fade-up">
-          <div class="ins-icon"><i class="fas fa-shield-alt"></i></div>
-          <div class="ins-name">Seguro Básico</div>
-          <div class="ins-desc">Cobertura esencial para cumplir con los requisitos legales mínimos de tu estado.</div>
-          <div class="ins-price">$75<span>/mes</span></div>
-          <div class="ins-period">Activación inmediata al contratar</div>
-          <ul class="ins-features">
-            <li><i class="fas fa-check yes"></i> Responsabilidad Civil</li>
-            <li><i class="fas fa-check yes"></i> Daños a Terceros</li>
-            <li><i class="fas fa-check yes"></i> Protección Legal Básica</li>
-            <li><i class="fas fa-check yes"></i> Válido en 50 Estados</li>
-            <li><i class="fas fa-check yes"></i> Certificado Digital Inmediato</li>
-            <li><i class="fas fa-times no"></i> <span class="dim">Cobertura por Colisión</span></li>
-            <li><i class="fas fa-times no"></i> <span class="dim">Asistencia en Carretera</span></li>
-            <li><i class="fas fa-times no"></i> <span class="dim">Auto de Reemplazo</span></li>
-          </ul>
-          <button class="ins-btn" onclick="openModal('seguro-basico')">
-            <i class="fas fa-paper-plane"></i> Solicitar Seguro Básico
-          </button>
-        </div>
-        <!-- FULL COVER -->
-        <div class="ins-card featured fade-up">
-          <div class="ins-popular">Más Popular</div>
-          <div class="ins-icon"><i class="fas fa-shield-alt"></i></div>
-          <div class="ins-name">Full Cover</div>
-          <div class="ins-desc">Cobertura total para máxima protección de tu vehículo en cualquier situación.</div>
-          <div class="ins-price">$140<span>/mes</span></div>
-          <div class="ins-period">Activación inmediata al contratar</div>
-          <ul class="ins-features">
-            <li><i class="fas fa-check yes"></i> Todo el Plan Básico</li>
-            <li><i class="fas fa-check yes"></i> Cobertura por Colisión</li>
-            <li><i class="fas fa-check yes"></i> Cobertura Médica Completa</li>
-            <li><i class="fas fa-check yes"></i> Asistencia en Carretera 24/7</li>
-            <li><i class="fas fa-check yes"></i> Auto de Reemplazo</li>
-            <li><i class="fas fa-check yes"></i> Robo y Vandalismo</li>
-            <li><i class="fas fa-check yes"></i> Desastres Naturales</li>
-            <li><i class="fas fa-check yes"></i> Agente Personal Asignado</li>
-          </ul>
-          <button class="ins-btn" onclick="openModal('seguro-full')">
-            <i class="fas fa-paper-plane"></i> Solicitar Full Cover
-          </button>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA SEGUROS -->
-  <section class="how-section">
-    <div class="container" style="text-align:center;position:relative;z-index:1">
-      <div class="section-badge"><i class="fas fa-question-circle"></i> ¿Tienes Dudas?</div>
-      <h2 class="section-title white" style="margin-bottom:14px">Habla con un Asesor de Seguros</h2>
-      <p class="section-desc white" style="margin:0 auto 30px">Nuestros especialistas en seguros están listos para ayudarte a elegir el plan perfecto para ti.</p>
-      <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap">
-        <button class="btn btn-white" onclick="openModal('seguro-consulta')">
-          <i class="fas fa-headset"></i> Hablar con un Asesor
-        </button>
-        <button class="btn btn-outline" onclick="goTo('home')">
-          <i class="fas fa-home"></i> Volver al Inicio
-        </button>
-      </div>
-    </div>
-  </section>
-
-  <!-- FOOTER SEGUROS -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-bottom" style="border-top:none;padding-top:0">
-        <p>© 2024 DMVCarPortal. Todos los derechos reservados.</p>
-        <div class="footer-badges">
-          <div class="footer-badge"><i class="fas fa-lock"></i> SSL Seguro</div>
-          <div class="footer-badge"><i class="fas fa-check-circle"></i> DMV Aprobado</div>
-          <div class="footer-badge"><i class="fas fa-globe"></i> 50 Estados</div>
-        </div>
-      </div>
-    </div>
-  </footer>
-</div>
-
-<!-- ============================================
-     PÁGINA: PLACAS
-============================================ -->
-<div class="page" id="page-placas">
-  <div class="service-detail-page">
-    <div class="hero-circle-1"></div>
-    <div class="hero-circle-2"></div>
-    <div class="container">
-      <div class="sdp-hero">
-        <button class="sdp-back" onclick="goTo('home')">
-          <i class="fas fa-arrow-left"></i> Volver al Inicio
-        </button>
-        <div class="sdp-badge">
-          <i class="fas fa-id-card"></i> Placas Temporales
-        </div>
-        <h1 class="sdp-title">Placas Temporales<br><span>Rápidas y Legales</span></h1>
-        <p class="sdp-desc">
-          Obtén tu placa temporal oficial válida en los 50 estados de USA.
-          Entrega en 24-48 horas directamente en tu puerta.
-        </p>
-        <div class="sdp-features">
-          <div class="sdp-feature"><i class="fas fa-check-circle"></i> 100% Legal DMV</div>
-          <div class="sdp-feature"><i class="fas fa-truck"></i> Entrega a Domicilio</div>
-          <div class="sdp-feature"><i class="fas fa-globe"></i> 50 Estados</div>
-          <div class="sdp-feature"><i class="fas fa-clock"></i> Desde 24 Horas</div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <section class="sdp-cards-section">
-    <div class="container">
-      <div class="section-header">
-        <div class="section-badge"><i class="fas fa-id-card"></i> Tipos de Placa</div>
-        <h2 class="section-title">Elige el Tipo de Placa que Necesitas</h2>
-        <p class="section-desc">Tres opciones disponibles para adaptarse a tus necesidades y urgencia.</p>
-      </div>
-      <div class="sdp-cards-grid">
-        <div class="sdp-card fade-up">
-          <div class="sdp-card-icon"><i class="fas fa-id-card"></i></div>
-          <h3>Placa Temporal Estándar</h3>
-          <p>Placa temporal oficial válida por 60 días. Perfecta para vehículos recién comprados o en proceso de registro.</p>
-          <div class="sdp-card-price"><i class="fas fa-tag"></i> Desde $99.99</div>
-          <button class="sdp-card-btn" onclick="openModal('placa-estandar')">
-            <i class="fas fa-paper-plane"></i> Solicitar Ahora
-          </button>
-        </div>
-        <div class="sdp-card fade-up">
-          <div class="sdp-card-icon"><i class="fas fa-bolt"></i></div>
-          <h3>Placa Express</h3>
-          <p>Procesamiento prioritario con entrega en 24 horas. Validez de 30 días. Ideal cuando necesitas tu placa urgente.</p>
-          <div class="sdp-card-price"><i class="fas fa-tag"></i> Desde $60</div>
-          <button class="sdp-card-btn" onclick="openModal('placa-express')">
-            <i class="fas fa-paper-plane"></i> Solicitar Ahora
-          </button>
-        </div>
-        <div class="sdp-card fade-up">
-          <div class="sdp-card-icon"><i class="fas fa-sync-alt"></i></div>
-          <h3>Extendida</h3>
-          <p>Renueva tu placa temporal fácilmente en línea. Opciones de validez extendida hasta 90 días disponibles.</p>
-          <div class="sdp-card-price"><i class="fas fa-tag"></i> Desde $130</div>
-          <button class="sdp-card-btn" onclick="openModal('placa-renovacion')">
-            <i class="fas fa-paper-plane"></i> Solicitar Ahora
-          </button>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="how-section">
-    <div class="container" style="text-align:center;position:relative;z-index:1">
-      <h2 class="section-title white" style="margin-bottom:14px">¿Necesitas Ayuda para Elegir?</h2>
-      <p class="section-desc white" style="margin:0 auto 30px">Un asesor te ayudará a seleccionar la mejor opción para tu situación.</p>
-      <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap">
-        <button class="btn btn-white" onclick="openModal('placa-consulta')">
-          <i class="fas fa-headset"></i> Hablar con un Asesor
-        </button>
-        <button class="btn btn-outline" onclick="goTo('home')">
-          <i class="fas fa-home"></i> Volver al Inicio
-        </button>
-      </div>
-    </div>
-  </section>
-
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-bottom" style="border-top:none;padding-top:0">
-        <p>© 2024 DMVCarPortal. Todos los derechos reservados.</p>
-        <div class="footer-badges">
-          <div class="footer-badge"><i class="fas fa-lock"></i> SSL Seguro</div>
-          <div class="footer-badge"><i class="fas fa-check-circle"></i> DMV Aprobado</div>
-          <div class="footer-badge"><i class="fas fa-globe"></i> 50 Estados</div>
-        </div>
-      </div>
-    </div>
-  </footer>
-</div>
-
-<!-- ============================================
-     PÁGINA: TÍTULOS
-============================================ -->
-<div class="page" id="page-titulos">
-  <div class="service-detail-page">
-    <div class="hero-circle-1"></div>
-    <div class="hero-circle-2"></div>
-    <div class="container">
-      <div class="sdp-hero">
-        <button class="sdp-back" onclick="goTo('home')">
-          <i class="fas fa-arrow-left"></i> Volver al Inicio
-        </button>
-        <div class="sdp-badge">
-          <i class="fas fa-file-alt"></i> Títulos 
-        </div>
-        <h1 class="sdp-title">Títulos<br><span>Sin Complicaciones</span></h1>
-        <p class="sdp-desc">
-          Transferencias, duplicados y correcciones de título vehicular.
-          Proceso completamente en línea sin visitar el DMV.
-        </p>
-        <div class="sdp-features">
-          <div class="sdp-feature"><i class="fas fa-laptop"></i> 100% En Línea</div>
-          <div class="sdp-feature">          <i class="fas fa-check-circle"></i> Proceso Legal</div>
-          <div class="sdp-feature"><i class="fas fa-clock"></i> Entrega 3-5 Días</div>
-          <div class="sdp-feature"><i class="fas fa-headset"></i> Asesor Personal</div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <section class="sdp-cards-section">
-    <div class="container">
-      <div class="section-header">
-        <div class="section-badge"><i class="fas fa-file-alt"></i> Tipos de Trámite</div>
-        <h2 class="section-title">Elige el Trámite que Necesitas</h2>
-        <p class="section-desc">Tres opciones disponibles para gestionar tu título vehicular de forma rápida y segura.</p>
-      </div>
-      <div class="sdp-cards-grid">
-        <div class="sdp-card fade-up">
-          <div class="sdp-card-icon"><i class="fas fa-exchange-alt"></i></div>
-          <h3>Transferencia de Título</h3>
-          <p>Transfiere el título de tu vehículo de forma rápida y segura. Proceso completamente en línea sin visitar el DMV.</p>
-          <div class="sdp-card-price"><i class="fas fa-tag"></i> Desde $490</div>
-          <button class="sdp-card-btn" onclick="openModal('titulo-transferencia')">
-            <i class="fas fa-paper-plane"></i> Solicitar Ahora
-          </button>
-        </div>
-        <div class="sdp-card fade-up">
-          <div class="sdp-card-icon"><i class="fas fa-copy"></i></div>
-          <h3>Recuperacion de titulo perdido</h3>
-          <p>¿Perdiste tu título vehicular? Obtén un duplicado oficial de forma rápida. Entrega en 3-5 días hábiles.</p>
-          <div class="sdp-card-price"><i class="fas fa-tag"></i> Desde $600</div>
-          <button class="sdp-card-btn" onclick="openModal('titulo-duplicado')">
-            <i class="fas fa-paper-plane"></i> Solicitar Ahora
-          </button>
-        </div>
-        <div class="sdp-card fade-up">
-          <div class="sdp-card-icon"><i class="fas fa-edit"></i></div>
-          <h3>Copia de titulo</h3>
-          <p>Corrige errores en tu título vehicular como nombre, dirección o datos del vehículo de manera oficial.</p>
-          <div class="sdp-card-price"><i class="fas fa-tag"></i> Desde $400</div>
-          <button class="sdp-card-btn" onclick="openModal('titulo-correccion')">
-            <i class="fas fa-paper-plane"></i> Solicitar Ahora
-          </button>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="how-section">
-    <div class="container" style="text-align:center;position:relative;z-index:1">
-      <h2 class="section-title white" style="margin-bottom:14px">¿Tienes Preguntas sobre tu Título?</h2>
-      <p class="section-desc white" style="margin:0 auto 30px">Nuestros asesores especializados en títulos vehiculares están listos para ayudarte.</p>
-      <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap">
-        <button class="btn btn-white" onclick="openModal('titulo-consulta')">
-          <i class="fas fa-headset"></i> Hablar con un Asesor
-        </button>
-        <button class="btn btn-outline" onclick="goTo('home')">
-          <i class="fas fa-home"></i> Volver al Inicio
-        </button>
-      </div>
-    </div>
-  </section>
-
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-bottom" style="border-top:none;padding-top:0">
-        <p>© 2024 DMVCarPortal. Todos los derechos reservados.</p>
-        <div class="footer-badges">
-          <div class="footer-badge"><i class="fas fa-lock"></i> SSL Seguro</div>
-          <div class="footer-badge"><i class="fas fa-check-circle"></i> DMV Aprobado</div>
-          <div class="footer-badge"><i class="fas fa-globe"></i> 50 Estados</div>
-        </div>
-      </div>
-    </div>
-  </footer>
-</div>
-
-<!-- ============================================
-     PÁGINA: LICENCIAS
-============================================ -->
-<div class="page" id="page-licencias">
-  <div class="service-detail-page">
-    <div class="hero-circle-1"></div>
-    <div class="hero-circle-2"></div>
-    <div class="container">
-      <div class="sdp-hero">
-        <button class="sdp-back" onclick="goTo('home')">
-          <i class="fas fa-arrow-left"></i> Volver al Inicio
-        </button>
-        <div class="sdp-badge">
-          <i class="fas fa-car"></i> Licencias de Conducir
-        </div>
-        <h1 class="sdp-title">Licencias de Conducir<br><span>Fácil y Rápido</span></h1>
-        <p class="sdp-desc">
-          Nuevas licencias, renovaciones y duplicados para todos los estados.
-          Asistencia personalizada en cada paso del proceso.
-        </p>
-        <div class="sdp-features">
-          <div class="sdp-feature"><i class="fas fa-user-check"></i> Asistencia Personal</div>
-          <div class="sdp-feature"><i class="fas fa-globe"></i> Todos los Estados</div>
-          <div class="sdp-feature"><i class="fas fa-clock"></i> Proceso Rápido</div>
-          <div class="sdp-feature"><i class="fas fa-shield-alt"></i> 100% Legal</div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <section class="sdp-cards-section">
-    <div class="container">
-      <div class="section-header">
-        <div class="section-badge"><i class="fas fa-car"></i> Tipos de Trámite</div>
-        <h2 class="section-title">Elige el Trámite de Licencia que Necesitas</h2>
-        <p class="section-desc">Tres opciones disponibles para gestionar tu licencia de conducir sin complicaciones.</p>
-      </div>
-      <div class="sdp-cards-grid">
-        <div class="sdp-card fade-up">
-          <div class="sdp-card-icon"><i class="fas fa-plus-circle"></i></div>
-          <h3>Nueva Licencia</h3>
-          <p>Obtén tu primera licencia de conducir con nuestra asistencia completa. Te guiamos en cada paso del proceso.</p>
-          <div class="sdp-card-price"><i class="fas fa-tag"></i> Desde $59.99</div>
-          <button class="sdp-card-btn" onclick="openModal('licencia-nueva')">
-            <i class="fas fa-paper-plane"></i> Solicitar Ahora
-          </button>
-        </div>
-        <div class="sdp-card fade-up">
-          <div class="sdp-card-icon"><i class="fas fa-redo"></i></div>
-          <h3>Renovación de Licencia</h3>
-          <p>Renueva tu licencia de conducir antes de que venza. Proceso simplificado sin largas filas en el DMV.</p>
-          <div class="sdp-card-price"><i class="fas fa-tag"></i> Desde $44.99</div>
-          <button class="sdp-card-btn" onclick="openModal('licencia-renovacion')">
-            <i class="fas fa-paper-plane"></i> Solicitar Ahora
-          </button>
-        </div>
-        <div class="sdp-card fade-up">
-          <div class="sdp-card-icon"><i class="fas fa-clone"></i></div>
-          <h3>Duplicado de Licencia</h3>
-          <p>¿Perdiste o te robaron tu licencia? Obtén un duplicado oficial rápidamente con nuestra asistencia.</p>
-          <div class="sdp-card-price"><i class="fas fa-tag"></i> Desde $34.99</div>
-          <button class="sdp-card-btn" onclick="openModal('licencia-duplicado')">
-            <i class="fas fa-paper-plane"></i> Solicitar Ahora
-          </button>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="how-section">
-    <div class="container" style="text-align:center;position:relative;z-index:1">
-      <h2 class="section-title white" style="margin-bottom:14px">¿Necesitas Orientación?</h2>
-      <p class="section-desc white" style="margin:0 auto 30px">Nuestros asesores especializados en licencias te guiarán en todo el proceso.</p>
-      <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap">
-        <button class="btn btn-white" onclick="openModal('licencia-consulta')">
-          <i class="fas fa-headset"></i> Hablar con un Asesor
-        </button>
-        <button class="btn btn-outline" onclick="goTo('home')">
-          <i class="fas fa-home"></i> Volver al Inicio
-        </button>
-      </div>
-    </div>
-  </section>
-
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-bottom" style="border-top:none;padding-top:0">
-        <p>© 2024 DMVCarPortal. Todos los derechos reservados.</p>
-        <div class="footer-badges">
-          <div class="footer-badge"><i class="fas fa-lock"></i> SSL Seguro</div>
-          <div class="footer-badge"><i class="fas fa-check-circle"></i> DMV Aprobado</div>
-          <div class="footer-badge"><i class="fas fa-globe"></i> 50 Estados</div>
-        </div>
-      </div>
-    </div>
-  </footer>
-</div>
-
-<!-- ============================================
-     PÁGINA: VERIFICACIÓN (con Inspecciones y responsive)
-============================================ -->
-<div class="page" id="page-verify">
-  <div class="verify-page">
-    <div class="hero-circle-1"></div>
-    <div class="hero-circle-2"></div>
-    <div class="container">
-      <div class="verify-hero-section">
-        <button class="sdp-back" onclick="goTo('home')" style="margin:0 auto 25px;display:inline-flex">
-          <i class="fas fa-arrow-left"></i> Volver al Inicio
-        </button>
-        <div class="section-badge" style="margin-bottom:16px">
-          <i class="fas fa-search"></i> Verificación de Trámites
-        </div>
-        <h1>Verifica el Estado de <span>Tu Trámite</span></h1>
-        <p class="verify-tagline">Consulta el estado de cualquiera de tus trámites vehiculares de forma rápida y segura.</p>
-        <p class="verify-sub">Verifica con nosotros — Tu tranquilidad es nuestra prioridad</p>
-        <div class="verify-box">
-          <div class="verify-box-title">
-            <i class="fas fa-search"></i>
-            Selecciona el servicio que deseas verificar
-          </div>
-          <div class="verify-service-grid">
-            <div class="verify-opt selected" onclick="selectVerify(this,'seguros')">
-              <i class="fas fa-shield-alt"></i><span>Seguros</span>
-            </div>
-            <div class="verify-opt" onclick="selectVerify(this,'placas')">
-              <i class="fas fa-id-card"></i><span>Placas Temporales</span>
-            </div>
-            <div class="verify-opt" onclick="selectVerify(this,'titulos')">
-              <i class="fas fa-file-alt"></i><span>Títulos</span>
-            </div>
-            <div class="verify-opt" onclick="selectVerify(this,'licencias')">
-              <i class="fas fa-car"></i><span>Licencias de Conducir</span>
-            </div>
-            <div class="verify-opt" onclick="selectVerify(this,'inspecciones')">
-              <i class="fas fa-clipboard-list"></i><span>Inspecciones</span>
-            </div>
-              <div class="verify-opt" onclick="selectVerify(this,'Stickers')">
-              <i class="fas fa-clipboard-list"></i><span>Stickers</span>
-             </div>   
-          </div>
-          <div class="verify-input-row">
-            <input
-              type="text"
-              class="verify-input"
-              id="verifyId"
-              placeholder="Ingresa tu ID o VIN Y1234567"
-            />
-            <button class="verify-btn" onclick="runVerify()">
-              <i class="fas fa-search"></i> Verificación para nuestros clientes
-            </button>
-          </div>
-          <p class="verify-hint">
-            <i class="fas fa-info-circle"></i>
-            Tu ID de trámite fue enviado a tu correo al momento de realizar tu solicitud.
-          </p>
-          <div id="verifyResult" class="verify-result"></div>
-        </div>
-      </div>
-    </div>
-
-    <!-- INFO CARDS -->
-    <div style="background:var(--gray);padding:70px 0;position:relative;z-index:2">
-      <div class="container">
-        <div class="section-header">
-          <div class="section-badge-blue"><i class="fas fa-info-circle"></i> ¿Cómo Verificar?</div>
-          <h2 class="section-title">Pasos para Verificar tu Trámite</h2>
-          <p class="section-desc">Sigue estos sencillos pasos para consultar el estado de tu trámite en segundos.</p>
-        </div>
-        <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:22px">
-          <div class="sdp-card fade-up" style="border-left-color:var(--blue);text-align:center">
-            <div class="sdp-card-icon" style="margin:0 auto 16px"><i class="fas fa-th-large"></i></div>
-            <h3>1. Elige el Servicio</h3>
-            <p>Selecciona el tipo de trámite que deseas verificar.</p>
-          </div>
-          <div class="sdp-card fade-up" style="border-left-color:var(--blue);text-align:center">
-            <div class="sdp-card-icon" style="margin:0 auto 16px"><i class="fas fa-keyboard"></i></div>
-            <h3>2. Ingresa tu ID</h3>
-            <p>Escribe el ID único de tu trámite que recibiste por correo.</p>
-          </div>
-          <div class="sdp-card fade-up" style="border-left-color:var(--blue);text-align:center">
-            <div class="sdp-card-icon" style="margin:0 auto 16px"><i class="fas fa-search"></i></div>
-            <h3>3. Consulta el Estado</h3>
-            <p>Presiona verificar y obtén el estado actual de tu trámite al instante.</p>
-          </div>
-          <div class="sdp-card fade-up" style="border-left-color:var(--blue);text-align:center">
-            <div class="sdp-card-icon" style="margin:0 auto 16px"><i class="fas fa-headset"></i></div>
-            <h3>4. ¿Necesitas Ayuda?</h3>
-            <p>Contáctanos por WhatsApp y un asesor te ayudará de inmediato.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- CTA VERIFY -->
-    <section class="how-section" style="position:relative;z-index:2">
-      <div class="container" style="text-align:center;position:relative;z-index:1">
-        <div class="section-badge"><i class="fas fa-paper-plane"></i> ¿Aún no tienes un trámite?</div>
-        <h2 class="section-title white" style="margin-bottom:14px">Inicia tu Trámite Hoy Mismo</h2>
-        <p class="section-desc white" style="margin:0 auto 30px">Nuestros asesores están listos para ayudarte con cualquier trámite vehicular en USA.</p>
-        <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap">
-          <button class="btn btn-white" onclick="openModal('general')">
-            <i class="fas fa-paper-plane"></i> Solicitar Servicio
-          </button>
-          <button class="btn btn-outline" onclick="goTo('home')">
-            <i class="fas fa-home"></i> Ir al Inicio
-          </button>
-        </div>
-      </div>
-    </section>
-
-    <footer class="footer" style="position:relative;z-index:2">
-      <div class="container">
-        <div class="footer-bottom" style="border-top:none;padding-top:0">
-          <p>© 2024 DMVCarPortal. Todos los derechos reservados.</p>
-          <div class="footer-badges">
-            <div class="footer-badge"><i class="fas fa-lock"></i> SSL Seguro</div>
-            <div class="footer-badge"><i class="fas fa-check-circle"></i> DMV Aprobado</div>
-            <div class="footer-badge"><i class="fas fa-globe"></i> 50 Estados</div>
-          </div>
-        </div>
-      </div>
-    </footer>
-  </div>
-</div>
-<!-- FIN VERIFY PAGE -->
-   <!-- ============================================
-     HOME PAGE - CONTENIDO COMPLETO (original)
-============================================ -->
-<div class="page active" id="page-home">
-
-  <!-- HERO -->
-  <section class="hero">
-    <div class="hero-circle-1"></div>
-    <div class="hero-circle-2"></div>
-    <div class="hero-circle-3"></div>
-    <div class="container">
-      <div class="hero-wrap">
-        <div class="hero-content">
-          <div class="hero-badge">
-            <i class="fas fa-certificate"></i>
-            Servicio Oficial Número 1 en USA
-          </div>
-          <h1>Tu Portal de <span>Trámites Vehiculares</span> en USA</h1>
-          <p class="hero-desc">
-            Obtén tus placas temporales, seguros, títulos y licencias de forma
-            rápida, segura y 100% legal. Servicio disponible en los 50 estados.
-          </p>
-          <div class="hero-buttons">
-            <button class="btn btn-red" onclick="openModal('general')">
-              <i class="fas fa-paper-plane"></i> Solicitar Servicio Ahora
-            </button>
-            <button class="btn btn-outline" onclick="goTo('verify')">
-              <i class="fas fa-search"></i> Verificar Mi Trámite
-            </button>
-          </div>
-          <div class="hero-trust">
-            <div class="hero-trust-item"><i class="fas fa-check-circle"></i><span>Aprobado por DMV</span></div>
-            <div class="hero-trust-item"><i class="fas fa-lock"></i><span>100% Seguro</span></div>
-            <div class="hero-trust-item"><i class="fas fa-bolt"></i><span>Entrega en 24h</span></div>
-            <div class="hero-trust-item"><i class="fas fa-globe"></i><span>50 Estados</span></div>
-          </div>
-        </div>
-        <div class="hero-right">
-          <div class="hero-card" onclick="goTo('seguros')">
-            <div class="hero-card-icon"><i class="fas fa-shield-alt"></i></div>
-            <h3>Seguros</h3>
-            <p>Básico y Full Cover disponible</p>
-            <div class="hero-card-arrow">Ver planes <i class="fas fa-arrow-right"></i></div>
-          </div>
-          <div class="hero-card" onclick="goTo('placas')">
-            <div class="hero-card-icon"><i class="fas fa-id-card"></i></div>
-            <h3>Placas Temporales</h3>
-            <p>Válidas en los 50 estados</p>
-            <div class="hero-card-arrow">Ver servicios <i class="fas fa-arrow-right"></i></div>
-          </div>
-          <div class="hero-card" onclick="goTo('titulos')">
-            <div class="hero-card-icon"><i class="fas fa-file-alt"></i></div>
-            <h3>Títulos</h3>
-            <p>Transferencias y recuperacion</p>
-            <div class="hero-card-arrow">Ver trámites <i class="fas fa-arrow-right"></i></div>
-          </div>
-          <div class="hero-card" onclick="goTo('licencias')">
-            <div class="hero-card-icon"><i class="fas fa-car"></i></div>
-            <h3>Licencias de Conducir</h3>
-            <p>Nuevas, renovaciones y duplicados</p>
-            <div class="hero-card-arrow">Ver trámites <i class="fas fa-arrow-right"></i></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- PROMO ESPECIAL -->
-  <section class="promo-section">
-    <div class="container">
-      <div class="promo-box fade-up">
-        <div class="promo-ribbon">Oferta</div>
-        <div class="promo-content">
-          <div class="promo-tag"><i class="fas fa-fire"></i> Promoción Especial</div>
-          <h2 class="promo-title">Placa Temporal + Seguro <span>por solo $150</span></h2>
-          <div class="promo-features-mini">
-            <div class="promo-feature-mini"><i class="fas fa-check-circle"></i> Placa Temporal Oficial</div>
-            <div class="promo-feature-mini"><i class="fas fa-check-circle"></i> Seguro de Auto Incluido</div>
-            <div class="promo-feature-mini"><i class="fas fa-check-circle"></i> Activación Inmediata</div>
-          </div>
-          <div class="promo-timer"><i class="fas fa-clock"></i> Tiempo Limitado — ¡No te lo pierdas!</div>
-        </div>
-        <div class="promo-right">
-          <div class="promo-price-label">Precio Combo</div>
-          <div class="promo-price">$150</div>
-          <span class="promo-price-old">Antes $220</span>
-          <button class="promo-btn" onclick="openModal('promo-combo')">
-            <i class="fas fa-bolt"></i> Aprovechar Oferta <i class="fas fa-arrow-right"></i>
-          </button>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- STATS -->
-  <div class="stats-bar">
-    <div class="container">
-      <div class="stats-grid">
-        <div class="stat-item"><div class="stat-icon"><i class="fas fa-id-card"></i></div><span class="stat-number" id="s1">0</span><div class="stat-label">Placas Emitidas</div></div>
-        <div class="stat-item"><div class="stat-icon"><i class="fas fa-map-marked-alt"></i></div><span class="stat-number" id="s2">0</span><div class="stat-label">Estados Cubiertos</div></div>
-        <div class="stat-item"><div class="stat-icon"><i class="fas fa-clock"></i></div><span class="stat-number" id="s3">0</span><div class="stat-label">Horas de Entrega</div></div>
-        <div class="stat-item"><div class="stat-icon"><i class="fas fa-star"></i></div><span class="stat-number" id="s4">0</span><div class="stat-label">% Satisfacción</div></div>
-      </div>
-    </div>
-  </div>
-
-  <!-- SERVICES OVERVIEW -->
-  <section class="services-section">
-    <div class="container">
-      <div class="section-header">
-        <div class="section-badge"><i class="fas fa-th-large"></i> Nuestros Servicios</div>
-        <h2 class="section-title">Todo lo que Necesitas en un Solo Lugar</h2>
-        <p class="section-desc">Trámites vehiculares rápidos, legales y sin complicaciones para todo tipo de vehículos en USA.</p>
-      </div>
-      <div class="services-grid">
-        <div class="service-card fade-up" onclick="goTo('seguros')">
-          <div class="service-card-icon"><i class="fas fa-shield-alt"></i></div>
-          <h3>Seguros de Auto</h3>
-          <p>Protege tu vehículo con nuestros planes de cobertura básica y full cover.</p>
-          <div class="service-sub"><i class="fas fa-layer-group"></i> 2 planes disponibles</div>
-          <button class="service-btn"><i class="fas fa-arrow-right"></i> Ver Planes</button>
-        </div>
-        <div class="service-card fade-up" onclick="goTo('placas')">
-          <div class="service-card-icon"><i class="fas fa-id-card"></i></div>
-          <h3>Placas Temporales</h3>
-          <p>Obtén tu placa temporal oficial válida en los 50 estados de USA.</p>
-          <div class="service-sub"><i class="fas fa-layer-group"></i> 3 tipos de servicio</div>
-          <button class="service-btn"><i class="fas fa-arrow-right"></i> Ver Servicios</button>
-        </div>
-        <div class="service-card fade-up" onclick="goTo('titulos')">
-          <div class="service-card-icon"><i class="fas fa-file-alt"></i></div>
-          <h3>Títulos Vehiculares</h3>
-          <p>Transferencias, duplicados y correcciones de título vehicular.</p>
-          <div class="service-sub"><i class="fas fa-layer-group"></i> 3 tipos de trámite</div>
-          <button class="service-btn"><i class="fas fa-arrow-right"></i> Ver Trámites</button>
-        </div>
-        <div class="service-card fade-up" onclick="goTo('licencias')">
-          <div class="service-card-icon"><i class="fas fa-car"></i></div>
-          <h3>Licencias de Conducir</h3>
-          <p>Nuevas licencias, renovaciones y duplicados para todos los estados.</p>
-          <div class="service-sub"><i class="fas fa-layer-group"></i> 3 tipos de trámite</div>
-          <button class="service-btn"><i class="fas fa-arrow-right"></i> Ver Trámites</button>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- HOW IT WORKS -->
-  <section class="how-section">
-    <div class="container">
-      <div class="section-header">
-        <div class="section-badge"><i class="fas fa-list-ol"></i> Cómo Funciona</div>
-        <h2 class="section-title white">Obtén Tu Trámite en 4 Simples Pasos</h2>
-        <p class="section-desc white">Nuestro proceso simplificado hace que cualquier trámite vehicular sea rápido y sin complicaciones.</p>
-      </div>
-      <div class="how-grid">
-        <div class="how-line"></div>
-        <div class="how-step fade-up"><div class="how-num">1</div><h3>Elige tu Servicio</h3><p>Selecciona el trámite que necesitas entre nuestras opciones disponibles.</p></div>
-        <div class="how-step fade-up"><div class="how-num">2</div><h3>Llena el Formulario</h3><p>Ingresa tus datos personales y la información de tu vehículo de forma segura.</p></div>
-        <div class="how-step fade-up"><div class="how-num">3</div><h3>Un Asesor te Contacta</h3><p>Nuestro equipo se pondrá en contacto contigo en menos de 24 horas.</p></div>
-        <div class="how-step fade-up"><div class="how-num">4</div><h3>Recibe tu Trámite</h3><p>Recibe tu documento oficial en la comodidad de tu hogar.</p></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- TESTIMONIALS -->
-  <section class="section" style="background:var(--gray)">
-    <div class="container">
-      <div class="section-header">
-        <div class="section-badge"><i class="fas fa-star"></i> Testimonios</div>
-        <h2 class="section-title">Lo que Dicen Nuestros Clientes</h2>
-        <p class="section-desc">Miles de clientes satisfechos en todo USA confían en DMVCarPortal.</p>
-      </div>
-      <div class="testi-grid">
-        <div class="testi-card fade-up">
-          <div class="testi-stars"><i class="fas fa-star star-on"></i><i class="fas fa-star star-on"></i><i class="fas fa-star star-on"></i><i class="fas fa-star star-on"></i><i class="fas fa-star star-on"></i></div>
-          <p class="testi-text">"Increíble servicio. Obtuve mi placa temporal en menos de 24 horas. El proceso fue muy fácil y el asesor me guió en todo momento."</p>
-          <div class="testi-author"><div class="testi-avatar" style="background:var(--blue)">MR</div><div><div class="testi-name">María Rodríguez</div><div class="testi-loc"><i class="fas fa-map-marker-alt"></i> Miami, Florida</div><div class="testi-tag">Placa Temporal</div></div></div>
-        </div>
-        <div class="testi-card fade-up">
-          <div class="testi-stars"><i class="fas fa-star star-on"></i><i class="fas fa-star star-on"></i><i class="fas fa-star star-on"></i><i class="fas fa-star star-off"></i><i class="fas fa-star star-off"></i></div>
-          <p class="testi-text">"Buen servicio en general. El trámite tardó un poco más de lo esperado pero al final todo salió bien. El asesor fue muy amable y profesional."</p>
-          <div class="testi-author"><div class="testi-avatar" style="background:var(--blue-light)">CL</div><div><div class="testi-name">Carlos López</div><div class="testi-loc"><i class="fas fa-map-marker-alt"></i> Houston, Texas</div><div class="testi-tag">Título Vehicular</div></div></div>
-        </div>
-        <div class="testi-card fade-up">
-          <div class="testi-stars"><i class="fas fa-star star-on"></i><i class="fas fa-star star-on"></i><i class="fas fa-star star-on"></i><i class="fas fa-star star-on"></i><i class="fas fa-star star-on"></i></div>
-          <p class="testi-text">"El seguro Full Cover es excelente. Tuve un accidente y todo fue cubierto sin problemas. El proceso de contratación fue muy rápido."</p>
-          <div class="testi-author"><div class="testi-avatar" style="background:#1a7a1a">AG</div><div><div class="testi-name">Ana González</div><div class="testi-loc"><i class="fas fa-map-marker-alt"></i> Los Angeles, California</div><div class="testi-tag">Seguro Full Cover</div></div></div>
-        </div>
-        <div class="testi-card fade-up">
-          <div class="testi-stars"><i class="fas fa-star star-on"></i><i class="fas fa-star star-on"></i><i class="fas fa-star star-on"></i><i class="fas fa-star star-on"></i><i class="fas fa-star star-off"></i></div>
-          <p class="testi-text">"Me ayudaron con la renovación de mi licencia. El proceso fue claro y el asesor estuvo disponible para responder todas mis dudas."</p>
-          <div class="testi-author"><div class="testi-avatar" style="background:#7b1fa2">JM</div><div><div class="testi-name">José Martínez</div><div class="testi-loc"><i class="fas fa-map-marker-alt"></i> Chicago, Illinois</div><div class="testi-tag">Licencia de Conducir</div></div></div>
-        </div>
-        <div class="testi-card fade-up">
-          <div class="testi-stars"><i class="fas fa-star star-on"></i><i class="fas fa-star star-on"></i><i class="fas fa-star star-on"></i><i class="fas fa-star star-on"></i><i class="fas fa-star star-on"></i></div>
-          <p class="testi-text">"Pensé que sería complicado pero fue muy sencillo. Llené el formulario, me llamó un asesor y en 2 días tenía mi placa. El mejor servicio."</p>
-          <div class="testi-author"><div class="testi-avatar" style="background:#e65100">LP</div><div><div class="testi-name">Laura Pérez</div><div class="testi-loc"><i class="fas fa-map-marker-alt"></i> New York, NY</div><div class="testi-tag">Placa Express</div></div></div>
-        </div>
-        <div class="testi-card fade-up">
-          <div class="testi-stars"><i class="fas fa-star star-on"></i><i class="fas fa-star star-on"></i><i class="fas fa-star star-on"></i><i class="fas fa-star star-off"></i><i class="fas fa-star star-off"></i></div>
-          <p class="testi-text">"El servicio de duplicado de título fue bueno. Tardó unos días más de lo indicado pero el resultado fue correcto. Recomendaría mejorar los tiempos."</p>
-          <div class="testi-author"><div class="testi-avatar" style="background:#00838f">RF</div><div><div class="testi-name">Roberto Flores</div><div class="testi-loc"><i class="fas fa-map-marker-alt"></i> Phoenix, Arizona</div><div class="testi-tag">Duplicado de Título</div></div></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="section" style="background:white">
-    <div class="container">
-      <div class="section-header">
-        <div class="section-badge"><i class="fas fa-question-circle"></i> Preguntas Frecuentes</div>
-        <h2 class="section-title">Resolvemos tus Dudas</h2>
-        <p class="section-desc">Encuentra respuestas a las preguntas más comunes sobre nuestros servicios.</p>
-      </div>
-      <div class="faq-wrap">
-        <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)"><h3>¿Cuánto tiempo tarda en llegar mi placa temporal?</h3><div class="faq-toggle"><i class="fas fa-plus"></i></div></div><div class="faq-a"><p>Dependiendo del plan elegido, tu placa puede llegar en 3-5 días hábiles con el plan Estándar, 24-48 horas con el plan Express, o el mismo día con el plan Premium. Un asesor te confirmará el tiempo exacto al contactarte.</p></div></div>
-        <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)"><h3>¿Son legales las placas temporales que emiten?</h3><div class="faq-toggle"><i class="fas fa-plus"></i></div></div><div class="faq-a"><p>Sí, todas nuestras placas temporales son 100% legales y están aprobadas por el DMV. Son válidas en los 50 estados de USA y cumplen con todos los requisitos legales vigentes.</p></div></div>
-        <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)"><h3>¿Cómo funciona el proceso de contacto con el asesor?</h3><div class="faq-toggle"><i class="fas fa-plus"></i></div></div><div class="faq-a"><p>Una vez que llenes el formulario de solicitud, un asesor especializado se pondrá en contacto contigo en un máximo de 24 horas por teléfono, WhatsApp o correo electrónico según tu preferencia.</p></div></div>
-        <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)"><h3>¿Cuál es la diferencia entre el Seguro Básico y el Full Cover?</h3><div class="faq-toggle"><i class="fas fa-plus"></i></div></div><div class="faq-a"><p>El Seguro Básico cubre responsabilidad civil y daños a terceros, cumpliendo con los requisitos mínimos legales. El Full Cover incluye además cobertura por colisión, médica, asistencia 24/7, auto de reemplazo, robo y desastres naturales.</p></div></div>
-        <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)"><h3>¿Qué documentos necesito para obtener mi placa?</h3><div class="faq-toggle"><i class="fas fa-plus"></i></div></div><div class="faq-a"><p>Solo necesitas el número VIN de tu vehículo, tu información personal y una forma de contacto válida. El asesor te indicará si se requiere algún documento adicional según tu estado.</p></div></div>
-        <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)"><h3>¿Tienen servicio al cliente en español?</h3><div class="faq-toggle"><i class="fas fa-plus"></i></div></div><div class="faq-a"><p>Sí, nuestro equipo de atención al cliente está disponible en español e inglés. Puedes contactarnos por WhatsApp, email o teléfono de lunes a domingo de 8am a 8pm EST.</p></div></div>
-        <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)"><h3>¿Puedo verificar el estado de mi trámite en línea?</h3><div class="faq-toggle"><i class="fas fa-plus"></i></div></div><div class="faq-a"><p>Sí, puedes verificar el estado de cualquier trámite en nuestra sección de Verificación. Solo necesitas tu ID de trámite y seleccionar el tipo de servicio para consultar el estado en tiempo real.</p></div></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- FOOTER HOME -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand">
-          <div class="logo-main" style="font-size:22px">DMVCar<span style="color:var(--gold)">Portal</span></div>
-          <p>La fuente número 1 de confianza para trámites vehiculares en USA. Placas temporales, seguros, títulos y licencias de forma rápida, legal y sin complicaciones.</p>
-          <div class="footer-social">
-            <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
-            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
-            <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
-            <a href="#" class="social-link"><i class="fab fa-tiktok"></i></a>
-          </div>
-        </div>
-        <div class="footer-col">
-          <h4>Servicios</h4>
-          <ul>
-            <li><a onclick="goTo('seguros')"><i class="fas fa-chevron-right"></i> Seguro Básico</a></li>
-            <li><a onclick="goTo('seguros')"><i class="fas fa-chevron-right"></i> Seguro Full Cover</a></li>
-            <li><a onclick="goTo('placas')"><i class="fas fa-chevron-right"></i> Placa Estándar</a></li>
-            <li><a onclick="goTo('placas')"><i class="fas fa-chevron-right"></i> Placa Express</a></li>
-            <li><a onclick="goTo('titulos')"><i class="fas fa-chevron-right"></i> Títulos</a></li>
-            <li><a onclick="goTo('licencias')"><i class="fas fa-chevron-right"></i> Licencias de Conducir</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4>Empresa</h4>
-          <ul>
-            <li><a onclick="goTo('home')"><i class="fas fa-chevron-right"></i> Sobre Nosotros</a></li>
-            <li><a onclick="goTo('home')"><i class="fas fa-chevron-right"></i> Cómo Funciona</a></li>
-            <li><a onclick="goTo('home')"><i class="fas fa-chevron-right"></i> Testimonios</a></li>
-            <li><a onclick="goTo('home')"><i class="fas fa-chevron-right"></i> Preguntas Frecuentes</a></li>
-            <li><a onclick="goTo('verify')"><i class="fas fa-chevron-right"></i> Verificar Trámite</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4>Contacto</h4>
-          <ul>
-            <li><a href="https://wa.me/1TUNUMERO" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a></li>
-            <li><a href="mailto:info@dmvcarportal.com"><i class="fas fa-envelope"></i> info@dmvcarportal.com</a></li>
-            <li><a href="tel:+10000000000"><i class="fas fa-phone"></i> +1 (000) 000-0000</a></li>
-            <li><a><i class="fas fa-clock"></i> Lun-Dom 8am-8pm EST</a></li>
-            <li><a><i class="fas fa-globe"></i> Los 50 Estados de USA</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <p>© 2024 DMVCarPortal. Todos los derechos reservados. | No afiliado con ninguna agencia gubernamental.</p>
-        <div class="footer-badges">
-          <div class="footer-badge"><i class="fas fa-lock"></i> SSL Seguro</div>
-          <div class="footer-badge"><i class="fas fa-check-circle"></i> DMV Aprobado</div>
-          <div class="footer-badge"><i class="fas fa-globe"></i> 50 Estados</div>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-</div>
-<!-- FIN HOME PAGE -->
-
-<!-- ============================================
-     MODALES: CONTACTO Y ÉXITO (completos)
-============================================ -->
-<div class="modal-overlay" id="contactModal">
-  <div class="modal-box">
-    <button class="modal-close" onclick="closeModal()">
-      <i class="fas fa-times"></i>
-    </button>
-    <div class="modal-header">
-      <div class="modal-icon-wrap" id="modalIconWrap">
-        <i class="fas fa-paper-plane" id="modalIcon"></i>
-      </div>
-      <div class="modal-service-tag" id="modalTag">
-        <i class="fas fa-headset" id="modalTagIcon"></i>
-        <span id="modalTagText">Consulta General</span>
-      </div>
-      <h2 class="modal-title" id="modalTitle">Solicitar Servicio</h2>
-      <p class="modal-desc" id="modalDesc">
-        Completa el formulario y un asesor se pondrá en contacto contigo en menos de 24 horas.
-      </p>
-    </div>
-
-    <div class="cf-row">
-      <div class="cf-group">
-        <label><i class="fas fa-user"></i> Nombre *</label>
-        <input type="text" class="cf-input" id="cfNombre" placeholder="Juan">
-      </div>
-      <div class="cf-group">
-        <label><i class="fas fa-user"></i> Apellido *</label>
-        <input type="text" class="cf-input" id="cfApellido" placeholder="García">
-      </div>
-    </div>
-    <div class="cf-row">
-      <div class="cf-group">
-        <label><i class="fas fa-envelope"></i> Correo Electrónico *</label>
-        <input type="email" class="cf-input" id="cfEmail" placeholder="juan@email.com">
-      </div>
-      <div class="cf-group">
-        <label><i class="fas fa-phone"></i> Teléfono / WhatsApp *</label>
-        <input type="tel" class="cf-input" id="cfTelefono" placeholder="(555) 000-0000">
-      </div>
-    </div>
-    <div class="cf-row">
-      <div class="cf-group">
-        <label><i class="fas fa-map-marker-alt"></i> Estado *</label>
-        <select class="cf-input" id="cfEstado">
-          <option value="">Selecciona tu Estado</option>
-          <option>Alabama</option><option>Alaska</option><option>Arizona</option>
-          <option>Arkansas</option><option>California</option><option>Colorado</option>
-          <option>Connecticut</option><option>Delaware</option><option>Florida</option>
-          <option>Georgia</option><option>Hawaii</option><option>Idaho</option>
-          <option>Illinois</option><option>Indiana</option><option>Iowa</option>
-          <option>Kansas</option><option>Kentucky</option><option>Louisiana</option>
-          <option>Maine</option><option>Maryland</option><option>Massachusetts</option>
-          <option>Michigan</option><option>Minnesota</option><option>Mississippi</option>
-          <option>Missouri</option><option>Montana</option><option>Nebraska</option>
-          <option>Nevada</option><option>New Hampshire</option><option>New Jersey</option>
-          <option>New Mexico</option><option>New York</option><option>North Carolina</option>
-          <option>North Dakota</option><option>Ohio</option><option>Oklahoma</option>
-          <option>Oregon</option><option>Pennsylvania</option><option>Rhode Island</option>
-          <option>South Carolina</option><option>South Dakota</option><option>Tennessee</option>
-          <option>Texas</option><option>Utah</option><option>Vermont</option>
-          <option>Virginia</option><option>Washington</option><option>West Virginia</option>
-          <option>Wisconsin</option><option>Wyoming</option>
-        </select>
-      </div>
-      <div class="cf-group">
-        <label><i class="fas fa-comments"></i> Método de Contacto *</label>
-        <select class="cf-input" id="cfContacto">
-          <option value="">Selecciona una opción</option>
-          <option>WhatsApp</option>
-          <option>Llamada Telefónica</option>
-          <option>Correo Electrónico</option>
-        </select>
-      </div>
-    </div>
-    <div class="cf-group" id="cfVehicleGroup">
-      <label><i class="fas fa-car"></i> Información del Vehículo</label>
-      <input type="text" class="cf-input" id="cfVehiculo" placeholder="Marca, Modelo, Año (ej. Toyota Camry 2022)">
-    </div>
-    <div class="cf-group">
-      <label><i class="fas fa-comment-alt"></i> Mensaje o Consulta Adicional</label>
-      <textarea class="cf-input" id="cfMensaje" rows="3"
-        placeholder="Cuéntanos más sobre tu trámite o cualquier duda que tengas..."></textarea>
-    </div>
-    <input type="hidden" id="cfServicio" value="general">
-
-    <button class="cf-submit" id="cfSubmitBtn" onclick="submitForm()">
-      <i class="fas fa-paper-plane"></i> Enviar Solicitud — Un Asesor te Contactará
-    </button>
-    <div class="cf-note">
-      <i class="fas fa-lock"></i>
-      Tu información es 100% confidencial y segura. No compartimos tus datos.
-    </div>
-  </div>
-</div>
-
-<div class="modal-overlay" id="successModal">
-  <div class="success-box">
-    <div class="success-icon">
-      <i class="fas fa-check"></i>
-    </div>
-    <h2 class="success-title">¡Solicitud Enviada!</h2>
-    <p class="success-desc">
-      Tu solicitud ha sido recibida exitosamente. Un asesor especializado
-      se pondrá en contacto contigo en menos de 24 horas./* ============================================
-   PASOS VERIFICACIÓN - RESPONSIVE
-============================================ */
 @media (max-width: 768px) {
   .verify-page [style*="display:grid;grid-template-columns:repeat(4,1fr)"] {
     grid-template-columns: 1fr !important;
@@ -4046,7 +2395,6 @@ body {
     margin-bottom: 0 !important;
   }
 }
-
 @media (max-width: 480px) {
   .verify-page .sdp-card {
     padding: 20px 16px !important;
@@ -4055,571 +2403,808 @@ body {
     font-size: 15px !important;
   }
 }
-    </p>
-    <div class="success-id" id="successId">DMV-000000</div>
-    <p class="success-id-note">Guarda este ID para verificar el estado de tu trámite</p>
-    <div class="success-steps">
-      <div class="success-step"><i class="fas fa-envelope"></i> Recibirás un correo de confirmación en breve</div>
-      <div class="success-step"><i class="fas fa-headset"></i> Un asesor te contactará en menos de 24 horas</div>
-      <div class="success-step"><i class="fas fa-search"></i> Usa tu ID para verificar el estado de tu trámite</div>
-    </div>
-    <button class="cf-submit" onclick="closeSuccess()" style="margin-top:0">
-      <i class="fas fa-check-circle"></i> Entendido
-    </button>
+</style>
+</head>
+<body>
+
+<!-- WHATSAPP FLOTANTE con enlace actualizado -->
+<div class="wa-float">
+  <div class="wa-tooltip-box">¡Chatea con nosotros!</div>
+  <a href="https://wa.me/message/DIJO3NMFOQJZM1" target="_blank" class="wa-btn">
+    <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+      <path d="M16 0C7.163 0 0 7.163 0 16c0 2.833.737 5.489 2.027 7.8L0 32l8.418-2.007A15.93 15.93 0 0016 32c8.837 0 16-7.163 16-16S24.837 0 16 0zm0 29.333a13.267 13.267 0 01-6.77-1.853l-.486-.29-5.002 1.193 1.216-4.87-.317-.5A13.267 13.267 0 012.667 16C2.667 8.636 8.636 2.667 16 2.667S29.333 8.636 29.333 16 23.364 29.333 16 29.333zm7.27-9.927c-.398-.199-2.354-1.162-2.72-1.294-.365-.133-.631-.199-.897.199-.265.398-1.029 1.294-1.261 1.56-.232.265-.465.298-.863.1-.398-.2-1.681-.62-3.203-1.977-1.184-1.056-1.983-2.36-2.215-2.758-.232-.398-.025-.613.174-.811.179-.178.398-.465.597-.697.2-.232.266-.398.399-.664.132-.265.066-.497-.033-.696-.1-.199-.897-2.162-1.229-2.96-.324-.777-.653-.672-.897-.684l-.764-.013c-.265 0-.696.1-1.061.497-.365.398-1.394 1.362-1.394 3.325s1.427 3.856 1.626 4.122c.199.265 2.808 4.287 6.803 6.014.951.41 1.693.655 2.271.839.954.304 1.823.261 2.51.158.766-.114 2.354-.962 2.686-1.891.332-.93.332-1.727.232-1.892-.099-.165-.365-.265-.763-.464z"/>
+    </svg>
+  </a>
+</div>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <button class="mobile-menu-close" onclick="closeMobileMenu()"><i class="fas fa-times"></i></button>
+  <a onclick="goTo('home');closeMobileMenu()"><i class="fas fa-home"></i> Inicio</a>
+  <a onclick="goTo('seguros');closeMobileMenu()"><i class="fas fa-shield-alt"></i> Seguros</a>
+  <a onclick="goTo('placas');closeMobileMenu()"><i class="fas fa-id-card"></i> Placas Temporales</a>
+  <a onclick="goTo('titulos');closeMobileMenu()"><i class="fas fa-file-alt"></i> Títulos</a>
+  <a onclick="goTo('licencias');closeMobileMenu()"><i class="fas fa-car"></i> Licencias</a>
+  <a onclick="goTo('stickers');closeMobileMenu()"><i class="fas fa-tag"></i> Stickers</a>
+  <a onclick="goTo('inspecciones');closeMobileMenu()"><i class="fas fa-clipboard-list"></i> Inspecciones</a>
+  <a onclick="goTo('verify');closeMobileMenu()"><i class="fas fa-search"></i> Verificar</a>
+  <a onclick="openModal('general');closeMobileMenu()" class="mobile-menu-cta"><i class="fas fa-paper-plane"></i> Solicitar Servicio</a>
+</div>
+
+<!-- PROMO BANNER -->
+<div class="promo-banner">
+  <div class="promo-track">
+    <span><i class="fas fa-certificate"></i> Servicio #1 de Trámites Vehiculares en USA</span>
+    <span><i class="fas fa-bolt"></i> Procesamiento en 24 Horas</span>
+    <span><i class="fas fa-shield-alt"></i> 100% Legal y Aprobado por el DMV</span>
+    <span><i class="fas fa-truck"></i> Envío Gratis en Órdenes Mayores a $50</span>
+    <span><i class="fas fa-globe"></i> Válido en los 50 Estados de USA</span>
+    <span><i class="fas fa-headset"></i> Soporte en Español e Inglés 24/7</span>
+    <span><i class="fas fa-star"></i> Más de 50,000 Clientes Satisfechos</span>
+    <span><i class="fas fa-certificate"></i> Servicio #1 de Trámites Vehiculares en USA</span>
+    <span><i class="fas fa-bolt"></i> Procesamiento en 24 Horas</span>
+    <span><i class="fas fa-shield-alt"></i> 100% Legal y Aprobado por el DMV</span>
+    <span><i class="fas fa-truck"></i> Envío Gratis en Órdenes Mayores a $50</span>
+    <span><i class="fas fa-globe"></i> Válido en los 50 Estados de USA</span>
+    <span><i class="fas fa-headset"></i> Soporte en Español e Inglés 24/7</span>
+    <span><i class="fas fa-star"></i> Más de 50,000 Clientes Satisfechos</span>
   </div>
 </div>
 
-<!-- ============================================
-     JAVASCRIPT COMPLETO (con funciones actualizadas)
-============================================ -->
-<script>
-'use strict';
+<!-- NAVBAR actualizada con enlaces a stickers e inspecciones -->
+<nav class="navbar" id="navbar">
+  <div class="logo-institucional" onclick="goTo('home')">
+    <div class="dmv-wrapper"><span class="dmv-main">DMV</span><div class="horizon-line"></div></div>
+    <div class="brand-footer"><i class="fa-solid fa-car car-mini"></i><span class="brand-name">Car Portal</span></div>
+  </div>
+  <ul class="nav-links">
+    <li><a onclick="goTo('home')" id="nav-home" class="active"><i class="fas fa-home"></i> Inicio</a></li>
+    <li><a onclick="goTo('seguros')" id="nav-seguros"><i class="fas fa-shield-alt"></i> Seguros</a></li>
+    <li><a onclick="goTo('placas')" id="nav-placas"><i class="fas fa-id-card"></i> Placas</a></li>
+    <li><a onclick="goTo('titulos')" id="nav-titulos"><i class="fas fa-file-alt"></i> Títulos</a></li>
+    <li><a onclick="goTo('licencias')" id="nav-licencias"><i class="fas fa-car"></i> Licencias</a></li>
+    <li><a onclick="goTo('stickers')" id="nav-stickers"><i class="fas fa-tag"></i> Stickers</a></li>
+    <li><a onclick="goTo('inspecciones')" id="nav-inspecciones"><i class="fas fa-clipboard-list"></i> Inspecciones</a></li>
+    <li><a onclick="goTo('verify')" id="nav-verify"><i class="fas fa-search"></i> Verificar</a></li>
+    <li><a onclick="openModal('general')" class="nav-cta"><i class="fas fa-paper-plane"></i> Solicitar Servicio</a></li>
+  </ul>
+  <button class="hamburger" onclick="openMobileMenu()"><i class="fas fa-bars"></i></button>
+</nav>
 
-/* ============================================
-   VARIABLES GLOBALES
-============================================ */
-let currentPage = 'home';
-let currentVerifyService = 'seguros';
-let currentService = 'general';
-
-/* ============================================
-   NAVEGACIÓN
-============================================ */
-function goTo(page) {
-  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
-  const target = document.getElementById('page-' + page);
-  if (target) {
-    target.classList.add('active');
-    currentPage = page;
-  }
-  window.scrollTo({ top: 0, behavior: 'smooth' });
-  document.querySelectorAll('.nav-links a').forEach(a => a.classList.remove('active'));
-  const navEl = document.getElementById('nav-' + page);
-  if (navEl) navEl.classList.add('active');
-  setTimeout(observeAnimations, 100);
-}
-
-/* ============================================
-   MOBILE MENU
-============================================ */
-function openMobileMenu() {
-  document.getElementById('mobileMenu').classList.add('open');
-  document.body.style.overflow = 'hidden';
-}
-function closeMobileMenu() {
-  document.getElementById('mobileMenu').classList.remove('open');
-  document.body.style.overflow = '';
-}
-
-/* ============================================
-   NAVBAR SCROLL
-============================================ */
-window.addEventListener('scroll', () => {
-  const navbar = document.getElementById('navbar');
-  if (window.scrollY > 60) navbar.classList.add('scrolled');
-  else navbar.classList.remove('scrolled');
-});
-
-/* ============================================
-   CONTADORES ANIMADOS
-============================================ */
-function animateCounter(id, target, suffix) {
-  const el = document.getElementById(id);
-  if (!el) return;
-  let count = 0;
-  const step = target / 70;
-  const timer = setInterval(() => {
-    count += step;
-    if (count >= target) {
-      count = target;
-      clearInterval(timer);
-    }
-    el.textContent = Math.floor(count).toLocaleString() + (suffix || '');
-  }, 22);
-}
-
-const statsObserver = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      animateCounter('s1', 50000, '+');
-      animateCounter('s2', 50, '');
-      animateCounter('s3', 24, 'h');
-      animateCounter('s4', 99, '%');
-      statsObserver.disconnect();
-    }
-  });
-}, { threshold: 0.3 });
-
-const statsBar = document.querySelector('.stats-bar');
-if (statsBar) statsObserver.observe(statsBar);
-
-/* ============================================
-   ANIMACIONES SCROLL
-============================================ */
-function observeAnimations() {
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry, i) => {
-      if (entry.isIntersecting) {
-        setTimeout(() => {
-          entry.target.classList.add('visible');
-        }, i * 100);
-        observer.unobserve(entry.target);
-      }
-    });
-  }, { threshold: 0.1 });
-  document.querySelectorAll('.fade-up:not(.visible), .fade-left:not(.visible), .fade-right:not(.visible)')
-    .forEach(el => observer.observe(el));
-}
-observeAnimations();
-
-/* ============================================
-   FAQ
-============================================ */
-function toggleFaq(qEl) {
-  const item = qEl.parentElement;
-  const answer = item.querySelector('.faq-a');
-  const isOpen = item.classList.contains('open');
-  document.querySelectorAll('.faq-item').forEach(i => {
-    i.classList.remove('open');
-    i.querySelector('.faq-a').classList.remove('open');
-  });
-  if (!isOpen) {
-    item.classList.add('open');
-    answer.classList.add('open');
-  }
-}
-
-/* ============================================
-   VERIFICACIÓN CON ARCHIVOS ESTÁTICOS (actualizada)
-============================================ */
-let clientesData = null;
-
-async function cargarClientes() {
-  if (clientesData) return clientesData;
-  try {
-    const response = await fetch('data/clientes.json');
-    if (!response.ok) throw new Error('No se pudo cargar la base de datos');
-    clientesData = await response.json();
-    return clientesData;
-  } catch (error) {
-    console.error(error);
-    return null;
-  }
-}
-
-async function runVerify() {
-  const id = document.getElementById('verifyId').value.trim();
-  const resultDiv = document.getElementById('verifyResult');
-
-  if (!id) {
-    mostrarErrorVerificacion(resultDiv, 'Por favor ingresa tu ID de trámite.');
-    return;
-  }
-
-  resultDiv.className = 'verify-result show pending';
-  resultDiv.innerHTML = `
-    <div class="vr-head">
-      <div class="vr-icon p"><i class="fas fa-spinner fa-spin"></i></div>
-      <div class="vr-title p">Buscando tu información...</div>
+<!-- ========== PÁGINA HOME ========== -->
+<div class="page active" id="page-home">
+  <section class="hero">
+    <div class="hero-circle-1"></div><div class="hero-circle-2"></div><div class="hero-circle-3"></div>
+    <div class="container">
+      <div class="hero-wrap">
+        <div class="hero-content">
+          <div class="hero-badge"><i class="fas fa-certificate"></i> Servicio Oficial Número 1 en USA</div>
+          <h1>Tu Portal de <span>Trámites Vehiculares</span> en USA</h1>
+          <p class="hero-desc">Obtén tus placas temporales, seguros, títulos y licencias de forma rápida, segura y 100% legal. Servicio disponible en los 50 estados.</p>
+          <div class="hero-buttons">
+            <button class="btn btn-red" onclick="openModal('general')"><i class="fas fa-paper-plane"></i> Solicitar Servicio Ahora</button>
+            <button class="btn btn-outline" onclick="goTo('verify')"><i class="fas fa-search"></i> Verificar Mi Trámite</button>
+          </div>
+          <div class="hero-trust">
+            <div class="hero-trust-item"><i class="fas fa-check-circle"></i><span>Aprobado por DMV</span></div>
+            <div class="hero-trust-item"><i class="fas fa-lock"></i><span>100% Seguro</span></div>
+            <div class="hero-trust-item"><i class="fas fa-bolt"></i><span>Entrega en 24h</span></div>
+            <div class="hero-trust-item"><i class="fas fa-globe"></i><span>50 Estados</span></div>
+          </div>
+        </div>
+        <div class="hero-right">
+          <div class="hero-card" onclick="goTo('seguros')"><div class="hero-card-icon"><i class="fas fa-shield-alt"></i></div><h3>Seguros</h3><p>Básico y Full Cover disponible</p><div class="hero-card-arrow">Ver planes <i class="fas fa-arrow-right"></i></div></div>
+          <div class="hero-card" onclick="goTo('placas')"><div class="hero-card-icon"><i class="fas fa-id-card"></i></div><h3>Placas Temporales</h3><p>Válidas en los 50 estados</p><div class="hero-card-arrow">Ver servicios <i class="fas fa-arrow-right"></i></div></div>
+          <div class="hero-card" onclick="goTo('titulos')"><div class="hero-card-icon"><i class="fas fa-file-alt"></i></div><h3>Títulos</h3><p>Transferencias y recuperacion</p><div class="hero-card-arrow">Ver trámites <i class="fas fa-arrow-right"></i></div></div>
+          <div class="hero-card" onclick="goTo('licencias')"><div class="hero-card-icon"><i class="fas fa-car"></i></div><h3>Licencias de Conducir</h3><p>Nuevas, renovaciones y duplicados</p><div class="hero-card-arrow">Ver trámites <i class="fas fa-arrow-right"></i></div></div>
+        </div>
+      </div>
     </div>
-  `;
-
-  const clientes = await cargarClientes();
-  if (!clientes) {
-    mostrarErrorVerificacion(resultDiv, 'Error al cargar la base de datos. Intenta más tarde.');
-    return;
-  }
-
-  const cliente = clientes[id];
-  if (cliente) {
-    sessionStorage.setItem('clienteData', JSON.stringify(cliente));
-    window.location.href = 'verify-detail.html';
-  } else {
-    mostrarErrorVerificacion(resultDiv, `No encontramos ningún trámite con el ID ${id}. Verifica que esté bien escrito.`);
-  }
-}
-
-function mostrarErrorVerificacion(div, mensaje) {
-  div.className = 'verify-result show error';
-  div.innerHTML = `
-    <div class="vr-head">
-      <div class="vr-icon e"><i class="fas fa-exclamation-triangle"></i></div>
-      <div class="vr-title e">Error</div>
+  </section>
+  <section class="promo-section"><div class="container"><div class="promo-box fade-up"><div class="promo-ribbon">Oferta</div><div class="promo-content"><div class="promo-tag"><i class="fas fa-fire"></i> Promoción Especial</div><h2 class="promo-title">Placa Temporal + Seguro <span>por solo $150</span></h2><div class="promo-features-mini"><div class="promo-feature-mini"><i class="fas fa-check-circle"></i> Placa Temporal Oficial</div><div class="promo-feature-mini"><i class="fas fa-check-circle"></i> Seguro de Auto Incluido</div><div class="promo-feature-mini"><i class="fas fa-check-circle"></i> Activación Inmediata</div></div><div class="promo-timer"><i class="fas fa-clock"></i> Tiempo Limitado — ¡No te lo pierdas!</div></div><div class="promo-right"><div class="promo-price-label">Precio Combo</div><div class="promo-price">$150</div><span class="promo-price-old">Antes $220</span><button class="promo-btn" onclick="openModal('promo-combo')"><i class="fas fa-bolt"></i> Aprovechar Oferta <i class="fas fa-arrow-right"></i></button></div></div></div></section>
+  <div class="stats-bar"><div class="container"><div class="stats-grid"><div class="stat-item"><div class="stat-icon"><i class="fas fa-id-card"></i></div><span class="stat-number" id="s1">0</span><div class="stat-label">Placas Emitidas</div></div><div class="stat-item"><div class="stat-icon"><i class="fas fa-map-marked-alt"></i></div><span class="stat-number" id="s2">0</span><div class="stat-label">Estados Cubiertos</div></div><div class="stat-item"><div class="stat-icon"><i class="fas fa-clock"></i></div><span class="stat-number" id="s3">0</span><div class="stat-label">Horas de Entrega</div></div><div class="stat-item"><div class="stat-icon"><i class="fas fa-star"></i></div><span class="stat-number" id="s4">0</span><div class="stat-label">% Satisfacción</div></div></div></div></div>
+  <section class="services-section">
+    <div class="container">
+      <div class="section-header"><div class="section-badge"><i class="fas fa-th-large"></i> Nuestros Servicios</div><h2 class="section-title">Todo lo que Necesitas en un Solo Lugar</h2><p class="section-desc">Trámites vehiculares rápidos, legales y sin complicaciones para todo tipo de vehículos en USA.</p></div>
+      <div class="services-grid">
+        <div class="service-card fade-up" onclick="goTo('seguros')"><div class="service-card-icon"><i class="fas fa-shield-alt"></i></div><h3>Seguros de Auto</h3><p>Protege tu vehículo con nuestros planes de cobertura básica y full cover.</p><div class="service-sub"><i class="fas fa-layer-group"></i> 2 planes disponibles</div><button class="service-btn"><i class="fas fa-arrow-right"></i> Ver Planes</button></div>
+        <div class="service-card fade-up" onclick="goTo('placas')"><div class="service-card-icon"><i class="fas fa-id-card"></i></div><h3>Placas Temporales</h3><p>Obtén tu placa temporal oficial válida en los 50 estados de USA.</p><div class="service-sub"><i class="fas fa-layer-group"></i> 3 tipos de servicio</div><button class="service-btn"><i class="fas fa-arrow-right"></i> Ver Servicios</button></div>
+        <div class="service-card fade-up" onclick="goTo('titulos')"><div class="service-card-icon"><i class="fas fa-file-alt"></i></div><h3>Títulos Vehiculares</h3><p>Transferencias, duplicados y correcciones de título vehicular.</p><div class="service-sub"><i class="fas fa-layer-group"></i> 3 tipos de trámite</div><button class="service-btn"><i class="fas fa-arrow-right"></i> Ver Trámites</button></div>
+        <div class="service-card fade-up" onclick="goTo('licencias')"><div class="service-card-icon"><i class="fas fa-car"></i></div><h3>Licencias de Conducir</h3><p>Nuevas licencias, renovaciones y duplicados para todos los estados.</p><div class="service-sub"><i class="fas fa-layer-group"></i> 3 tipos de trámite</div><button class="service-btn"><i class="fas fa-arrow-right"></i> Ver Trámites</button></div>
+        <div class="service-card fade-up" onclick="goTo('stickers')"><div class="service-card-icon"><i class="fas fa-tag"></i></div><h3>Stickers</h3><p>Calcomanías oficiales de registro vehicular. Envío a todo USA.</p><div class="service-sub"><i class="fas fa-layer-group"></i> 2 tipos</div><button class="service-btn"><i class="fas fa-arrow-right"></i> Ver Stickers</button></div>
+        <div class="service-card fade-up" onclick="goTo('inspecciones')"><div class="service-card-icon"><i class="fas fa-clipboard-list"></i></div><h3>Inspecciones</h3><p>Inspección vehicular oficial para transferencia o registro.</p><div class="service-sub"><i class="fas fa-layer-group"></i> 2 tipos</div><button class="service-btn"><i class="fas fa-arrow-right"></i> Ver Inspecciones</button></div>
+      </div>
     </div>
-    <p style="font-size:14px;color:var(--text2)">${mensaje}</p>
-    <button onclick="window.open('https://wa.me/1TUNUMERO','_blank')" style="margin-top:15px; background:#25D366; color:white; border:none; padding:10px 20px; border-radius:30px; font-weight:bold; cursor:pointer;">
-      <i class="fab fa-whatsapp"></i> Contactar Asesor
-    </button>
-  `;
-}
+  </section>
+  <section class="how-section"><div class="container"><div class="section-header"><div class="section-badge"><i class="fas fa-list-ol"></i> Cómo Funciona</div><h2 class="section-title white">Obtén Tu Trámite en 4 Simples Pasos</h2><p class="section-desc white">Nuestro proceso simplificado hace que cualquier trámite vehicular sea rápido y sin complicaciones.</p></div><div class="how-grid"><div class="how-line"></div><div class="how-step fade-up"><div class="how-num">1</div><h3>Elige tu Servicio</h3><p>Selecciona el trámite que necesitas entre nuestras opciones disponibles.</p></div><div class="how-step fade-up"><div class="how-num">2</div><h3>Llena el Formulario</h3><p>Ingresa tus datos personales y la información de tu vehículo de forma segura.</p></div><div class="how-step fade-up"><div class="how-num">3</div><h3>Un Asesor te Contacta</h3><p>Nuestro equipo se pondrá en contacto contigo en menos de 24 horas.</p></div><div class="how-step fade-up"><div class="how-num">4</div><h3>Recibe tu Trámite</h3><p>Recibe tu documento oficial en la comodidad de tu hogar.</p></div></div></div></section>
+  <section class="section" style="background:var(--gray)"><div class="container"><div class="section-header"><div class="section-badge"><i class="fas fa-star"></i> Testimonios</div><h2 class="section-title">Lo que Dicen Nuestros Clientes</h2><p class="section-desc">Miles de clientes satisfechos en todo USA confían en DMVCarPortal.</p></div><div class="testi-grid">
+    <div class="testi-card fade-up"><div class="testi-stars"><i class="fas fa-star star-on"></i><i class="fas fa-star star-on"></i><i class="fas fa-star star-on"></i><i class="fas fa-star star-on"></i><i class="fas fa-star star-on"></i></div><p class="testi-text">"Increíble servicio. Obtuve mi placa temporal en menos de 24 horas. El proceso fue muy fácil y el asesor me guió en todo momento."</p><div class="testi-author"><div class="testi-avatar" style="background:var(--blue)">MR</div><div><div class="testi-name">María Rodríguez</div><div class="testi-loc"><i class="fas fa-map-marker-alt"></i> Miami, Florida</div><div class="testi-tag">Placa Temporal</div></div></div></div>
+    <div class="testi-card fade-up"><div class="testi-stars"><i class="fas fa-star star-on"></i><i class="fas fa-star star-on"></i><i class="fas fa-star star-on"></i><i class="fas fa-star star-off"></i><i class="fas fa-star star-off"></i></div><p class="testi-text">"Buen servicio en general. El trámite tardó un poco más de lo esperado pero al final todo salió bien. El asesor fue muy amable y profesional."</p><div class="testi-author"><div class="testi-avatar" style="background:var(--blue-light)">CL</div><div><div class="testi-name">Carlos López</div><div class="testi-loc"><i class="fas fa-map-marker-alt"></i> Houston, Texas</div><div class="testi-tag">Título Vehicular</div></div></div></div>
+    <div class="testi-card fade-up"><div class="testi-stars"><i class="fas fa-star star-on"></i><i class="fas fa-star star-on"></i><i class="fas fa-star star-on"></i><i class="fas fa-star star-on"></i><i class="fas fa-star star-on"></i></div><p class="testi-text">"El seguro Full Cover es excelente. Tuve un accidente y todo fue cubierto sin problemas. El proceso de contratación fue muy rápido."</p><div class="testi-author"><div class="testi-avatar" style="background:#1a7a1a">AG</div><div><div class="testi-name">Ana González</div><div class="testi-loc"><i class="fas fa-map-marker-alt"></i> Los Angeles, California</div><div class="testi-tag">Seguro Full Cover</div></div></div></div>
+    <div class="testi-card fade-up"><div class="testi-stars"><i class="fas fa-star star-on"></i><i class="fas fa-star star-on"></i><i class="fas fa-star star-on"></i><i class="fas fa-star star-on"></i><i class="fas fa-star star-off"></i></div><p class="testi-text">"Me ayudaron con la renovación de mi licencia. El proceso fue claro y el asesor estuvo disponible para responder todas mis dudas."</p><div class="testi-author"><div class="testi-avatar" style="background:#7b1fa2">JM</div><div><div class="testi-name">José Martínez</div><div class="testi-loc"><i class="fas fa-map-marker-alt"></i> Chicago, Illinois</div><div class="testi-tag">Licencia de Conducir</div></div></div></div>
+    <div class="testi-card fade-up"><div class="testi-stars"><i class="fas fa-star star-on"></i><i class="fas fa-star star-on"></i><i class="fas fa-star star-on"></i><i class="fas fa-star star-on"></i><i class="fas fa-star star-on"></i></div><p class="testi-text">"Pensé que sería complicado pero fue muy sencillo. Llené el formulario, me llamó un asesor y en 2 días tenía mi placa. El mejor servicio."</p><div class="testi-author"><div class="testi-avatar" style="background:#e65100">LP</div><div><div class="testi-name">Laura Pérez</div><div class="testi-loc"><i class="fas fa-map-marker-alt"></i> New York, NY</div><div class="testi-tag">Placa Express</div></div></div></div>
+    <div class="testi-card fade-up"><div class="testi-stars"><i class="fas fa-star star-on"></i><i class="fas fa-star star-on"></i><i class="fas fa-star star-on"></i><i class="fas fa-star star-off"></i><i class="fas fa-star star-off"></i></div><p class="testi-text">"El servicio de duplicado de título fue bueno. Tardó unos días más de lo indicado pero el resultado fue correcto. Recomendaría mejorar los tiempos."</p><div class="testi-author"><div class="testi-avatar" style="background:#00838f">RF</div><div><div class="testi-name">Roberto Flores</div><div class="testi-loc"><i class="fas fa-map-marker-alt"></i> Phoenix, Arizona</div><div class="testi-tag">Duplicado de Título</div></div></div></div>
+  </div></div></section>
+  <section class="section" style="background:white"><div class="container"><div class="section-header"><div class="section-badge"><i class="fas fa-question-circle"></i> Preguntas Frecuentes</div><h2 class="section-title">Resolvemos tus Dudas</h2><p class="section-desc">Encuentra respuestas a las preguntas más comunes sobre nuestros servicios.</p></div><div class="faq-wrap">
+    <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)"><h3>¿Cuánto tiempo tarda en llegar mi placa temporal?</h3><div class="faq-toggle"><i class="fas fa-plus"></i></div></div><div class="faq-a"><p>Dependiendo del plan elegido, tu placa puede llegar en 3-5 días hábiles con el plan Estándar, 24-48 horas con el plan Express, o el mismo día con el plan Premium. Un asesor te confirmará el tiempo exacto al contactarte.</p></div></div>
+    <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)"><h3>¿Son legales las placas temporales que emiten?</h3><div class="faq-toggle"><i class="fas fa-plus"></i></div></div><div class="faq-a"><p>Sí, todas nuestras placas temporales son 100% legales y están aprobadas por el DMV. Son válidas en los 50 estados de USA y cumplen con todos los requisitos legales vigentes.</p></div></div>
+    <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)"><h3>¿Cómo funciona el proceso de contacto con el asesor?</h3><div class="faq-toggle"><i class="fas fa-plus"></i></div></div><div class="faq-a"><p>Una vez que llenes el formulario de solicitud, un asesor especializado se pondrá en contacto contigo en un máximo de 24 horas por teléfono, WhatsApp o correo electrónico según tu preferencia.</p></div></div>
+    <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)"><h3>¿Cuál es la diferencia entre el Seguro Básico y el Full Cover?</h3><div class="faq-toggle"><i class="fas fa-plus"></i></div></div><div class="faq-a"><p>El Seguro Básico cubre responsabilidad civil y daños a terceros, cumpliendo con los requisitos mínimos legales. El Full Cover incluye además cobertura por colisión, médica, asistencia 24/7, auto de reemplazo, robo y desastres naturales.</p></div></div>
+    <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)"><h3>¿Qué documentos necesito para obtener mi placa?</h3><div class="faq-toggle"><i class="fas fa-plus"></i></div></div><div class="faq-a"><p>Solo necesitas el número VIN de tu vehículo, tu información personal y una forma de contacto válida. El asesor te indicará si se requiere algún documento adicional según tu estado.</p></div></div>
+    <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)"><h3>¿Tienen servicio al cliente en español?</h3><div class="faq-toggle"><i class="fas fa-plus"></i></div></div><div class="faq-a"><p>Sí, nuestro equipo de atención al cliente está disponible en español e inglés. Puedes contactarnos por WhatsApp, email o teléfono de lunes a domingo de 8am a 8pm EST.</p></div></div>
+    <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)"><h3>¿Puedo verificar el estado de mi trámite en línea?</h3><div class="faq-toggle"><i class="fas fa-plus"></i></div></div><div class="faq-a"><p>Sí, puedes verificar el estado de cualquier trámite en nuestra sección de Verificación. Solo necesitas tu ID de trámite y seleccionar el tipo de servicio para consultar el estado en tiempo real.</p></div></div>
+  </div></div></section>
+  <footer class="footer"><div class="container"><div class="footer-grid"><div class="footer-brand"><div class="logo-main" style="font-size:22px">DMVCar<span style="color:var(--gold)">Portal</span></div><p>La fuente número 1 de confianza para trámites vehiculares en USA. Placas temporales, seguros, títulos y licencias de forma rápida, legal y sin complicaciones.</p><div class="footer-social"><a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a><a href="#" class="social-link"><i class="fab fa-instagram"></i></a><a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a><a href="#" class="social-link"><i class="fab fa-tiktok"></i></a></div></div><div class="footer-col"><h4>Servicios</h4><ul><li><a onclick="goTo('seguros')"><i class="fas fa-chevron-right"></i> Seguro Básico</a></li><li><a onclick="goTo('seguros')"><i class="fas fa-chevron-right"></i> Seguro Full Cover</a></li><li><a onclick="goTo('placas')"><i class="fas fa-chevron-right"></i> Placa Estándar</a></li><li><a onclick="goTo('placas')"><i class="fas fa-chevron-right"></i> Placa Express</a></li><li><a onclick="goTo('titulos')"><i class="fas fa-chevron-right"></i> Títulos</a></li><li><a onclick="goTo('licencias')"><i class="fas fa-chevron-right"></i> Licencias de Conducir</a></li><li><a onclick="goTo('stickers')"><i class="fas fa-chevron-right"></i> Stickers</a></li><li><a onclick="goTo('inspecciones')"><i class="fas fa-chevron-right"></i> Inspecciones</a></li></ul></div><div class="footer-col"><h4>Empresa</h4><ul><li><a onclick="goTo('home')"><i class="fas fa-chevron-right"></i> Sobre Nosotros</a></li><li><a onclick="goTo('home')"><i class="fas fa-chevron-right"></i> Cómo Funciona</a></li><li><a onclick="goTo('home')"><i class="fas fa-chevron-right"></i> Testimonios</a></li><li><a onclick="goTo('home')"><i class="fas fa-chevron-right"></i> Preguntas Frecuentes</a></li><li><a onclick="goTo('verify')"><i class="fas fa-chevron-right"></i> Verificar Trámite</a></li></ul></div><div class="footer-col"><h4>Contacto</h4><ul><li><a href="https://wa.me/message/DIJO3NMFOQJZM1" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a></li><li><a href="mailto:info@dmvcarportal.com"><i class="fas fa-envelope"></i> info@dmvcarportal.com</a></li><li><a href="tel:+10000000000"><i class="fas fa-phone"></i> +1 (000) 000-0000</a></li><li><a><i class="fas fa-clock"></i> Lun-Dom 8am-8pm EST</a></li><li><a><i class="fas fa-globe"></i> Los 50 Estados de USA</a></li></ul></div></div><div class="footer-bottom"><p>© 2024 DMVCarPortal. Todos los derechos reservados. | No afiliado con ninguna agencia gubernamental.</p><div class="footer-badges"><div class="footer-badge"><i class="fas fa-lock"></i> SSL Seguro</div><div class="footer-badge"><i class="fas fa-check-circle"></i> DMV Aprobado</div><div class="footer-badge"><i class="fas fa-globe"></i> 50 Estados</div></div></div></div></footer>
+</div>
 
-function selectVerify(el, service) {
-  document.querySelectorAll('.verify-opt').forEach(o => o.classList.remove('selected'));
-  el.classList.add('selected');
-  currentVerifyService = service;
-  const result = document.getElementById('verifyResult');
-  result.className = 'verify-result';
-  result.innerHTML = '';
-}
+<!-- ========== PÁGINA SEGUROS ========== -->
+<div class="page" id="page-seguros">
+  <div class="service-detail-page">
+    <div class="hero-circle-1"></div><div class="hero-circle-2"></div>
+    <div class="container">
+      <div class="sdp-hero">
+        <button class="sdp-back" onclick="goTo('home')"><i class="fas fa-arrow-left"></i> Volver al Inicio</button>
+        <div class="sdp-badge"><i class="fas fa-shield-alt"></i> Seguros</div>
+        <h1 class="sdp-title">Protege Tu Vehículo con<br><span>Cobertura Completa</span></h1>
+        <p class="sdp-desc">Obtén tu seguro de auto de forma rápida y sencilla. Cobertura inmediata disponible en los 50 estados con las mejores tarifas del mercado.</p>
+        <div class="sdp-features"><div class="sdp-feature"><i class="fas fa-bolt"></i> Activación Inmediata</div><div class="sdp-feature"><i class="fas fa-globe"></i> Válido en 50 Estados</div><div class="sdp-feature"><i class="fas fa-file-alt"></i> Certificado Digital</div><div class="sdp-feature"><i class="fas fa-headset"></i> Soporte 24/7</div></div>
+      </div>
+    </div>
+  </div>
+  <section class="section" style="background:var(--gray)">
+    <div class="container">
+      <div class="section-header"><div class="section-badge"><i class="fas fa-shield-alt"></i> Planes Disponibles</div><h2 class="section-title">Elige el Plan que Mejor se Adapte a Ti</h2><p class="section-desc">Dos opciones diseñadas para cubrir todas tus necesidades de protección vehicular.</p></div>
+      <div class="insurance-grid">
+        <div class="ins-card fade-up"><div class="ins-icon"><i class="fas fa-shield-alt"></i></div><div class="ins-name">Seguro Básico</div><div class="ins-desc">Cobertura esencial para cumplir con los requisitos legales mínimos de tu estado.</div><div class="ins-price">$75<span>/mes</span></div><div class="ins-period">Activación inmediata al contratar</div><ul class="ins-features"><li><i class="fas fa-check yes"></i> Responsabilidad Civil</li><li><i class="fas fa-check yes"></i> Daños a Terceros</li><li><i class="fas fa-check yes"></i> Protección Legal Básica</li><li><i class="fas fa-check yes"></i> Válido en 50 Estados</li><li><i class="fas fa-check yes"></i> Certificado Digital Inmediato</li><li><i class="fas fa-times no"></i> <span class="dim">Cobertura por Colisión</span></li><li><i class="fas fa-times no"></i> <span class="dim">Asistencia en Carretera</span></li><li><i class="fas fa-times no"></i> <span class="dim">Auto de Reemplazo</span></li></ul><button class="ins-btn" onclick="openModal('seguro-basico')"><i class="fas fa-paper-plane"></i> Solicitar Seguro Básico</button></div>
+        <div class="ins-card featured fade-up"><div class="ins-popular">Más Popular</div><div class="ins-icon"><i class="fas fa-shield-alt"></i></div><div class="ins-name">Full Cover</div><div class="ins-desc">Cobertura total para máxima protección de tu vehículo en cualquier situación.</div><div class="ins-price">$140<span>/mes</span></div><div class="ins-period">Activación inmediata al contratar</div><ul class="ins-features"><li><i class="fas fa-check yes"></i> Todo el Plan Básico</li><li><i class="fas fa-check yes"></i> Cobertura por Colisión</li><li><i class="fas fa-check yes"></i> Cobertura Médica Completa</li><li><i class="fas fa-check yes"></i> Asistencia en Carretera 24/7</li><li><i class="fas fa-check yes"></i> Auto de Reemplazo</li><li><i class="fas fa-check yes"></i> Robo y Vandalismo</li><li><i class="fas fa-check yes"></i> Desastres Naturales</li><li><i class="fas fa-check yes"></i> Agente Personal Asignado</li></ul><button class="ins-btn" onclick="openModal('seguro-full')"><i class="fas fa-paper-plane"></i> Solicitar Full Cover</button></div>
+      </div>
+    </div>
+  </section>
+  <section class="how-section"><div class="container" style="text-align:center"><div class="section-badge"><i class="fas fa-question-circle"></i> ¿Tienes Dudas?</div><h2 class="section-title white">Habla con un Asesor de Seguros</h2><p class="section-desc white">Nuestros especialistas en seguros están listos para ayudarte a elegir el plan perfecto para ti.</p><div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap"><button class="btn btn-white" onclick="openModal('seguro-consulta')"><i class="fas fa-headset"></i> Hablar con un Asesor</button><button class="btn btn-outline" onclick="goTo('home')"><i class="fas fa-home"></i> Volver al Inicio</button></div></div></section>
+  <footer class="footer"><div class="container"><div class="footer-bottom" style="border-top:none"><p>© 2024 DMVCarPortal. Todos los derechos reservados.</p><div class="footer-badges"><div class="footer-badge"><i class="fas fa-lock"></i> SSL Seguro</div><div class="footer-badge"><i class="fas fa-check-circle"></i> DMV Aprobado</div><div class="footer-badge"><i class="fas fa-globe"></i> 50 Estados</div></div></div></div></footer>
+</div>
 
-/* ============================================
-   CONFIGURACIÓN DE MODALES (original, sin cambios)
-============================================ */
-const serviceConfig = {
-  'general': {
-    title: 'Solicitar Servicio',
-    desc: 'Completa el formulario y un asesor se pondrá en contacto contigo en menos de 24 horas.',
-    icon: 'fa-paper-plane',
-    tag: 'Consulta General',
-    tagIcon: 'fa-headset',
-    vehicle: false,
-    prefix: 'DMV'
-  },
-   'promo-combo': {
-    title: '🔥 Promoción Combo — Placa + Seguro',
-    desc: 'Aprovecha nuestra oferta especial por tiempo limitado: Placa Temporal + Seguro de Auto por solo $150. Completa tus datos y un asesor te contactará en menos de 24 horas.',
-    icon: 'fa-fire',
-    tag: 'Combo Promocional — $150',
-    tagIcon: 'fa-fire',
-    vehicle: true,
-    prefix: 'PRM'
-  },
-  'seguro-basico': {
-    title: 'Solicitar Seguro Básico',
-    desc: 'Completa tus datos y un asesor de seguros te contactará para activar tu cobertura básica.',
-    icon: 'fa-shield-alt',
-    tag: 'Seguro Básico — $49.99/mes',
-    tagIcon: 'fa-shield-alt',
-    vehicle: true,
-    prefix: 'INS'
-  },
-  'seguro-full': {
-    title: 'Solicitar Seguro Full Cover',
-    desc: 'Completa tus datos y un asesor te contactará para activar tu cobertura completa inmediatamente.',
-    icon: 'fa-shield-alt',
-    tag: 'Full Cover — $89.99/mes',
-    tagIcon: 'fa-shield-alt',
-    vehicle: true,
-    prefix: 'INS'
-  },
-  'seguro-consulta': {
-    title: 'Consulta sobre Seguros',
-    desc: 'Un asesor especializado en seguros te ayudará a elegir el plan perfecto para ti.',
-    icon: 'fa-headset',
-    tag: 'Asesoría de Seguros',
-    tagIcon: 'fa-shield-alt',
-    vehicle: false,
-    prefix: 'INS'
-  },
-  'placa-estandar': {
-    title: 'Solicitar Placa Estándar',
-    desc: 'Completa tus datos y un asesor te contactará para procesar tu placa temporal estándar.',
-    icon: 'fa-id-card',
-    tag: 'Placa Estándar — Desde $29.99',
-    tagIcon: 'fa-id-card',
-    vehicle: true,
-    prefix: 'PLT'
-  },
-  'placa-express': {
-    title: 'Solicitar Placa Express',
-    desc: 'Completa tus datos y un asesor te contactará para procesar tu placa express en 24 horas.',
-    icon: 'fa-bolt',
-    tag: 'Placa Express — Desde $49.99',
-    tagIcon: 'fa-id-card',
-    vehicle: true,
-    prefix: 'PLT'
-  },
-  'placa-renovacion': {
-    title: 'Renovar Placa Temporal',
-    desc: 'Completa tus datos y un asesor te contactará para gestionar la renovación de tu placa.',
-    icon: 'fa-sync-alt',
-    tag: 'Renovación — Desde $19.99',
-    tagIcon: 'fa-id-card',
-    vehicle: true,
-    prefix: 'PLT'
-  },
-  'placa-consulta': {
-    title: 'Consulta sobre Placas',
-    desc: 'Un asesor te ayudará a elegir el tipo de placa temporal que mejor se adapte a tu situación.',
-    icon: 'fa-headset',
-    tag: 'Asesoría de Placas',
-    tagIcon: 'fa-id-card',
-    vehicle: false,
-    prefix: 'PLT'
-  },
-  'titulo-transferencia': {
-    title: 'Transferencia de Título',
-    desc: 'Completa tus datos y un asesor te contactará para gestionar la transferencia de tu título.',
-    icon: 'fa-exchange-alt',
-    tag: 'Transferencia — Desde $39.99',
-    tagIcon: 'fa-file-alt',
-    vehicle: true,
-    prefix: 'TTL'
-  },
-  'titulo-duplicado': {
-    title: 'Duplicado de Título',
-    desc: 'Completa tus datos y un asesor te contactará para gestionar el duplicado de tu título.',
-    icon: 'fa-copy',
-    tag: 'Duplicado — Desde $34.99',
-    tagIcon: 'fa-file-alt',
-    vehicle: true,
-    prefix: 'TTL'
-  },
-  'titulo-correccion': {
-    title: 'Corrección de Título',
-    desc: 'Completa tus datos y un asesor te contactará para gestionar la corrección de tu título.',
-    icon: 'fa-edit',
-    tag: 'Corrección — Desde $29.99',
-    tagIcon: 'fa-file-alt',
-    vehicle: true,
-    prefix: 'TTL'
-  },
-  'titulo-consulta': {
-    title: 'Consulta sobre Títulos',
-    desc: 'Un asesor especializado en títulos vehiculares te orientará en todo el proceso.',
-    icon: 'fa-headset',
-    tag: 'Asesoría de Títulos',
-    tagIcon: 'fa-file-alt',
-    vehicle: false,
-    prefix: 'TTL'
-  },
-  'licencia-nueva': {
-    title: 'Nueva Licencia de Conducir',
-    desc: 'Completa tus datos y un asesor te guiará en todo el proceso para obtener tu nueva licencia.',
-    icon: 'fa-plus-circle',
-    tag: 'Nueva Licencia — Desde $59.99',
-    tagIcon: 'fa-car',
-    vehicle: false,
-    prefix: 'LIC'
-  },
-  'licencia-renovacion': {
-    title: 'Renovación de Licencia',
-    desc: 'Completa tus datos y un asesor te contactará para gestionar la renovación de tu licencia.',
-    icon: 'fa-redo',
-    tag: 'Renovación — Desde $44.99',
-    tagIcon: 'fa-car',
-    vehicle: false,
-    prefix: 'LIC'
-  },
-  'licencia-duplicado': {
-    title: 'Duplicado de Licencia',
-    desc: 'Completa tus datos y un asesor te contactará para gestionar el duplicado de tu licencia.',
-    icon: 'fa-clone',
-    tag: 'Duplicado — Desde $34.99',
-    tagIcon: 'fa-car',
-    vehicle: false,
-    prefix: 'LIC'
-  },
-  'licencia-consulta': {
-    title: 'Consulta sobre Licencias',
-    desc: 'Un asesor especializado en licencias de conducir te orientará en todo el proceso.',
-    icon: 'fa-headset',
-    tag: 'Asesoría de Licencias',
-    tagIcon: 'fa-car',
-    vehicle: false,
-    prefix: 'LIC'
-  }
-};
+<!-- ========== PÁGINA PLACAS ========== -->
+<div class="page" id="page-placas">
+  <div class="service-detail-page">
+    <div class="container"><div class="sdp-hero"><button class="sdp-back" onclick="goTo('home')"><i class="fas fa-arrow-left"></i> Volver al Inicio</button><div class="sdp-badge"><i class="fas fa-id-card"></i> Placas Temporales</div><h1 class="sdp-title">Placas Temporales<br><span>Rápidas y Legales</span></h1><p class="sdp-desc">Obtén tu placa temporal oficial válida en los 50 estados de USA. Entrega en 24-48 horas directamente en tu puerta.</p><div class="sdp-features"><div class="sdp-feature"><i class="fas fa-check-circle"></i> 100% Legal DMV</div><div class="sdp-feature"><i class="fas fa-truck"></i> Entrega a Domicilio</div><div class="sdp-feature"><i class="fas fa-globe"></i> 50 Estados</div><div class="sdp-feature"><i class="fas fa-clock"></i> Desde 24 Horas</div></div></div></div>
+  </div>
+  <section class="sdp-cards-section"><div class="container"><div class="section-header"><div class="section-badge"><i class="fas fa-id-card"></i> Tipos de Placa</div><h2 class="section-title">Elige el Tipo de Placa que Necesitas</h2><p class="section-desc">Tres opciones disponibles para adaptarse a tus necesidades y urgencia.</p></div><div class="sdp-cards-grid"><div class="sdp-card fade-up"><div class="sdp-card-icon"><i class="fas fa-id-card"></i></div><h3>Placa Temporal Estándar</h3><p>Placa temporal oficial válida por 60 días. Perfecta para vehículos recién comprados o en proceso de registro.</p><div class="sdp-card-price"><i class="fas fa-tag"></i> Desde $99.99</div><button class="sdp-card-btn" onclick="openModal('placa-estandar')"><i class="fas fa-paper-plane"></i> Solicitar Ahora</button></div><div class="sdp-card fade-up"><div class="sdp-card-icon"><i class="fas fa-bolt"></i></div><h3>Placa Express</h3><p>Procesamiento prioritario con entrega en 24 horas. Validez de 30 días. Ideal cuando necesitas tu placa urgente.</p><div class="sdp-card-price"><i class="fas fa-tag"></i> Desde $60</div><button class="sdp-card-btn" onclick="openModal('placa-express')"><i class="fas fa-paper-plane"></i> Solicitar Ahora</button></div><div class="sdp-card fade-up"><div class="sdp-card-icon"><i class="fas fa-sync-alt"></i></div><h3>Extendida</h3><p>Renueva tu placa temporal fácilmente en línea. Opciones de validez extendida hasta 90 días disponibles.</p><div class="sdp-card-price"><i class="fas fa-tag"></i> Desde $130</div><button class="sdp-card-btn" onclick="openModal('placa-renovacion')"><i class="fas fa-paper-plane"></i> Solicitar Ahora</button></div></div></div></section>
+  <section class="how-section"><div class="container" style="text-align:center"><h2 class="section-title white">¿Necesitas Ayuda para Elegir?</h2><p class="section-desc white">Un asesor te ayudará a seleccionar la mejor opción para tu situación.</p><div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap"><button class="btn btn-white" onclick="openModal('placa-consulta')"><i class="fas fa-headset"></i> Hablar con un Asesor</button><button class="btn btn-outline" onclick="goTo('home')"><i class="fas fa-home"></i> Volver al Inicio</button></div></div></section>
+  <footer class="footer"><div class="container"><div class="footer-bottom" style="border-top:none"><p>© 2024 DMVCarPortal. Todos los derechos reservados.</p><div class="footer-badges"><div class="footer-badge"><i class="fas fa-lock"></i> SSL Seguro</div><div class="footer-badge"><i class="fas fa-check-circle"></i> DMV Aprobado</div><div class="footer-badge"><i class="fas fa-globe"></i> 50 Estados</div></div></div></div></footer>
+</div>
 
-function openModal(serviceKey) {
-  const cfg = serviceConfig[serviceKey] || serviceConfig['general'];
-  currentService = serviceKey;
+<!-- ========== PÁGINA TÍTULOS ========== -->
+<div class="page" id="page-titulos">
+  <div class="service-detail-page">
+    <div class="container"><div class="sdp-hero"><button class="sdp-back" onclick="goTo('home')"><i class="fas fa-arrow-left"></i> Volver al Inicio</button><div class="sdp-badge"><i class="fas fa-file-alt"></i> Títulos</div><h1 class="sdp-title">Títulos<br><span>Sin Complicaciones</span></h1><p class="sdp-desc">Transferencias, duplicados y correcciones de título vehicular. Proceso completamente en línea sin visitar el DMV.</p><div class="sdp-features"><div class="sdp-feature"><i class="fas fa-laptop"></i> 100% En Línea</div><div class="sdp-feature"><i class="fas fa-check-circle"></i> Proceso Legal</div><div class="sdp-feature"><i class="fas fa-clock"></i> Entrega 3-5 Días</div><div class="sdp-feature"><i class="fas fa-headset"></i> Asesor Personal</div></div></div></div>
+  </div>
+  <section class="sdp-cards-section"><div class="container"><div class="section-header"><div class="section-badge"><i class="fas fa-file-alt"></i> Tipos de Trámite</div><h2 class="section-title">Elige el Trámite que Necesitas</h2><p class="section-desc">Tres opciones disponibles para gestionar tu título vehicular de forma rápida y segura.</p></div><div class="sdp-cards-grid"><div class="sdp-card fade-up"><div class="sdp-card-icon"><i class="fas fa-exchange-alt"></i></div><h3>Transferencia de Título</h3><p>Transfiere el título de tu vehículo de forma rápida y segura. Proceso completamente en línea sin visitar el DMV.</p><div class="sdp-card-price"><i class="fas fa-tag"></i> Desde $490</div><button class="sdp-card-btn" onclick="openModal('titulo-transferencia')"><i class="fas fa-paper-plane"></i> Solicitar Ahora</button></div><div class="sdp-card fade-up"><div class="sdp-card-icon"><i class="fas fa-copy"></i></div><h3>Recuperacion de titulo perdido</h3><p>¿Perdiste tu título vehicular? Obtén un duplicado oficial de forma rápida. Entrega en 3-5 días hábiles.</p><div class="sdp-card-price"><i class="fas fa-tag"></i> Desde $600</div><button class="sdp-card-btn" onclick="openModal('titulo-duplicado')"><i class="fas fa-paper-plane"></i> Solicitar Ahora</button></div><div class="sdp-card fade-up"><div class="sdp-card-icon"><i class="fas fa-edit"></i></div><h3>Copia de titulo</h3><p>Corrige errores en tu título vehicular como nombre, dirección o datos del vehículo de manera oficial.</p><div class="sdp-card-price"><i class="fas fa-tag"></i> Desde $400</div><button class="sdp-card-btn" onclick="openModal('titulo-correccion')"><i class="fas fa-paper-plane"></i> Solicitar Ahora</button></div></div></div></section>
+  <section class="how-section"><div class="container" style="text-align:center"><h2 class="section-title white">¿Tienes Preguntas sobre tu Título?</h2><p class="section-desc white">Nuestros asesores especializados en títulos vehiculares están listos para ayudarte.</p><div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap"><button class="btn btn-white" onclick="openModal('titulo-consulta')"><i class="fas fa-headset"></i> Hablar con un Asesor</button><button class="btn btn-outline" onclick="goTo('home')"><i class="fas fa-home"></i> Volver al Inicio</button></div></div></section>
+  <footer class="footer"><div class="container"><div class="footer-bottom" style="border-top:none"><p>© 2024 DMVCarPortal. Todos los derechos reservados.</p><div class="footer-badges"><div class="footer-badge"><i class="fas fa-lock"></i> SSL Seguro</div><div class="footer-badge"><i class="fas fa-check-circle"></i> DMV Aprobado</div><div class="footer-badge"><i class="fas fa-globe"></i> 50 Estados</div></div></div></div></footer>
+</div>
 
-  document.getElementById('modalIcon').className = 'fas ' + cfg.icon;
-  document.getElementById('modalTagIcon').className = 'fas ' + cfg.tagIcon;
-  document.getElementById('modalTagText').textContent = cfg.tag;
-  document.getElementById('modalTitle').textContent = cfg.title;
-  document.getElementById('modalDesc').textContent = cfg.desc;
-  document.getElementById('cfServicio').value = serviceKey;
+<!-- ========== PÁGINA LICENCIAS ========== -->
+<div class="page" id="page-licencias">
+  <div class="service-detail-page">
+    <div class="container"><div class="sdp-hero"><button class="sdp-back" onclick="goTo('home')"><i class="fas fa-arrow-left"></i> Volver al Inicio</button><div class="sdp-badge"><i class="fas fa-car"></i> Licencias de Conducir</div><h1 class="sdp-title">Licencias de Conducir<br><span>Fácil y Rápido</span></h1><p class="sdp-desc">Nuevas licencias, renovaciones y duplicados para todos los estados. Asistencia personalizada en cada paso del proceso.</p><div class="sdp-features"><div class="sdp-feature"><i class="fas fa-user-check"></i> Asistencia Personal</div><div class="sdp-feature"><i class="fas fa-globe"></i> Todos los Estados</div><div class="sdp-feature"><i class="fas fa-clock"></i> Proceso Rápido</div><div class="sdp-feature"><i class="fas fa-shield-alt"></i> 100% Legal</div></div></div></div>
+  </div>
+  <section class="sdp-cards-section"><div class="container"><div class="section-header"><div class="section-badge"><i class="fas fa-car"></i> Tipos de Trámite</div><h2 class="section-title">Elige el Trámite de Licencia que Necesitas</h2><p class="section-desc">Tres opciones disponibles para gestionar tu licencia de conducir sin complicaciones.</p></div><div class="sdp-cards-grid"><div class="sdp-card fade-up"><div class="sdp-card-icon"><i class="fas fa-plus-circle"></i></div><h3>Nueva Licencia</h3><p>Obtén tu primera licencia de conducir con nuestra asistencia completa. Te guiamos en cada paso del proceso.</p><div class="sdp-card-price"><i class="fas fa-tag"></i> Desde $59.99</div><button class="sdp-card-btn" onclick="openModal('licencia-nueva')"><i class="fas fa-paper-plane"></i> Solicitar Ahora</button></div><div class="sdp-card fade-up"><div class="sdp-card-icon"><i class="fas fa-redo"></i></div><h3>Renovación de Licencia</h3><p>Renueva tu licencia de conducir antes de que venza. Proceso simplificado sin largas filas en el DMV.</p><div class="sdp-card
+    <!-- Continuación de la página LICENCIAS (sdp-card faltante) -->
+                        </div>
+                        <div class="sdp-card fade-up">
+                            <div class="sdp-card-icon"><i class="fas fa-clone"></i></div>
+                            <h3>Duplicado de Licencia</h3>
+                            <p>¿Perdiste o te robaron tu licencia? Obtén un duplicado oficial rápidamente con nuestra asistencia.</p>
+                            <div class="sdp-card-price"><i class="fas fa-tag"></i> Desde $34.99</div>
+                            <button class="sdp-card-btn" onclick="openModal('licencia-duplicado')"><i class="fas fa-paper-plane"></i> Solicitar Ahora</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="how-section">
+                <div class="container" style="text-align:center">
+                    <h2 class="section-title white">¿Necesitas Orientación?</h2>
+                    <p class="section-desc white">Nuestros asesores especializados en licencias te guiarán en todo el proceso.</p>
+                    <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap">
+                        <button class="btn btn-white" onclick="openModal('licencia-consulta')"><i class="fas fa-headset"></i> Hablar con un Asesor</button>
+                        <button class="btn btn-outline" onclick="goTo('home')"><i class="fas fa-home"></i> Volver al Inicio</button>
+                    </div>
+                </div>
+            </section>
+            <footer class="footer">
+                <div class="container"><div class="footer-bottom" style="border-top:none"><p>© 2024 DMVCarPortal. Todos los derechos reservados.</p><div class="footer-badges"><div class="footer-badge"><i class="fas fa-lock"></i> SSL Seguro</div><div class="footer-badge"><i class="fas fa-check-circle"></i> DMV Aprobado</div><div class="footer-badge"><i class="fas fa-globe"></i> 50 Estados</div></div></div></div>
+            </footer>
+        </div>
 
-  document.getElementById('cfVehicleGroup').style.display = cfg.vehicle ? 'flex' : 'none';
+        <!-- ========== PÁGINA STICKERS ========== -->
+        <div class="page" id="page-stickers">
+            <div class="service-detail-page">
+                <div class="hero-circle-1"></div><div class="hero-circle-2"></div>
+                <div class="container">
+                    <div class="sdp-hero">
+                        <button class="sdp-back" onclick="goTo('home')"><i class="fas fa-arrow-left"></i> Volver al Inicio</button>
+                        <div class="sdp-badge"><i class="fas fa-tag"></i> Stickers Oficiales</div>
+                        <h1 class="sdp-title">Stickers de Registro<br><span>Envío Rápido</span></h1>
+                        <p class="sdp-desc">Obtén tus calcomanías de registro vehicular anual. Válidas en los 50 estados.</p>
+                        <div class="sdp-features">
+                            <div class="sdp-feature"><i class="fas fa-calendar-alt"></i> Vigencia Anual</div>
+                            <div class="sdp-feature"><i class="fas fa-truck"></i> Envío a Domicilio</div>
+                            <div class="sdp-feature"><i class="fas fa-globe"></i> 50 Estados</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section class="sdp-cards-section">
+                <div class="container">
+                    <div class="section-header">
+                        <div class="section-badge"><i class="fas fa-tag"></i> Tipos de Sticker</div>
+                        <h2 class="section-title">Elige tu Sticker</h2>
+                        <p class="section-desc">Stickers oficiales para tu vehículo.</p>
+                    </div>
+                    <div class="sdp-cards-grid">
+                        <div class="sdp-card fade-up">
+                            <div class="sdp-card-icon"><i class="fas fa-calendar-alt"></i></div>
+                            <h3>Sticker Anual Estándar</h3>
+                            <p>Calcomanía de registro válida por 1 año. Entrega en 5-7 días.</p>
+                            <div class="sdp-card-price"><i class="fas fa-tag"></i> $45</div>
+                            <button class="sdp-card-btn" onclick="openModal('sticker-anual')"><i class="fas fa-paper-plane"></i> Solicitar Ahora</button>
+                        </div>
+                        <div class="sdp-card fade-up">
+                            <div class="sdp-card-icon"><i class="fas fa-bolt"></i></div>
+                            <h3>Sticker Express</h3>
+                            <p>Procesamiento prioritario. Entrega en 24-48 horas.</p>
+                            <div class="sdp-card-price"><i class="fas fa-tag"></i> $65</div>
+                            <button class="sdp-card-btn" onclick="openModal('sticker-express')"><i class="fas fa-paper-plane"></i> Solicitar Ahora</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="how-section">
+                <div class="container" style="text-align:center">
+                    <h2 class="section-title white">¿Necesitas tu Sticker rápido?</h2>
+                    <p class="section-desc white">Contáctanos y recíbelo en tu puerta.</p>
+                    <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap">
+                        <button class="btn btn-white" onclick="openModal('sticker-consulta')"><i class="fas fa-headset"></i> Hablar con un Asesor</button>
+                        <button class="btn btn-outline" onclick="goTo('home')"><i class="fas fa-home"></i> Volver al Inicio</button>
+                    </div>
+                </div>
+            </section>
+            <footer class="footer">
+                <div class="container"><div class="footer-bottom" style="border-top:none"><p>© 2024 DMVCarPortal. Todos los derechos reservados.</p><div class="footer-badges"><div class="footer-badge"><i class="fas fa-lock"></i> SSL Seguro</div><div class="footer-badge"><i class="fas fa-check-circle"></i> DMV Aprobado</div><div class="footer-badge"><i class="fas fa-globe"></i> 50 Estados</div></div></div></div>
+            </footer>
+        </div>
 
-  ['cfNombre','cfApellido','cfEmail','cfTelefono','cfVehiculo','cfMensaje'].forEach(id => {
-    const el = document.getElementById(id);
-    if (el) { el.value = ''; el.className = 'cf-input'; }
-  });
-  document.getElementById('cfEstado').value = '';
-  document.getElementById('cfContacto').value = '';
+        <!-- ========== PÁGINA INSPECCIONES ========== -->
+        <div class="page" id="page-inspecciones">
+            <div class="service-detail-page">
+                <div class="hero-circle-1"></div><div class="hero-circle-2"></div>
+                <div class="container">
+                    <div class="sdp-hero">
+                        <button class="sdp-back" onclick="goTo('home')"><i class="fas fa-arrow-left"></i> Volver al Inicio</button>
+                        <div class="sdp-badge"><i class="fas fa-clipboard-list"></i> Inspecciones Vehiculares</div>
+                        <h1 class="sdp-title">Inspección Oficial<br><span>Resultados Rápidos</span></h1>
+                        <p class="sdp-desc">Inspección vehicular oficial para trámites de transferencia y registro. Centros autorizados.</p>
+                        <div class="sdp-features">
+                            <div class="sdp-feature"><i class="fas fa-check-circle"></i> Certificado Digital</div>
+                            <div class="sdp-feature"><i class="fas fa-clock"></i> Resultado en 24h</div>
+                            <div class="sdp-feature"><i class="fas fa-globe"></i> 50 Estados</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section class="sdp-cards-section">
+                <div class="container">
+                    <div class="section-header">
+                        <div class="section-badge"><i class="fas fa-clipboard-list"></i> Tipos de Inspección</div>
+                        <h2 class="section-title">Elige tu inspección</h2>
+                        <p class="section-desc">Dos opciones según tu trámite.</p>
+                    </div>
+                    <div class="sdp-cards-grid">
+                        <div class="sdp-card fade-up">
+                            <div class="sdp-card-icon"><i class="fas fa-exchange-alt"></i></div>
+                            <h3>Inspección para Transferencia</h3>
+                            <p>Requerida por el DMV para transferir título. Incluye certificado.</p>
+                            <div class="sdp-card-price"><i class="fas fa-tag"></i> $89</div>
+                            <button class="sdp-card-btn" onclick="openModal('inspeccion-transferencia')"><i class="fas fa-paper-plane"></i> Solicitar Ahora</button>
+                        </div>
+                        <div class="sdp-card fade-up">
+                            <div class="sdp-card-icon"><i class="fas fa-registered"></i></div>
+                            <h3>Inspección de Registro</h3>
+                            <p>Para registro inicial de vehículo nuevo o usado.</p>
+                            <div class="sdp-card-price"><i class="fas fa-tag"></i> $79</div>
+                            <button class="sdp-card-btn" onclick="openModal('inspeccion-registro')"><i class="fas fa-paper-plane"></i> Solicitar Ahora</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="how-section">
+                <div class="container" style="text-align:center">
+                    <h2 class="section-title white">¿Necesitas una inspección urgente?</h2>
+                    <p class="section-desc white">Agenda con uno de nuestros centros autorizados.</p>
+                    <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap">
+                        <button class="btn btn-white" onclick="openModal('inspeccion-consulta')"><i class="fas fa-headset"></i> Hablar con un Asesor</button>
+                        <button class="btn btn-outline" onclick="goTo('home')"><i class="fas fa-home"></i> Volver al Inicio</button>
+                    </div>
+                </div>
+            </section>
+            <footer class="footer">
+                <div class="container"><div class="footer-bottom" style="border-top:none"><p>© 2024 DMVCarPortal. Todos los derechos reservados.</p><div class="footer-badges"><div class="footer-badge"><i class="fas fa-lock"></i> SSL Seguro</div><div class="footer-badge"><i class="fas fa-check-circle"></i> DMV Aprobado</div><div class="footer-badge"><i class="fas fa-globe"></i> 50 Estados</div></div></div></div>
+            </footer>
+        </div>
 
-  document.getElementById('contactModal').classList.add('open');
-  document.body.style.overflow = 'hidden';
-}
+        <!-- ========== PÁGINA VERIFICACIÓN ========== -->
+        <div class="page" id="page-verify">
+            <div class="verify-page">
+                <div class="hero-circle-1"></div><div class="hero-circle-2"></div>
+                <div class="container">
+                    <div class="verify-hero-section">
+                        <button class="sdp-back" onclick="goTo('home')" style="margin:0 auto 25px;display:inline-flex"><i class="fas fa-arrow-left"></i> Volver al Inicio</button>
+                        <div class="section-badge" style="margin-bottom:16px"><i class="fas fa-search"></i> Verificación de Trámites</div>
+                        <h1>Verifica el Estado de <span>Tu Trámite</span></h1>
+                        <p class="verify-tagline">Consulta el estado de cualquiera de tus trámites vehiculares de forma rápida y segura.</p>
+                        <p class="verify-sub">Verifica con nosotros — Tu tranquilidad es nuestra prioridad</p>
+                        <div class="verify-box">
+                            <div class="verify-box-title"><i class="fas fa-search"></i> Selecciona el servicio que deseas verificar</div>
+                            <div class="verify-service-grid">
+                                <div class="verify-opt selected" onclick="selectVerify(this,'seguros')"><i class="fas fa-shield-alt"></i><span>Seguros</span></div>
+                                <div class="verify-opt" onclick="selectVerify(this,'placas')"><i class="fas fa-id-card"></i><span>Placas</span></div>
+                                <div class="verify-opt" onclick="selectVerify(this,'titulos')"><i class="fas fa-file-alt"></i><span>Títulos</span></div>
+                                <div class="verify-opt" onclick="selectVerify(this,'licencias')"><i class="fas fa-car"></i><span>Licencias</span></div>
+                                <div class="verify-opt" onclick="selectVerify(this,'stickers')"><i class="fas fa-tag"></i><span>Stickers</span></div>
+                                <div class="verify-opt" onclick="selectVerify(this,'inspecciones')"><i class="fas fa-clipboard-list"></i><span>Inspecciones</span></div>
+                            </div>
+                            <div class="verify-input-row">
+                                <input type="text" class="verify-input" id="verifyId" placeholder="Ingresa tu ID o VIN"/>
+                                <button class="verify-btn" onclick="runVerify()"><i class="fas fa-search"></i> Verificar</button>
+                            </div>
+                            <p class="verify-hint"><i class="fas fa-info-circle"></i> Tu ID de trámite fue enviado a tu correo al momento de realizar tu solicitud.</p>
+                            <div id="verifyResult" class="verify-result"></div>
+                        </div>
+                    </div>
+                </div>
+                <div style="background:var(--gray);padding:70px 0;position:relative;z-index:2">
+                    <div class="container">
+                        <div class="section-header">
+                            <div class="section-badge-blue"><i class="fas fa-info-circle"></i> ¿Cómo Verificar?</div>
+                            <h2 class="section-title">Pasos para Verificar tu Trámite</h2>
+                            <p class="section-desc">Sigue estos sencillos pasos para consultar el estado de tu trámite en segundos.</p>
+                        </div>
+                        <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:22px">
+                            <div class="sdp-card fade-up" style="border-left-color:var(--blue);text-align:center">
+                                <div class="sdp-card-icon" style="margin:0 auto 16px"><i class="fas fa-th-large"></i></div>
+                                <h3>1. Elige el Servicio</h3>
+                                <p>Selecciona el tipo de trámite que deseas verificar.</p>
+                            </div>
+                            <div class="sdp-card fade-up" style="border-left-color:var(--blue);text-align:center">
+                                <div class="sdp-card-icon" style="margin:0 auto 16px"><i class="fas fa-keyboard"></i></div>
+                                <h3>2. Ingresa tu ID</h3>
+                                <p>Escribe el ID único de tu trámite que recibiste por correo.</p>
+                            </div>
+                            <div class="sdp-card fade-up" style="border-left-color:var(--blue);text-align:center">
+                                <div class="sdp-card-icon" style="margin:0 auto 16px"><i class="fas fa-search"></i></div>
+                                <h3>3. Consulta el Estado</h3>
+                                <p>Presiona verificar y obtén el estado actual de tu trámite al instante.</p>
+                            </div>
+                            <div class="sdp-card fade-up" style="border-left-color:var(--blue);text-align:center">
+                                <div class="sdp-card-icon" style="margin:0 auto 16px"><i class="fas fa-headset"></i></div>
+                                <h3>4. ¿Necesitas Ayuda?</h3>
+                                <p>Contáctanos por WhatsApp y un asesor te ayudará de inmediato.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <section class="how-section" style="position:relative;z-index:2">
+                    <div class="container" style="text-align:center">
+                        <div class="section-badge"><i class="fas fa-paper-plane"></i> ¿Aún no tienes un trámite?</div>
+                        <h2 class="section-title white">Inicia tu Trámite Hoy Mismo</h2>
+                        <p class="section-desc white">Nuestros asesores están listos para ayudarte con cualquier trámite vehicular en USA.</p>
+                        <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap">
+                            <button class="btn btn-white" onclick="openModal('general')"><i class="fas fa-paper-plane"></i> Solicitar Servicio</button>
+                            <button class="btn btn-outline" onclick="goTo('home')"><i class="fas fa-home"></i> Ir al Inicio</button>
+                        </div>
+                    </div>
+                </section>
+                <footer class="footer" style="position:relative;z-index:2">
+                    <div class="container"><div class="footer-bottom" style="border-top:none"><p>© 2024 DMVCarPortal. Todos los derechos reservados.</p><div class="footer-badges"><div class="footer-badge"><i class="fas fa-lock"></i> SSL Seguro</div><div class="footer-badge"><i class="fas fa-check-circle"></i> DMV Aprobado</div><div class="footer-badge"><i class="fas fa-globe"></i> 50 Estados</div></div></div></div>
+                </footer>
+            </div>
+        </div>
 
-function closeModal() {
-  document.getElementById('contactModal').classList.remove('open');
-  document.body.style.overflow = '';
-}
+        <!-- ========== MODALES ========== -->
+        <div class="modal-overlay" id="contactModal">
+            <div class="modal-box">
+                <button class="modal-close" onclick="closeModal()"><i class="fas fa-times"></i></button>
+                <div class="modal-header">
+                    <div class="modal-icon-wrap" id="modalIconWrap"><i class="fas fa-paper-plane" id="modalIcon"></i></div>
+                    <div class="modal-service-tag" id="modalTag"><i class="fas fa-headset" id="modalTagIcon"></i><span id="modalTagText">Consulta General</span></div>
+                    <h2 class="modal-title" id="modalTitle">Solicitar Servicio</h2>
+                    <p class="modal-desc" id="modalDesc">Completa el formulario y un asesor se pondrá en contacto contigo en menos de 24 horas.</p>
+                </div>
+                <div class="cf-row">
+                    <div class="cf-group"><label><i class="fas fa-user"></i> Nombre *</label><input type="text" class="cf-input" id="cfNombre" placeholder="Juan"></div>
+                    <div class="cf-group"><label><i class="fas fa-user"></i> Apellido *</label><input type="text" class="cf-input" id="cfApellido" placeholder="García"></div>
+                </div>
+                <div class="cf-row">
+                    <div class="cf-group"><label><i class="fas fa-envelope"></i> Correo Electrónico *</label><input type="email" class="cf-input" id="cfEmail" placeholder="juan@email.com"></div>
+                    <div class="cf-group"><label><i class="fas fa-phone"></i> Teléfono / WhatsApp *</label><input type="tel" class="cf-input" id="cfTelefono" placeholder="(555) 000-0000"></div>
+                </div>
+                <div class="cf-row">
+                    <div class="cf-group"><label><i class="fas fa-map-marker-alt"></i> Estado *</label><select class="cf-input" id="cfEstado"><option value="">Selecciona tu Estado</option><option>Alabama</option><option>Alaska</option><option>Arizona</option><option>Arkansas</option><option>California</option><option>Colorado</option><option>Connecticut</option><option>Delaware</option><option>Florida</option><option>Georgia</option><option>Hawaii</option><option>Idaho</option><option>Illinois</option><option>Indiana</option><option>Iowa</option><option>Kansas</option><option>Kentucky</option><option>Louisiana</option><option>Maine</option><option>Maryland</option><option>Massachusetts</option><option>Michigan</option><option>Minnesota</option><option>Mississippi</option><option>Missouri</option><option>Montana</option><option>Nebraska</option><option>Nevada</option><option>New Hampshire</option><option>New Jersey</option><option>New Mexico</option><option>New York</option><option>North Carolina</option><option>North Dakota</option><option>Ohio</option><option>Oklahoma</option><option>Oregon</option><option>Pennsylvania</option><option>Rhode Island</option><option>South Carolina</option><option>South Dakota</option><option>Tennessee</option><option>Texas</option><option>Utah</option><option>Vermont</option><option>Virginia</option><option>Washington</option><option>West Virginia</option><option>Wisconsin</option><option>Wyoming</option></select></div>
+                    <div class="cf-group"><label><i class="fas fa-comments"></i> Método de Contacto *</label><select class="cf-input" id="cfContacto"><option value="">Selecciona una opción</option><option>WhatsApp</option><option>Llamada Telefónica</option><option>Correo Electrónico</option></select></div>
+                </div>
+                <div class="cf-group" id="cfVehicleGroup"><label><i class="fas fa-car"></i> Información del Vehículo</label><input type="text" class="cf-input" id="cfVehiculo" placeholder="Marca, Modelo, Año (ej. Toyota Camry 2022)"></div>
+                <div class="cf-group"><label><i class="fas fa-comment-alt"></i> Mensaje o Consulta Adicional</label><textarea class="cf-input" id="cfMensaje" rows="3" placeholder="Cuéntanos más sobre tu trámite o cualquier duda que tengas..."></textarea></div>
+                <input type="hidden" id="cfServicio" value="general">
+                <button class="cf-submit" id="cfSubmitBtn" onclick="submitForm()"><i class="fas fa-paper-plane"></i> Enviar Solicitud — Un Asesor te Contactará</button>
+                <div class="cf-note"><i class="fas fa-lock"></i> Tu información es 100% confidencial y segura. No compartimos tus datos.</div>
+            </div>
+        </div>
 
-function closeSuccess() {
-  document.getElementById('successModal').classList.remove('open');
-  document.body.style.overflow = '';
-}
+        <div class="modal-overlay" id="successModal">
+            <div class="success-box">
+                <div class="success-icon"><i class="fas fa-check"></i></div>
+                <h2 class="success-title">¡Solicitud Enviada!</h2>
+                <p class="success-desc">Tu solicitud ha sido recibida exitosamente. Un asesor especializado se pondrá en contacto contigo en menos de 24 horas.</p>
+                <div class="success-id" id="successId">DMV-000000</div>
+                <p class="success-id-note">Guarda este ID para verificar el estado de tu trámite</p>
+                <div class="success-steps">
+                    <div class="success-step"><i class="fas fa-envelope"></i> Recibirás un correo de confirmación en breve</div>
+                    <div class="success-step"><i class="fas fa-headset"></i> Un asesor te contactará en menos de 24 horas</div>
+                    <div class="success-step"><i class="fas fa-search"></i> Usa tu ID para verificar el estado de tu trámite</div>
+                </div>
+                <button class="cf-submit" onclick="closeSuccess()" style="margin-top:0"><i class="fas fa-check-circle"></i> Entendido</button>
+            </div>
+        </div>
 
-document.getElementById('contactModal').addEventListener('click', function(e) {
-  if (e.target === this) closeModal();
-});
-document.getElementById('successModal').addEventListener('click', function(e) {
-  if (e.target === this) closeSuccess();
-});
-document.addEventListener('keydown', e => {
-  if (e.key === 'Escape') {
-    closeModal();
-    closeSuccess();
-  }
-});
+        <!-- ========== JAVASCRIPT COMPLETO ========== -->
+        <script>
+            'use strict';
 
-function submitForm() {
-  const required = [
-    { id: 'cfNombre',   label: 'Nombre' },
-    { id: 'cfApellido', label: 'Apellido' },
-    { id: 'cfEmail',    label: 'Correo' },
-    { id: 'cfTelefono', label: 'Teléfono' },
-    { id: 'cfEstado',   label: 'Estado' },
-    { id: 'cfContacto', label: 'Método de Contacto' }
-  ];
+            let currentPage = 'home';
+            let currentVerifyService = 'seguros';
+            let currentService = 'general';
 
-  let hasError = false;
+            // Navegación
+            function goTo(page) {
+                document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+                const target = document.getElementById('page-' + page);
+                if (target) target.classList.add('active');
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+                document.querySelectorAll('.nav-links a').forEach(a => a.classList.remove('active'));
+                const navEl = document.getElementById('nav-' + page);
+                if (navEl) navEl.classList.add('active');
+                setTimeout(observeAnimations, 100);
+            }
 
-  required.forEach(field => {
-    const el = document.getElementById(field.id);
-    if (!el) return;
-    if (!el.value.trim()) {
-      el.classList.add('invalid');
-      el.classList.remove('valid');
-      hasError = true;
-    } else {
-      el.classList.add('valid');
-      el.classList.remove('invalid');
-    }
-  });
+            function openMobileMenu() {
+                document.getElementById('mobileMenu').classList.add('open');
+                document.body.style.overflow = 'hidden';
+            }
+            function closeMobileMenu() {
+                document.getElementById('mobileMenu').classList.remove('open');
+                document.body.style.overflow = '';
+            }
 
-  const emailEl = document.getElementById('cfEmail');
-  if (emailEl && emailEl.value) {
-    const emailOk = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emailEl.value);
-    if (!emailOk) {
-      emailEl.classList.add('invalid');
-      emailEl.classList.remove('valid');
-      hasError = true;
-    }
-  }
+            window.addEventListener('scroll', () => {
+                const navbar = document.getElementById('navbar');
+                if (window.scrollY > 60) navbar.classList.add('scrolled');
+                else navbar.classList.remove('scrolled');
+            });
 
-  if (hasError) {
-    const btn = document.getElementById('cfSubmitBtn');
-    btn.style.animation = 'shake 0.4s ease';
-    setTimeout(() => btn.style.animation = '', 500);
-    return;
-  }
+            // Contadores animados
+            function animateCounter(id, target, suffix) {
+                const el = document.getElementById(id);
+                if (!el) return;
+                let count = 0;
+                const step = target / 70;
+                const timer = setInterval(() => {
+                    count += step;
+                    if (count >= target) {
+                        count = target;
+                        clearInterval(timer);
+                    }
+                    el.textContent = Math.floor(count).toLocaleString() + (suffix || '');
+                }, 22);
+            }
 
-  const btn = document.getElementById('cfSubmitBtn');
-  const originalHTML = btn.innerHTML;
-  btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Enviando solicitud...';
-  btn.disabled = true;
+            const statsObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        animateCounter('s1', 50000, '+');
+                        animateCounter('s2', 50, '');
+                        animateCounter('s3', 24, 'h');
+                        animateCounter('s4', 99, '%');
+                        statsObserver.disconnect();
+                    }
+                });
+            }, { threshold: 0.3 });
 
-  setTimeout(() => {
-    const cfg = serviceConfig[currentService] || serviceConfig['general'];
-    const uniqueId = cfg.prefix + '-' + Math.floor(Math.random() * 900000 + 100000);
+            const statsBar = document.querySelector('.stats-bar');
+            if (statsBar) statsObserver.observe(statsBar);
 
-    btn.innerHTML = originalHTML;
-    btn.disabled = false;
+            // Animaciones scroll
+            function observeAnimations() {
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach((entry, i) => {
+                        if (entry.isIntersecting) {
+                            setTimeout(() => entry.target.classList.add('visible'), i * 100);
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                }, { threshold: 0.1 });
+                document.querySelectorAll('.fade-up:not(.visible), .fade-left:not(.visible), .fade-right:not(.visible)')
+                    .forEach(el => observer.observe(el));
+            }
+            observeAnimations();
 
-    closeModal();
+            // FAQ
+            function toggleFaq(qEl) {
+                const item = qEl.parentElement;
+                const answer = item.querySelector('.faq-a');
+                const isOpen = item.classList.contains('open');
+                document.querySelectorAll('.faq-item').forEach(i => {
+                    i.classList.remove('open');
+                    i.querySelector('.faq-a').classList.remove('open');
+                });
+                if (!isOpen) {
+                    item.classList.add('open');
+                    answer.classList.add('open');
+                }
+            }
 
-    document.getElementById('successId').textContent = uniqueId;
-    document.getElementById('successModal').classList.add('open');
-    document.body.style.overflow = 'hidden';
-  }, 2200);
-}
+            // Verificación (simulada con archivo JSON)
+            let clientesData = null;
+            async function cargarClientes() {
+                if (clientesData) return clientesData;
+                try {
+                    const response = await fetch('data/clientes.json');
+                    if (!response.ok) throw new Error('No se pudo cargar la base de datos');
+                    clientesData = await response.json();
+                    return clientesData;
+                } catch (error) {
+                    console.error(error);
+                    return null;
+                }
+            }
 
-/* ============================================
-   VALIDACIÓN EN TIEMPO REAL
-============================================ */
-document.addEventListener('DOMContentLoaded', () => {
-  document.querySelectorAll('.cf-input').forEach(input => {
-    input.addEventListener('focus', function() {
-      this.style.borderColor = 'var(--blue)';
-      this.style.background = 'white';
-      this.style.boxShadow = '0 0 0 4px rgba(0,82,204,0.08)';
-    });
-    input.addEventListener('blur', function() {
-      this.style.boxShadow = 'none';
-      if (this.value.trim()) {
-        this.classList.add('valid');
-        this.classList.remove('invalid');
-      } else {
-        this.classList.remove('valid');
-        this.style.borderColor = '#e8eef8';
-        this.style.background = 'var(--blue-pale)';
-      }
-    });
-    input.addEventListener('input', function() {
-      if (this.classList.contains('invalid') && this.value.trim()) {
-        this.classList.remove('invalid');
-        this.classList.add('valid');
-      }
-    });
-  });
-  goTo('home');
-});
+            async function runVerify() {
+                const id = document.getElementById('verifyId').value.trim();
+                const resultDiv = document.getElementById('verifyResult');
+                if (!id) {
+                    mostrarErrorVerificacion(resultDiv, 'Por favor ingresa tu ID de trámite.');
+                    return;
+                }
+                resultDiv.className = 'verify-result show pending';
+                resultDiv.innerHTML = `<div class="vr-head"><div class="vr-icon p"><i class="fas fa-spinner fa-spin"></i></div><div class="vr-title p">Buscando tu información...</div></div>`;
+                const clientes = await cargarClientes();
+                if (!clientes) {
+                    mostrarErrorVerificacion(resultDiv, 'Error al cargar la base de datos. Intenta más tarde.');
+                    return;
+                }
+                const cliente = clientes[id];
+                if (cliente) {
+                    sessionStorage.setItem('clienteData', JSON.stringify(cliente));
+                    window.location.href = 'verify-detail.html';
+                } else {
+                    mostrarErrorVerificacion(resultDiv, `No encontramos ningún trámite con el ID ${id}. Verifica que esté bien escrito.`);
+                }
+            }
 
-window.addEventListener('load', () => {
-  const tooltip = document.querySelector('.wa-tooltip-box');
-  if (tooltip) {
-    setTimeout(() => {
-      tooltip.style.opacity = '1';
-      tooltip.style.transform = 'translateX(0)';
-      setTimeout(() => {
-        tooltip.style.opacity = '0';
-        tooltip.style.transform = 'translateX(10px)';
-      }, 3500);
-    }, 2500);
-  }
-});
+            function mostrarErrorVerificacion(div, mensaje) {
+                div.className = 'verify-result show error';
+                div.innerHTML = `
+                    <div class="vr-head"><div class="vr-icon e"><i class="fas fa-exclamation-triangle"></i></div><div class="vr-title e">Error</div></div>
+                    <p style="font-size:14px;color:var(--text2)">${mensaje}</p>
+                    <button onclick="window.open('https://wa.me/message/DIJO3NMFOQJZM1','_blank')" style="margin-top:15px; background:#25D366; color:white; border:none; padding:10px 20px; border-radius:30px; font-weight:bold; cursor:pointer;">
+                        <i class="fab fa-whatsapp"></i> Contactar Asesor
+                    </button>
+                `;
+            }
 
-const pageObserver = new MutationObserver(() => {
-  observeAnimations();
-});
-document.querySelectorAll('.page').forEach(page => {
-  pageObserver.observe(page, { attributes: true, attributeFilter: ['class'] });
-});
+            function selectVerify(el, service) {
+                document.querySelectorAll('.verify-opt').forEach(o => o.classList.remove('selected'));
+                el.classList.add('selected');
+                currentVerifyService = service;
+                const result = document.getElementById('verifyResult');
+                result.className = 'verify-result';
+                result.innerHTML = '';
+            }
 
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener('click', function(e) {
-    const href = this.getAttribute('href');
-    if (href === '#') return;
-    e.preventDefault();
-    const target = document.querySelector(href);
-    if (target) {
-      const top = target.getBoundingClientRect().top + window.pageYOffset - 80;
-      window.scrollTo({ top, behavior: 'smooth' });
-    }
-  });
-});
+            // Configuración de modales (ampliada para stickers e inspecciones)
+            const serviceConfig = {
+                'general': { title: 'Solicitar Servicio', desc: 'Completa el formulario y un asesor se pondrá en contacto contigo en menos de 24 horas.', icon: 'fa-paper-plane', tag: 'Consulta General', tagIcon: 'fa-headset', vehicle: false, prefix: 'DMV' },
+                'promo-combo': { title: '🔥 Promoción Combo — Placa + Seguro', desc: 'Aprovecha nuestra oferta especial por tiempo limitado: Placa Temporal + Seguro de Auto por solo $150.', icon: 'fa-fire', tag: 'Combo Promocional — $150', tagIcon: 'fa-fire', vehicle: true, prefix: 'PRM' },
+                'seguro-basico': { title: 'Solicitar Seguro Básico', desc: 'Completa tus datos y un asesor de seguros te contactará para activar tu cobertura básica.', icon: 'fa-shield-alt', tag: 'Seguro Básico — $49.99/mes', tagIcon: 'fa-shield-alt', vehicle: true, prefix: 'INS' },
+                'seguro-full': { title: 'Solicitar Seguro Full Cover', desc: 'Completa tus datos y un asesor te contactará para activar tu cobertura completa inmediatamente.', icon: 'fa-shield-alt', tag: 'Full Cover — $89.99/mes', tagIcon: 'fa-shield-alt', vehicle: true, prefix: 'INS' },
+                'seguro-consulta': { title: 'Consulta sobre Seguros', desc: 'Un asesor especializado en seguros te ayudará a elegir el plan perfecto para ti.', icon: 'fa-headset', tag: 'Asesoría de Seguros', tagIcon: 'fa-shield-alt', vehicle: false, prefix: 'INS' },
+                'placa-estandar': { title: 'Solicitar Placa Estándar', desc: 'Completa tus datos y un asesor te contactará para procesar tu placa temporal estándar.', icon: 'fa-id-card', tag: 'Placa Estándar — Desde $29.99', tagIcon: 'fa-id-card', vehicle: true, prefix: 'PLT' },
+                'placa-express': { title: 'Solicitar Placa Express', desc: 'Completa tus datos y un asesor te contactará para procesar tu placa express en 24 horas.', icon: 'fa-bolt', tag: 'Placa Express — Desde $49.99', tagIcon: 'fa-id-card', vehicle: true, prefix: 'PLT' },
+                'placa-renovacion': { title: 'Renovar Placa Temporal', desc: 'Completa tus datos y un asesor te contactará para gestionar la renovación de tu placa.', icon: 'fa-sync-alt', tag: 'Renovación — Desde $19.99', tagIcon: 'fa-id-card', vehicle: true, prefix: 'PLT' },
+                'placa-consulta': { title: 'Consulta sobre Placas', desc: 'Un asesor te ayudará a elegir el tipo de placa temporal que mejor se adapte a tu situación.', icon: 'fa-headset', tag: 'Asesoría de Placas', tagIcon: 'fa-id-card', vehicle: false, prefix: 'PLT' },
+                'titulo-transferencia': { title: 'Transferencia de Título', desc: 'Completa tus datos y un asesor te contactará para gestionar la transferencia de tu título.', icon: 'fa-exchange-alt', tag: 'Transferencia — Desde $39.99', tagIcon: 'fa-file-alt', vehicle: true, prefix: 'TTL' },
+                'titulo-duplicado': { title: 'Duplicado de Título', desc: 'Completa tus datos y un asesor te contactará para gestionar el duplicado de tu título.', icon: 'fa-copy', tag: 'Duplicado — Desde $34.99', tagIcon: 'fa-file-alt', vehicle: true, prefix: 'TTL' },
+                'titulo-correccion': { title: 'Corrección de Título', desc: 'Completa tus datos y un asesor te contactará para gestionar la corrección de tu título.', icon: 'fa-edit', tag: 'Corrección — Desde $29.99', tagIcon: 'fa-file-alt', vehicle: true, prefix: 'TTL' },
+                'titulo-consulta': { title: 'Consulta sobre Títulos', desc: 'Un asesor especializado en títulos vehiculares te orientará en todo el proceso.', icon: 'fa-headset', tag: 'Asesoría de Títulos', tagIcon: 'fa-file-alt', vehicle: false, prefix: 'TTL' },
+                'licencia-nueva': { title: 'Nueva Licencia de Conducir', desc: 'Completa tus datos y un asesor te guiará en todo el proceso para obtener tu nueva licencia.', icon: 'fa-plus-circle', tag: 'Nueva Licencia — Desde $59.99', tagIcon: 'fa-car', vehicle: false, prefix: 'LIC' },
+                'licencia-renovacion': { title: 'Renovación de Licencia', desc: 'Completa tus datos y un asesor te contactará para gestionar la renovación de tu licencia.', icon: 'fa-redo', tag: 'Renovación — Desde $44.99', tagIcon: 'fa-car', vehicle: false, prefix: 'LIC' },
+                'licencia-duplicado': { title: 'Duplicado de Licencia', desc: 'Completa tus datos y un asesor te contactará para gestionar el duplicado de tu licencia.', icon: 'fa-clone', tag: 'Duplicado — Desde $34.99', tagIcon: 'fa-car', vehicle: false, prefix: 'LIC' },
+                'licencia-consulta': { title: 'Consulta sobre Licencias', desc: 'Un asesor especializado en licencias de conducir te orientará en todo el proceso.', icon: 'fa-headset', tag: 'Asesoría de Licencias', tagIcon: 'fa-car', vehicle: false, prefix: 'LIC' },
+                // Nuevos servicios
+                'sticker-anual': { title: 'Sticker Anual Estándar', desc: 'Recibe tu calcomanía de registro oficial con envío incluido.', icon: 'fa-tag', tag: 'Sticker Anual — $45', tagIcon: 'fa-tag', vehicle: true, prefix: 'STK' },
+                'sticker-express': { title: 'Sticker Express', desc: 'Procesamiento prioritario con entrega en 24-48 horas.', icon: 'fa-bolt', tag: 'Sticker Express — $65', tagIcon: 'fa-tag', vehicle: true, prefix: 'STK' },
+                'sticker-consulta': { title: 'Consulta sobre Stickers', desc: 'Un asesor te ayudará a obtener tu sticker de registro.', icon: 'fa-headset', tag: 'Asesoría de Stickers', tagIcon: 'fa-tag', vehicle: false, prefix: 'STK' },
+                'inspeccion-transferencia': { title: 'Inspección para Transferencia', desc: 'Inspección oficial para transferencia de título.', icon: 'fa-exchange-alt', tag: 'Inspección Transferencia — $89', tagIcon: 'fa-clipboard-list', vehicle: true, prefix: 'INS' },
+                'inspeccion-registro': { title: 'Inspección de Registro', desc: 'Inspección para registro inicial de vehículo.', icon: 'fa-registered', tag: 'Inspección Registro — $79', tagIcon: 'fa-clipboard-list', vehicle: true, prefix: 'INS' },
+                'inspeccion-consulta': { title: 'Consulta sobre Inspecciones', desc: 'Un asesor te guiará sobre el tipo de inspección que necesitas.', icon: 'fa-headset', tag: 'Asesoría de Inspecciones', tagIcon: 'fa-clipboard-list', vehicle: false, prefix: 'INS' }
+            };
 
-document.addEventListener('mousemove', (e) => {
-  const cards = document.querySelectorAll('.hero-card');
-  const x = (e.clientX / window.innerWidth - 0.5) * 10;
-  const y = (e.clientY / window.innerHeight - 0.5) * 10;
-  cards.forEach((card, i) => {
-    const factor = (i % 2 === 0) ? 1 : -1;
-    card.style.transform = `translateY(${factor * y * 0.5}px) translateX(${x * 0.3}px)`;
-  });
-});
+            function openModal(serviceKey) {
+                const cfg = serviceConfig[serviceKey] || serviceConfig['general'];
+                currentService = serviceKey;
+                document.getElementById('modalIcon').className = 'fas ' + cfg.icon;
+                document.getElementById('modalTagIcon').className = 'fas ' + cfg.tagIcon;
+                document.getElementById('modalTagText').textContent = cfg.tag;
+                document.getElementById('modalTitle').textContent = cfg.title;
+                document.getElementById('modalDesc').textContent = cfg.desc;
+                document.getElementById('cfServicio').value = serviceKey;
+                document.getElementById('cfVehicleGroup').style.display = cfg.vehicle ? 'flex' : 'none';
+                ['cfNombre','cfApellido','cfEmail','cfTelefono','cfVehiculo','cfMensaje'].forEach(id => {
+                    const el = document.getElementById(id);
+                    if (el) { el.value = ''; el.className = 'cf-input'; }
+                });
+                document.getElementById('cfEstado').value = '';
+                document.getElementById('cfContacto').value = '';
+                document.getElementById('contactModal').classList.add('open');
+                document.body.style.overflow = 'hidden';
+            }
 
-const promoTrack = document.querySelector('.promo-track');
-if (promoTrack) {
-  promoTrack.addEventListener('mouseenter', () => {
-    promoTrack.style.animationPlayState = 'paused';
-  });
-  promoTrack.addEventListener('mouseleave', () => {
-    promoTrack.style.animationPlayState = 'running';
-  });
-}
+            function closeModal() {
+                document.getElementById('contactModal').classList.remove('open');
+                document.body.style.overflow = '';
+            }
 
-document.querySelectorAll('.nav-links a, .footer-col a').forEach(link => {
-  if (!link.getAttribute('href') || link.getAttribute('href') === '#') {
-    link.addEventListener('click', e => e.preventDefault());
-  }
-});
-</script>
-</body>
-</html>
+            function closeSuccess() {
+                document.getElementById('successModal').classList.remove('open');
+                document.body.style.overflow = '';
+            }
+
+            document.getElementById('contactModal').addEventListener('click', function(e) { if (e.target === this) closeModal(); });
+            document.getElementById('successModal').addEventListener('click', function(e) { if (e.target === this) closeSuccess(); });
+            document.addEventListener('keydown', e => { if (e.key === 'Escape') { closeModal(); closeSuccess(); } });
+
+            function submitForm() {
+                const required = [
+                    { id: 'cfNombre', label: 'Nombre' },
+                    { id: 'cfApellido', label: 'Apellido' },
+                    { id: 'cfEmail', label: 'Correo' },
+                    { id: 'cfTelefono', label: 'Teléfono' },
+                    { id: 'cfEstado', label: 'Estado' },
+                    { id: 'cfContacto', label: 'Método de Contacto' }
+                ];
+                let hasError = false;
+                required.forEach(field => {
+                    const el = document.getElementById(field.id);
+                    if (!el) return;
+                    if (!el.value.trim()) {
+                        el.classList.add('invalid');
+                        el.classList.remove('valid');
+                        hasError = true;
+                    } else {
+                        el.classList.add('valid');
+                        el.classList.remove('invalid');
+                    }
+                });
+                const emailEl = document.getElementById('cfEmail');
+                if (emailEl && emailEl.value) {
+                    const emailOk = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emailEl.value);
+                    if (!emailOk) {
+                        emailEl.classList.add('invalid');
+                        emailEl.classList.remove('valid');
+                        hasError = true;
+                    }
+                }
+                if (hasError) {
+                    const btn = document.getElementById('cfSubmitBtn');
+                    btn.style.animation = 'shake 0.4s ease';
+                    setTimeout(() => btn.style.animation = '', 500);
+                    return;
+                }
+                const btn = document.getElementById('cfSubmitBtn');
+                const originalHTML = btn.innerHTML;
+                btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Enviando solicitud...';
+                btn.disabled = true;
+                setTimeout(() => {
+                    const cfg = serviceConfig[currentService] || serviceConfig['general'];
+                    const uniqueId = cfg.prefix + '-' + Math.floor(Math.random() * 900000 + 100000);
+                    btn.innerHTML = originalHTML;
+                    btn.disabled = false;
+                    closeModal();
+                    document.getElementById('successId').textContent = uniqueId;
+                    document.getElementById('successModal').classList.add('open');
+                    document.body.style.overflow = 'hidden';
+                }, 2200);
+            }
+
+            document.addEventListener('DOMContentLoaded', () => {
+                document.querySelectorAll('.cf-input').forEach(input => {
+                    input.addEventListener('focus', function() {
+                        this.style.borderColor = 'var(--blue)';
+                        this.style.background = 'white';
+                        this.style.boxShadow = '0 0 0 4px rgba(0,82,204,0.08)';
+                    });
+                    input.addEventListener('blur', function() {
+                        this.style.boxShadow = 'none';
+                        if (this.value.trim()) {
+                            this.classList.add('valid');
+                            this.classList.remove('invalid');
+                        } else {
+                            this.classList.remove('valid');
+                            this.style.borderColor = '#e8eef8';
+                            this.style.background = 'var(--blue-pale)';
+                        }
+                    });
+                    input.addEventListener('input', function() {
+                        if (this.classList.contains('invalid') && this.value.trim()) {
+                            this.classList.remove('invalid');
+                            this.classList.add('valid');
+                        }
+                    });
+                });
+                goTo('home');
+            });
+
+            window.addEventListener('load', () => {
+                const tooltip = document.querySelector('.wa-tooltip-box');
+                if (tooltip) {
+                    setTimeout(() => {
+                        tooltip.style.opacity = '1';
+                        tooltip.style.transform = 'translateX(0)';
+                        setTimeout(() => {
+                            tooltip.style.opacity = '0';
+                            tooltip.style.transform = 'translateX(10px)';
+                        }, 3500);
+                    }, 2500);
+                }
+            });
+
+            const pageObserver = new MutationObserver(() => { observeAnimations(); });
+            document.querySelectorAll('.page').forEach(page => { pageObserver.observe(page, { attributes: true, attributeFilter: ['class'] }); });
+
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    const href = this.getAttribute('href');
+                    if (href === '#') return;
+                    e.preventDefault();
+                    const target = document.querySelector(href);
+                    if (target) {
+                        const top = target.getBoundingClientRect().top + window.pageYOffset - 80;
+                        window.scrollTo({ top, behavior: 'smooth' });
+                    }
+                });
+            });
+
+            document.addEventListener('mousemove', (e) => {
+                const cards = document.querySelectorAll('.hero-card');
+                const x = (e.clientX / window.innerWidth - 0.5) * 10;
+                const y = (e.clientY / window.innerHeight - 0.5) * 10;
+                cards.forEach((card, i) => {
+                    const factor = (i % 2 === 0) ? 1 : -1;
+                    card.style.transform = `translateY(${factor * y * 0.5}px) translateX(${x * 0.3}px)`;
+                });
+            });
+
+            const promoTrack = document.querySelector('.promo-track');
+            if (promoTrack) {
+                promoTrack.addEventListener('mouseenter', () => { promoTrack.style.animationPlayState = 'paused'; });
+                promoTrack.addEventListener('mouseleave', () => { promoTrack.style.animationPlayState = 'running'; });
+            }
+
+            document.querySelectorAll('.nav-links a, .footer-col a').forEach(link => {
+                if (!link.getAttribute('href') || link.getAttribute('href') === '#') {
+                    link.addEventListener('click', e => e.preventDefault());
+                }
+            });
+        </script>
+    </body>
+    </html>
