@@ -2587,35 +2587,105 @@ body {
 <!-- ========== PÁGINA LICENCIAS ========== -->
 <div class="page" id="page-licencias">
   <div class="service-detail-page">
-    <div class="container"><div class="sdp-hero"><button class="sdp-back" onclick="goTo('home')"><i class="fas fa-arrow-left"></i> Volver al Inicio</button><div class="sdp-badge"><i class="fas fa-car"></i> Licencias de Conducir</div><h1 class="sdp-title">Licencias de Conducir<br><span>Fácil y Rápido</span></h1><p class="sdp-desc">Nuevas licencias, renovaciones y duplicados para todos los estados. Asistencia personalizada en cada paso del proceso.</p><div class="sdp-features"><div class="sdp-feature"><i class="fas fa-user-check"></i> Asistencia Personal</div><div class="sdp-feature"><i class="fas fa-globe"></i> Todos los Estados</div><div class="sdp-feature"><i class="fas fa-clock"></i> Proceso Rápido</div><div class="sdp-feature"><i class="fas fa-shield-alt"></i> 100% Legal</div></div></div></div>
-  </div>
-  <section class="sdp-cards-section"><div class="container"><div class="section-header"><div class="section-badge"><i class="fas fa-car"></i> Tipos de Trámite</div><h2 class="section-title">Elige el Trámite de Licencia que Necesitas</h2><p class="section-desc">Tres opciones disponibles para gestionar tu licencia de conducir sin complicaciones.</p></div><div class="sdp-cards-grid"><div class="sdp-card fade-up"><div class="sdp-card-icon"><i class="fas fa-plus-circle"></i></div><h3>Nueva Licencia</h3><p>Obtén tu primera licencia de conducir con nuestra asistencia completa. Te guiamos en cada paso del proceso.</p><div class="sdp-card-price"><i class="fas fa-tag"></i> Desde $59.99</div><button class="sdp-card-btn" onclick="openModal('licencia-nueva')"><i class="fas fa-paper-plane"></i> Solicitar Ahora</button></div><div class="sdp-card fade-up"><div class="sdp-card-icon"><i class="fas fa-redo"></i></div><h3>Renovación de Licencia</h3><p>Renueva tu licencia de conducir antes de que venza. Proceso simplificado sin largas filas en el DMV.</p><div class="sdp-card
-    <!-- Continuación de la página LICENCIAS (sdp-card faltante) -->
-                        </div>
-                        <div class="sdp-card fade-up">
-                            <div class="sdp-card-icon"><i class="fas fa-clone"></i></div>
-                            <h3>Duplicado de Licencia</h3>
-                            <p>¿Perdiste o te robaron tu licencia? Obtén un duplicado oficial rápidamente con nuestra asistencia.</p>
-                            <div class="sdp-card-price"><i class="fas fa-tag"></i> Desde $34.99</div>
-                            <button class="sdp-card-btn" onclick="openModal('licencia-duplicado')"><i class="fas fa-paper-plane"></i> Solicitar Ahora</button>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="how-section">
-                <div class="container" style="text-align:center">
-                    <h2 class="section-title white">¿Necesitas Orientación?</h2>
-                    <p class="section-desc white">Nuestros asesores especializados en licencias te guiarán en todo el proceso.</p>
-                    <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap">
-                        <button class="btn btn-white" onclick="openModal('licencia-consulta')"><i class="fas fa-headset"></i> Hablar con un Asesor</button>
-                        <button class="btn btn-outline" onclick="goTo('home')"><i class="fas fa-home"></i> Volver al Inicio</button>
-                    </div>
-                </div>
-            </section>
-            <footer class="footer">
-                <div class="container"><div class="footer-bottom" style="border-top:none"><p>© 2024 DMVCarPortal. Todos los derechos reservados.</p><div class="footer-badges"><div class="footer-badge"><i class="fas fa-lock"></i> SSL Seguro</div><div class="footer-badge"><i class="fas fa-check-circle"></i> DMV Aprobado</div><div class="footer-badge"><i class="fas fa-globe"></i> 50 Estados</div></div></div></div>
-            </footer>
+    <div class="hero-circle-1"></div>
+    <div class="hero-circle-2"></div>
+    <div class="container">
+      <div class="sdp-hero">
+        <button class="sdp-back" onclick="goTo('home')">
+          <i class="fas fa-arrow-left"></i> Volver al Inicio
+        </button>
+        <div class="sdp-badge">
+          <i class="fas fa-car"></i> Licencias de Conducir
         </div>
+        <h1 class="sdp-title">Licencias de Conducir<br><span>Fácil y Rápido</span></h1>
+        <p class="sdp-desc">
+          Nuevas licencias, renovaciones y duplicados para todos los estados.
+          Asistencia personalizada en cada paso del proceso.
+        </p>
+        <div class="sdp-features">
+          <div class="sdp-feature"><i class="fas fa-user-check"></i> Asistencia Personal</div>
+          <div class="sdp-feature"><i class="fas fa-globe"></i> Todos los Estados</div>
+          <div class="sdp-feature"><i class="fas fa-clock"></i> Proceso Rápido</div>
+          <div class="sdp-feature"><i class="fas fa-shield-alt"></i> 100% Legal</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="sdp-cards-section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-badge"><i class="fas fa-car"></i> Tipos de Trámite</div>
+        <h2 class="section-title">Elige el Trámite de Licencia que Necesitas</h2>
+        <p class="section-desc">
+          Tres opciones disponibles para gestionar tu licencia de conducir sin complicaciones.
+        </p>
+      </div>
+      <div class="sdp-cards-grid">
+        <!-- Nueva Licencia -->
+        <div class="sdp-card fade-up">
+          <div class="sdp-card-icon"><i class="fas fa-plus-circle"></i></div>
+          <h3>Nueva Licencia</h3>
+          <p>Obtén tu primera licencia de conducir con nuestra asistencia completa. Te guiamos en cada paso del proceso.</p>
+          <div class="sdp-card-price"><i class="fas fa-tag"></i> Desde $59.99</div>
+          <button class="sdp-card-btn" onclick="openModal('licencia-nueva')">
+            <i class="fas fa-paper-plane"></i> Solicitar Ahora
+          </button>
+        </div>
+        <!-- Renovación de Licencia -->
+        <div class="sdp-card fade-up">
+          <div class="sdp-card-icon"><i class="fas fa-redo"></i></div>
+          <h3>Renovación de Licencia</h3>
+          <p>Renueva tu licencia de conducir antes de que venza. Proceso simplificado sin largas filas en el DMV.</p>
+          <div class="sdp-card-price"><i class="fas fa-tag"></i> Desde $44.99</div>
+          <button class="sdp-card-btn" onclick="openModal('licencia-renovacion')">
+            <i class="fas fa-paper-plane"></i> Solicitar Ahora
+          </button>
+        </div>
+        <!-- Duplicado de Licencia -->
+        <div class="sdp-card fade-up">
+          <div class="sdp-card-icon"><i class="fas fa-clone"></i></div>
+          <h3>Duplicado de Licencia</h3>
+          <p>¿Perdiste o te robaron tu licencia? Obtén un duplicado oficial rápidamente con nuestra asistencia.</p>
+          <div class="sdp-card-price"><i class="fas fa-tag"></i> Desde $34.99</div>
+          <button class="sdp-card-btn" onclick="openModal('licencia-duplicado')">
+            <i class="fas fa-paper-plane"></i> Solicitar Ahora
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="how-section">
+    <div class="container" style="text-align:center;position:relative;z-index:1">
+      <h2 class="section-title white" style="margin-bottom:14px">¿Necesitas Orientación?</h2>
+      <p class="section-desc white" style="margin:0 auto 30px">
+        Nuestros asesores especializados en licencias te guiarán en todo el proceso.
+      </p>
+      <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap">
+        <button class="btn btn-white" onclick="openModal('licencia-consulta')">
+          <i class="fas fa-headset"></i> Hablar con un Asesor
+        </button>
+        <button class="btn btn-outline" onclick="goTo('home')">
+          <i class="fas fa-home"></i> Volver al Inicio
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom" style="border-top:none;padding-top:0">
+        <p>© 2024 DMVCarPortal. Todos los derechos reservados.</p>
+        <div class="footer-badges">
+          <div class="footer-badge"><i class="fas fa-lock"></i> SSL Seguro</div>
+          <div class="footer-badge"><i class="fas fa-check-circle"></i> DMV Aprobado</div>
+          <div class="footer-badge"><i class="fas fa-globe"></i> 50 Estados</div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
 
         <!-- ========== PÁGINA STICKERS ========== -->
         <div class="page" id="page-stickers">
