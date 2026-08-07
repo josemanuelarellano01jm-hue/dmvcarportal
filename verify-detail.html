@@ -1,199 +1,742 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Detalle de tu trámite - DMVCarPortal</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DMV CAR PORTAL</title>
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <!-- Google Fonts Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      font-family: 'Poppins', 'Segoe UI', sans-serif;
-      background: linear-gradient(145deg, #f5f9ff 0%, #eef2fa 100%);
-      padding: 40px 20px;
+    /* ===== RESET Y BASE ===== */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
     }
-    .container { max-width: 1100px; margin: 0 auto; }
-    .detail-card {
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(145deg, #f5f9ff 0%, #eef2fa 100%);
+      min-height: 100vh;
+      padding-top: 80px; /* espacio para el header fijo */
+    }
+    a {
+      text-decoration: none;
+    }
+
+    /* ===== HEADER FIJO ===== */
+    .header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: #0f1a3a; /* azul muy oscuro */
+      padding: 0 30px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 70px;
+      z-index: 1000;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+    }
+    .logo {
+      display: flex;
+      align-items: baseline;
+      gap: 2px;
+      font-weight: 900;
+      font-size: 28px;
+      letter-spacing: 1px;
+    }
+    .logo .dmv {
+      color: #ffffff;
+    }
+    .logo .car {
+      color: #e63946; /* rojo suave */
+      font-size: 22px;
+      margin-left: 4px;
+    }
+    /* eliminado .portal (USA) */
+
+    /* Menú de navegación */
+    .nav-menu {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+    .nav-menu a {
+      color: #cbd5e1;
+      font-size: 14px;
+      font-weight: 600;
+      transition: color 0.2s;
+      padding: 4px 0;
+      border-bottom: 2px solid transparent;
+    }
+    .nav-menu a:hover {
+      color: #ffffff;
+      border-bottom-color: #e63946;
+    }
+    .nav-menu a.activo {
+      color: #ffffff;
+      border-bottom-color: #e63946;
+    }
+    .nav-menu .solicitar-btn {
+      background: #e63946;
+      color: #fff;
+      padding: 6px 16px;
+      border-radius: 40px;
+      font-weight: 700;
+      border-bottom: none !important;
+      transition: background 0.2s;
+    }
+    .nav-menu .solicitar-btn:hover {
+      background: #c62836;
+      color: #fff;
+    }
+    /* Menú hamburguesa para móvil */
+    .menu-toggle {
+      display: none;
+      background: none;
+      border: none;
+      color: #fff;
+      font-size: 26px;
+      cursor: pointer;
+    }
+
+    /* ===== CONTENEDOR PRINCIPAL ===== */
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px 40px;
+    }
+
+    /* ===== SECCIÓN INICIO ===== */
+    #inicio {
+      display: block;
+    }
+    .hero {
       background: white;
       border-radius: 32px;
-      box-shadow: 0 20px 60px rgba(0,0,0,0.1);
+      box-shadow: 0 20px 60px rgba(0,0,0,0.08);
       overflow: hidden;
-      margin-top: 20px;
-    }
-    .detail-header {
-      background: linear-gradient(135deg, #1e3a8a, #2563eb);
-      padding: 30px 40px;
-      color: white;
-    }
-    .detail-header h1 { font-size: 28px; margin-bottom: 5px; }
-    .detail-header p { opacity: 0.8; }
-    .detail-content { padding: 30px 40px; }
-    .grid-2col {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 20px;
+      padding: 40px 40px 30px;
       margin-bottom: 30px;
+      text-align: center;
     }
-    .info-field {
-      border-bottom: 1px solid #e2e8f0;
-      padding-bottom: 12px;
-    }
-    .info-field label {
-      font-size: 12px;
+    .hero .etiqueta-oficial {
+      display: inline-block;
+      background: #e63946;
+      color: #fff;
+      font-size: 14px;
       font-weight: 700;
-      text-transform: uppercase;
-      color: #3b82f6;
-      display: block;
-      margin-bottom: 5px;
+      padding: 6px 20px;
+      border-radius: 40px;
+      letter-spacing: 1px;
+      margin-bottom: 16px;
     }
-    .info-field span {
+    .hero h1 {
+      font-size: 42px;
+      font-weight: 900;
+      color: #0f1a3a;
+      line-height: 1.2;
+    }
+    .hero h1 span {
+      color: #e63946;
+    }
+    .hero .subtitulo {
       font-size: 18px;
-      font-weight: 600;
-      color: #0f172a;
+      color: #334155;
+      margin: 12px 0 25px;
+      font-weight: 500;
     }
-    .photos-title {
-      font-size: 22px;
-      font-weight: 800;
-      margin: 20px 0 15px;
-      color: #1e3a8a;
-      border-left: 5px solid #3b82f6;
-      padding-left: 15px;
-    }
-    .photos-grid {
+
+    /* Sellos de calidad */
+    .sellos {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-      gap: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 15px;
+      margin: 25px 0 35px;
     }
-    .photo-item {
+    .sello {
       background: #f8fafc;
       border-radius: 16px;
-      overflow: hidden;
+      padding: 16px 10px;
+      text-align: center;
       border: 1px solid #e2e8f0;
       transition: transform 0.2s;
     }
-    .photo-item:hover { transform: translateY(-5px); }
-    .photo-item img {
-      width: 100%;
-      height: auto;
-      display: block;
+    .sello:hover {
+      transform: translateY(-4px);
     }
-    .photo-caption {
-      padding: 10px;
+    .sello i {
+      font-size: 28px;
+      color: #2563eb;
+      margin-bottom: 6px;
+    }
+    .sello .label {
+      font-weight: 700;
+      font-size: 15px;
+      color: #0f1a3a;
+    }
+    .sello .desc {
       font-size: 12px;
-      text-align: center;
-      background: white;
-      color: #334155;
+      color: #64748b;
     }
-    .btn-back {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      background: #2563eb;
-      color: white;
+
+    /* Servicios destacados (6) */
+    .servicios-destacados {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      margin: 30px 0;
+    }
+    .servicio-item {
+      background: #f8fafc;
+      border-radius: 20px;
+      padding: 20px;
+      text-align: left;
+      border-left: 4px solid #2563eb;
+      transition: box-shadow 0.2s, transform 0.2s;
+      cursor: pointer;
+    }
+    .servicio-item:hover {
+      box-shadow: 0 8px 25px rgba(0,0,0,0.06);
+      transform: translateY(-3px);
+    }
+    .servicio-item i {
+      font-size: 32px;
+      color: #2563eb;
+      margin-bottom: 8px;
+    }
+    .servicio-item h3 {
+      font-size: 18px;
+      color: #0f1a3a;
+      font-weight: 700;
+    }
+    .servicio-item p {
+      font-size: 14px;
+      color: #475569;
+      margin-top: 4px;
+    }
+
+    .btn-solicitar-grande {
+      display: inline-block;
+      background: #e63946;
+      color: #fff;
+      font-weight: 700;
+      font-size: 18px;
+      padding: 14px 40px;
+      border-radius: 60px;
+      transition: background 0.2s, transform 0.1s;
+      box-shadow: 0 8px 20px rgba(230, 57, 70, 0.3);
+      margin: 10px 0 5px;
       border: none;
-      padding: 12px 24px;
+      cursor: pointer;
+    }
+    .btn-solicitar-grande:hover {
+      background: #c62836;
+      transform: scale(1.02);
+    }
+
+    /* ===== SECCIÓN VERIFICACIÓN ===== */
+    #verificacion {
+      display: none;
+      background: white;
+      border-radius: 32px;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.08);
+      padding: 40px;
+    }
+    #verificacion .verif-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 2px solid #e2e8f0;
+      padding-bottom: 15px;
+      margin-bottom: 25px;
+      flex-wrap: wrap;
+    }
+    #verificacion .verif-header h2 {
+      font-size: 28px;
+      font-weight: 800;
+      color: #0f1a3a;
+    }
+    #verificacion .verif-header h2 i {
+      color: #e63946;
+      margin-right: 10px;
+    }
+    .btn-volver {
+      background: #e2e8f0;
+      border: none;
+      padding: 8px 20px;
       border-radius: 40px;
       font-weight: 600;
+      color: #1e293b;
       cursor: pointer;
-      margin-top: 20px;
-      text-decoration: none;
+      transition: background 0.2s;
     }
-    .btn-back:hover { background: #1d4ed8; }
-    @media (max-width: 700px) {
-      .grid-2col { grid-template-columns: 1fr; }
-      .detail-header, .detail-content { padding: 20px; }
+    .btn-volver:hover {
+      background: #cbd5e1;
+    }
+
+    /* Ahora solo 3 pasos */
+    .pasos-verificacion {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      margin: 25px 0 30px;
+    }
+    .paso {
+      background: #f8fafc;
+      border-radius: 16px;
+      padding: 18px;
+      text-align: center;
+      border: 1px solid #e2e8f0;
+    }
+    .paso .numero {
+      display: inline-block;
+      background: #2563eb;
+      color: #fff;
+      width: 36px;
+      height: 36px;
+      line-height: 36px;
+      border-radius: 50%;
+      font-weight: 700;
+      font-size: 18px;
+      margin-bottom: 8px;
+    }
+    .paso h4 {
+      font-size: 16px;
+      color: #0f1a3a;
+      font-weight: 700;
+    }
+    .paso p {
+      font-size: 14px;
+      color: #475569;
+      margin-top: 4px;
+    }
+
+    .form-verificar {
+      background: #f1f5f9;
+      border-radius: 20px;
+      padding: 25px 30px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-end;
+      gap: 15px;
+      margin-top: 10px;
+    }
+    .form-verificar .campo {
+      flex: 2 1 250px;
+    }
+    .form-verificar label {
+      display: block;
+      font-size: 13px;
+      font-weight: 700;
+      color: #1e293b;
+      margin-bottom: 4px;
+    }
+    .form-verificar input {
+      width: 100%;
+      padding: 12px 18px;
+      border: 2px solid #cbd5e1;
+      border-radius: 40px;
+      font-size: 16px;
+      font-family: 'Poppins', sans-serif;
+      transition: border-color 0.2s;
+      background: #fff;
+    }
+    .form-verificar input:focus {
+      outline: none;
+      border-color: #2563eb;
+      box-shadow: 0 0 0 3px rgba(37,99,235,0.2);
+    }
+    .form-verificar .btn-verificar {
+      background: #2563eb;
+      color: #fff;
+      border: none;
+      padding: 12px 30px;
+      border-radius: 40px;
+      font-weight: 700;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.2s;
+      flex: 0 0 auto;
+    }
+    .form-verificar .btn-verificar:hover {
+      background: #1d4ed8;
+    }
+    .form-verificar .ayuda {
+      font-size: 13px;
+      color: #64748b;
+      width: 100%;
+      margin-top: 10px;
+      text-align: center;
+    }
+    .form-verificar .ayuda i {
+      color: #e63946;
+    }
+
+    /* ===== WHATSAPP FLOTANTE ===== */
+    .whatsapp-float {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background: #25d366;
+      color: #fff;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 34px;
+      box-shadow: 0 6px 25px rgba(37, 211, 102, 0.4);
+      z-index: 999;
+      transition: transform 0.2s;
+    }
+    .whatsapp-float:hover {
+      transform: scale(1.08);
+      color: #fff;
+    }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 900px) {
+      .header {
+        padding: 0 15px;
+      }
+      .nav-menu {
+        display: none;
+        flex-direction: column;
+        background: #0f1a3a;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        padding: 20px;
+        gap: 12px;
+        border-top: 1px solid #1e2d5a;
+      }
+      .nav-menu.abierto {
+        display: flex;
+      }
+      .menu-toggle {
+        display: block;
+      }
+      .hero h1 {
+        font-size: 30px;
+      }
+      .hero {
+        padding: 25px;
+      }
+      #verificacion {
+        padding: 25px;
+      }
+      .form-verificar {
+        flex-direction: column;
+        align-items: stretch;
+      }
+      .form-verificar .btn-verificar {
+        width: 100%;
+        text-align: center;
+      }
+    }
+    @media (max-width: 500px) {
+      .logo .portal {
+        display: none;
+      }
+      .sellos {
+        grid-template-columns: 1fr 1fr;
+      }
+      .servicios-destacados {
+        grid-template-columns: 1fr;
+      }
     }
   </style>
 </head>
 <body>
-<div class="container">
-  <div class="detail-card" id="detailCard">
-    <div class="detail-header">
-      <h1><i class="fas fa-check-circle"></i> Información de tu trámite</h1>
-      <p>Datos verificados oficialmente por DMVCarPortal</p>
+
+  <!-- ===== HEADER FIJO ===== -->
+  <header class="header">
+    <div class="logo">
+      <span class="dmv">DMV</span>
+      <span class="car">CAR PORTAL</span>
     </div>
-    <div class="detail-content" id="detailContent">
-      <div style="text-align: center; padding: 50px;">
-        <i class="fas fa-spinner fa-spin" style="font-size: 40px; color: #2563eb;"></i>
-        <p>Cargando tu información...</p>
+    <button class="menu-toggle" id="menuToggle" aria-label="Menú">
+      <i class="fas fa-bars"></i>
+    </button>
+    <nav class="nav-menu" id="navMenu">
+      <a href="#" data-seccion="inicio" class="activo">Inicio</a>
+      <a href="#" data-seccion="seguros">Seguros</a>
+      <a href="#" data-seccion="placas">Placas</a>
+      <a href="#" data-seccion="titulos">Títulos</a>
+      <a href="#" data-seccion="licencias">Licencias</a>
+      <a href="#" data-seccion="stickers">Stickers</a>
+      <a href="#" data-seccion="inspecciones">Inspecciones</a>
+      <a href="#" data-seccion="verificar">Verificar</a>
+      <a href="#" class="solicitar-btn" id="solicitarNav">Solicitar Servicio</a>
+    </nav>
+  </header>
+
+  <!-- ===== CONTENEDOR PRINCIPAL ===== -->
+  <div class="container">
+
+    <!-- ===== SECCIÓN INICIO ===== -->
+    <section id="inicio">
+      <div class="hero">
+        <div class="etiqueta-oficial">
+          <i class="fas fa-star"></i> Servicio Oficial Número 1 en USA
+        </div>
+        <h1>Tu Portal de <span>Trámites Vehiculares</span> en USA</h1>
+        <p class="subtitulo">
+          Obtén tus placas temporales, seguros, títulos y licencias de forma rápida, segura y 100% legal.
+          Servicio disponible en los 50 estados.
+        </p>
+
+        <!-- Sellos -->
+        <div class="sellos">
+          <div class="sello">
+            <i class="fas fa-check-circle"></i>
+            <div class="label">Aprobado por DMV</div>
+            <div class="desc">100% legal</div>
+          </div>
+          <div class="sello">
+            <i class="fas fa-shield-alt"></i>
+            <div class="label">100% Seguro</div>
+            <div class="desc">Protegemos tus datos</div>
+          </div>
+          <div class="sello">
+            <i class="fas fa-clock"></i>
+            <div class="label">Entrega en 24h</div>
+            <div class="desc">Rápido y confiable</div>
+          </div>
+          <div class="sello">
+            <i class="fas fa-map-marked-alt"></i>
+            <div class="label">50 Estados</div>
+            <div class="desc">Cobertura nacional</div>
+          </div>
+        </div>
+
+        <!-- Servicios destacados: 6 -->
+        <div class="servicios-destacados">
+          <div class="servicio-item" data-servicio="seguros">
+            <i class="fas fa-shield-virus"></i>
+            <h3>Seguros</h3>
+            <p>Básico y Full Cover disponible</p>
+          </div>
+          <div class="servicio-item" data-servicio="placas">
+            <i class="fas fa-car"></i>
+            <h3>Placas Temporales</h3>
+            <p>Válidas en los 50 estados</p>
+          </div>
+          <div class="servicio-item" data-servicio="titulos">
+            <i class="fas fa-file-signature"></i>
+            <h3>Títulos</h3>
+            <p>Transferencias y recuperación</p>
+          </div>
+          <div class="servicio-item" data-servicio="licencias">
+            <i class="fas fa-id-card"></i>
+            <h3>Licencias de Conducir</h3>
+            <p>Nuevas, renovaciones y duplicados</p>
+          </div>
+          <div class="servicio-item" data-servicio="stickers">
+            <i class="fas fa-sticky-note"></i>
+            <h3>Stickers</h3>
+            <p>Verificación y renovación</p>
+          </div>
+          <div class="servicio-item" data-servicio="inspecciones">
+            <i class="fas fa-clipboard-list"></i>
+            <h3>Inspecciones</h3>
+            <p>Revisión técnica obligatoria</p>
+          </div>
+        </div>
+
+        <a href="#" class="btn-solicitar-grande" id="solicitarHero">
+          <i class="fas fa-paper-plane"></i> Solicitar Servicio Ahora
+        </a>
       </div>
-    </div>
-  </div>
-  <div style="text-align: center; margin-top: 30px;">
-    <a href="index.html" class="btn-back"><i class="fas fa-arrow-left"></i> Volver al inicio</a>
-  </div>
-</div>
+    </section>
 
-<script>
-  (function() {
-    const clienteData = sessionStorage.getItem('clienteData');
-    if (!clienteData) {
-      const urlParams = new URLSearchParams(window.location.search);
-      const id = urlParams.get('id');
-      if (id) {
-        fetch('data/clientes.json')
-          .then(res => res.json())
-          .then(clientes => {
-            const cliente = clientes[id];
-            if (cliente) renderizarCliente(cliente);
-            else mostrarError('ID no válido o no encontrado.');
-          })
-          .catch(() => mostrarError('Error al cargar los datos.'));
-      } else {
-        mostrarError('No se proporcionó un ID válido.');
-      }
-    } else {
-      const cliente = JSON.parse(clienteData);
-      renderizarCliente(cliente);
-      sessionStorage.removeItem('clienteData');
-    }
+    <!-- ===== SECCIÓN VERIFICACIÓN ===== -->
+    <section id="verificacion">
+      <div class="verif-header">
+        <h2 id="verifTitulo"><i class="fas fa-clipboard-check"></i> Verificar Trámite</h2>
+        <button class="btn-volver" id="volverInicio"><i class="fas fa-arrow-left"></i> Volver al inicio</button>
+      </div>
 
-    function renderizarCliente(cliente) {
-      const container = document.getElementById('detailContent');
-      let fotosHtml = '';
-      if (cliente.fotos && cliente.fotos.length) {
-        fotosHtml = `<div class="photos-title"><i class="fas fa-image"></i> Documentos adjuntos</div>
-                     <div class="photos-grid">`;
-        cliente.fotos.forEach(fotoUrl => {
-          fotosHtml += `
-            <div class="photo-item">
-              <img src="${fotoUrl}" alt="Documento del cliente" loading="lazy">
-              <div class="photo-caption">Documento oficial</div>
-            </div>
-          `;
+      <!-- Solo 3 pasos (eliminado "Elige el Servicio") -->
+      <div class="pasos-verificacion">
+        <div class="paso">
+          <div class="numero">1</div>
+          <h4>Ingresa tu ID</h4>
+          <p>Escribe el ID único de tu trámite que recibiste por correo.</p>
+        </div>
+        <div class="paso">
+          <div class="numero">2</div>
+          <h4>Consulta el Estado</h4>
+          <p>Presiona verificar y obtén el estado actual al instante.</p>
+        </div>
+        <div class="paso">
+          <div class="numero">3</div>
+          <h4>¿Necesitas Ayuda?</h4>
+          <p>Contáctanos por WhatsApp y un asesor te ayudará de inmediato.</p>
+        </div>
+      </div>
+
+      <div class="form-verificar">
+        <div class="campo">
+          <label for="idTramite"><i class="fas fa-id-badge"></i> Ingresa tu ID o VIN</label>
+          <input type="text" id="idTramite" placeholder="Ej: DMV-2026-1234" />
+        </div>
+        <button class="btn-verificar" id="btnVerificar"><i class="fas fa-search"></i> Verificar</button>
+        <div class="ayuda">
+          <i class="fas fa-info-circle"></i> Tu ID de trámite fue enviado a tu correo al momento de realizar tu solicitud.
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- ===== WHATSAPP FLOTANTE ===== -->
+  <a href="https://wa.me/1234567890?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20sus%20servicios%20vehiculares." class="whatsapp-float" target="_blank" rel="noopener">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- ===== JAVASCRIPT ===== -->
+  <script>
+    (function() {
+      // Elementos del DOM
+      const menuToggle = document.getElementById('menuToggle');
+      const navMenu = document.getElementById('navMenu');
+      const linksNav = navMenu.querySelectorAll('a[data-seccion]');
+      const seccionInicio = document.getElementById('inicio');
+      const seccionVerificacion = document.getElementById('verificacion');
+      const verifTitulo = document.getElementById('verifTitulo');
+      const volverBtn = document.getElementById('volverInicio');
+      const solicitarHero = document.getElementById('solicitarHero');
+      const solicitarNav = document.getElementById('solicitarNav');
+      const servicioItems = document.querySelectorAll('.servicio-item');
+      const btnVerificar = document.getElementById('btnVerificar');
+      const idInput = document.getElementById('idTramite');
+
+      // Mapeo de servicios a títulos de verificación
+      const servicioInfo = {
+        'seguros': { titulo: 'Verificar Seguro', icono: 'fa-shield-virus' },
+        'placas': { titulo: 'Verificar Placas', icono: 'fa-car' },
+        'titulos': { titulo: 'Verificar Título', icono: 'fa-file-signature' },
+        'licencias': { titulo: 'Verificar Licencia', icono: 'fa-id-card' },
+        'stickers': { titulo: 'Verificar Sticker', icono: 'fa-sticky-note' },
+        'inspecciones': { titulo: 'Verificar Inspección', icono: 'fa-clipboard-list' },
+        'verificar': { titulo: 'Verificar Trámite', icono: 'fa-clipboard-check' }
+      };
+
+      // Función para mostrar la sección de verificación con el título adecuado
+      function mostrarVerificacion(servicioId) {
+        // Cerrar menú móvil si está abierto
+        navMenu.classList.remove('abierto');
+
+        // Obtener info del servicio
+        let info = servicioInfo[servicioId];
+        if (!info) {
+          info = { titulo: 'Verificar Trámite', icono: 'fa-clipboard-check' };
+        }
+        // Actualizar título
+        verifTitulo.innerHTML = `<i class="fas ${info.icono}"></i> ${info.titulo}`;
+
+        // Mostrar verificación, ocultar inicio
+        seccionInicio.style.display = 'none';
+        seccionVerificacion.style.display = 'block';
+
+        // Marcar enlace activo en el menú
+        linksNav.forEach(link => {
+          link.classList.remove('activo');
+          if (link.dataset.seccion === servicioId) {
+            link.classList.add('activo');
+          }
         });
-        fotosHtml += `</div>`;
-      } else {
-        fotosHtml = `<div class="photos-title"><i class="fas fa-info-circle"></i> No hay documentos adjuntos</div>`;
+        const linkActivo = document.querySelector(`a[data-seccion="${servicioId}"]`);
+        if (linkActivo) {
+          linksNav.forEach(l => l.classList.remove('activo'));
+          linkActivo.classList.add('activo');
+        }
       }
 
-      const html = `
-        <div class="grid-2col">
-          <div class="info-field"><label>Nombre completo</label><span>${cliente.nombre || ''} ${cliente.apellido || ''}</span></div>
-          <div class="info-field"><label>ID de trámite</label><span>${cliente.id || ''}</span></div>
-          <div class="info-field"><label>Estado del trámite</label><span>${cliente.estado || ''}</span></div>
-          <div class="info-field"><label>Ubicación</label><span>${cliente.ubicacion || ''}</span></div>
-          <div class="info-field"><label>Fecha</label><span>${cliente.fecha_nacimiento || ''}</span></div>
-          <div class="info-field"><label>Plan / Servicio</label><span>${cliente.plan || ''}</span></div>
-          <div class="info-field"><label>Informacion del tramite</label><span>${cliente.servicio || ''} - ${cliente.tramite || ''}</span></div>
-        </div>
-        ${fotosHtml}
-      `;
-      container.innerHTML = html;
-    }
+      // Función para volver al inicio
+      function volverInicio() {
+        seccionInicio.style.display = 'block';
+        seccionVerificacion.style.display = 'none';
+        linksNav.forEach(link => link.classList.remove('activo'));
+        const linkInicio = document.querySelector('a[data-seccion="inicio"]');
+        if (linkInicio) linkInicio.classList.add('activo');
+        navMenu.classList.remove('abierto');
+      }
 
-    function mostrarError(mensaje) {
-      const container = document.getElementById('detailContent');
-      container.innerHTML = `
-        <div style="text-align:center; padding:40px;">
-          <i class="fas fa-exclamation-triangle" style="font-size: 50px; color: #c0392b;"></i>
-          <h2 style="margin: 20px 0 10px;">Error</h2>
-          <p>${mensaje}</p>
-          <a href="index.html" style="display:inline-block; margin-top:20px; background:#2563eb; color:white; padding:10px 20px; border-radius:30px; text-decoration:none;">Volver al inicio</a>
-        </div>
-      `;
-    }
-  })();
-</script>
+      // Evento para los enlaces del menú (data-seccion)
+      linksNav.forEach(link => {
+        link.addEventListener('click', function(e) {
+          e.preventDefault();
+          const seccion = this.dataset.seccion;
+          if (seccion === 'inicio') {
+            volverInicio();
+          } else {
+            mostrarVerificacion(seccion);
+          }
+        });
+      });
+
+      // Evento para los servicios destacados (clic)
+      servicioItems.forEach(item => {
+        item.addEventListener('click', function() {
+          const servicio = this.dataset.servicio;
+          if (servicio) {
+            mostrarVerificacion(servicio);
+          }
+        });
+      });
+
+      // Botón volver
+      volverBtn.addEventListener('click', volverInicio);
+
+      // Botones "Solicitar Servicio" (WhatsApp)
+      function abrirWhatsApp() {
+        const numero = '1234567890'; // Cambia por tu número
+        const mensaje = 'Hola, quiero solicitar un servicio vehicular.';
+        window.open(`https://wa.me/${numero}?text=${encodeURIComponent(mensaje)}`, '_blank');
+      }
+      solicitarHero.addEventListener('click', function(e) {
+        e.preventDefault();
+        abrirWhatsApp();
+      });
+      solicitarNav.addEventListener('click', function(e) {
+        e.preventDefault();
+        abrirWhatsApp();
+      });
+
+      // Botón "Verificar" (simulación)
+      btnVerificar.addEventListener('click', function() {
+        const id = idInput.value.trim();
+        if (id === '') {
+          alert('Por favor ingresa un ID o VIN válido.');
+        } else {
+          alert(`Verificando trámite con ID: ${id}\n(Simulación - en un sistema real se consultaría la base de datos)`);
+        }
+      });
+
+      // Toggle menú móvil
+      menuToggle.addEventListener('click', function() {
+        navMenu.classList.toggle('abierto');
+      });
+
+      // Cerrar menú al hacer clic fuera
+      document.addEventListener('click', function(e) {
+        if (!navMenu.contains(e.target) && !menuToggle.contains(e.target)) {
+          navMenu.classList.remove('abierto');
+        }
+      });
+
+      // Inicializar: mostrar inicio
+      volverInicio();
+    })();
+  </script>
 </body>
 </html>
